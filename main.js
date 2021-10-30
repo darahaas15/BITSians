@@ -195,6 +195,7 @@ function scorer_name(query, text) {
 }
 
 function scorer_id(query, text) {
+    query = query.toUpperCase()
     if(text.includes(query)) {
         return [query.length, query.length, text.indexOf(query)]
     }
