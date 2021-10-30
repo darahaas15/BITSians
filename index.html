@@ -23,7 +23,7 @@
 </head>
 <body>
     <div id="page">
-        <div id="filters-tab">
+        <div id="filters-tab" class="hidden">
             <header>FILTERS<img onclick="close_filters_tab()" src="images/forward.png"></header>
             <div id="filters-container">
                 <div class="filter-section" category="year">
@@ -49,9 +49,14 @@
             </div>
         </div>
         <!-- \n*\s*(<div class="filter-toggle".*?>.*?</div>)\n\s+ -->
-        <div id="results-tab" onclick="show_filters_tab()">
-            <div id="inputs-row"></div>
-            <div id="results-container"></div>
+        <div id="results-tab">
+            <header>
+                <img id="filter-img" onclick="show_filters_tab()" src="images/filter.png">
+                <input type="text" id="query" placeholder="Search" autocomplete="off">
+                <!-- <img onclick="toggle_theme()" src=""> -->
+            </header>
+            <div id="results-container">
+            </div>
         </div>
     </div>
 

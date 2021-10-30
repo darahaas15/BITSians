@@ -9,7 +9,7 @@
     font-size: 20px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 985px) {
     :root {
         font-size: 25px;
     }
@@ -53,18 +53,18 @@ body {
     padding: 10px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 985px) {
     #page > * {
         position: relative;
         height: 100vh;
     }
 
     #filters-tab {
-        width: 45%;
+        width: 40%;
     }
 
     #results-tab {
-        width: 55%;
+        width: 60%;
     }
 }
 
@@ -81,6 +81,12 @@ body {
     left: -100%;
 }
 
+@media (min-width: 985px) {
+    #filters-tab.hidden {
+        left: 0;
+    }
+}
+
 #filters-tab > * {
     width: 100%;
 }
@@ -90,6 +96,7 @@ body {
     /* text-align: center; */
     font-size: 2em;
     padding: 0.25em;
+    /* background-color: antiquewhite; */
 
     display: flex;
     justify-content: space-between;
@@ -102,7 +109,7 @@ body {
     aspect-ratio: 1 / 1;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 985px) {
     #filters-tab > header {
         font-weight: 900;
         text-align: center;
@@ -164,7 +171,7 @@ body {
     height: .75em;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 985px) {
     .filter-section > header > img {
         cursor: pointer;
     }
@@ -184,7 +191,7 @@ body {
     transition-property: color, background-color;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 985px) {
     .filter-toggle {
         cursor: pointer;
     }
@@ -195,6 +202,73 @@ body {
     color: black;
 }
 
+/* RESULTS TAB */
+
 #results-tab {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#results-tab > * {
+    width: 100%;
+}
+
+#results-tab > header {
+    font-weight: 900;
+    font-size: 2em;
+    padding: 0.25em;
+    height: calc(2em - 0.25em/2); /*For consistency with filters tab*/
+    overflow: hidden;
+    /* background-color: antiquewhite; */
+
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+#results-tab > header > img {
+    height: 0.75em;
+    filter: invert(1);
+    aspect-ratio: 1 / 1;
+}
+
+#results-tab > header > input {
+    font-size: 0.75em;
+    font-weight: 900;
+    background-color: transparent;
+    border: solid white 2px;
+    border-radius: 0.25em;
+    height: 100%;
+    outline: none;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+#results-tab > header > input::placeholder {
+    text-transform: uppercase;
+    color: rgb(128, 128, 128);
+}
+
+@media (min-width: 985px) {
+    #results-tab > header {
+        font-weight: 900;
+        text-align: center;
+        font-size: 3em;
+        padding: 0.5em;
+        height: calc(3em - 1.25em/2); /*For consistency with filters tab*/
+    }
+
+    #results-tab > header > img#filter-img {
+        display: none;
+    }
+}
+
+#results-tab > #results-container {
     background-color: orange;
+    height: 100%;
+    overflow: auto;
+    border-radius: 10px;
 }
