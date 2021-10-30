@@ -97,7 +97,7 @@ body {
 }
 
 #filters-tab > header > img {
-    height: 0.5em;
+    height: 0.75em;
     filter: invert(1);
     aspect-ratio: 1 / 1;
 }
