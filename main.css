@@ -339,9 +339,14 @@ body {
 }
 
 .info > .branch {
-    color: rgb(128, 128, 128);
+    color: hsl(210, 100%, 75%);
+}
+
+.info > .branch {
+    color: hsl(210, 100%, 75%);
 }
 
 .info > .student-id {
-    color: cyan;
+    font-size: 0.75em;
+    color: hsl(180, 100%, 30%);
 }
