@@ -276,12 +276,14 @@ body {
 }
 
 #results-container::-webkit-scrollbar {
+    border-radius: 999px;
     width: 5px;
-    background-color: grey;
+    background-color: black;
 }
 
 #results-container::-webkit-scrollbar-thumb {
-    background-color: white;
+    border-radius: 999px;
+    background-color: rgb(128, 128, 128);
 }
 
 #results-container > .student {
