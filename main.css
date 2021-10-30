@@ -311,7 +311,7 @@ body {
 
 .student > .place {
     color: hsl(30, 100%, 50%);
-    font-size: 1em;
+    font-size: 0.95em;
 }
 
 .place > .hostel {
