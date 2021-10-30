@@ -267,8 +267,78 @@ body {
 }
 
 #results-tab > #results-container {
-    background-color: orange;
     height: 100%;
     overflow: auto;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#results-container::-webkit-scrollbar {
+    width: 10px;
+    background-color: grey;
+}
+
+#results-container::-webkit-scrollbar-thumb {
+    background-color: white;
+}
+
+#results-container > .student {
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.student:nth-child(2n+1) {
+    background-color: rgb(25, 25, 25);
+}
+
+.student > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    height: 100%;
+}
+
+.student > .place {
+    color: hsl(30, 100%, 50%);
+    font-size: 1em;
+}
+
+.place > .hostel {
+    text-align: center;
+}
+
+.place > .room {
+    text-align: center;
+    font-size: 1.25em;
+}
+
+.student > .year {
+    color: hsl(150, 100%, 50%);
+}
+
+.student > .info {
+    width: 100%;
+}
+
+.info > .name {
+    font-size: 1.25em;
+}
+
+.info > .branch {
+    color: rgb(128, 128, 128);
+}
+
+.info > .student-id {
+    color: cyan;
 }

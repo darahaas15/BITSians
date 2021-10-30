@@ -21,7 +21,7 @@ print(len(people))
 data = list(people.values())
 data.sort(key=lambda x:x[0])
 
-def camel_case(name):
+def camel_case(name)->str:
     return " ".join(word.capitalize() for word in name.split())
 
 def branch(id:str)->list:
@@ -43,7 +43,7 @@ def branch(id:str)->list:
     return output
 
 for i in data:
-    i[1] = camel_case(i[1])
+    i[1] = camel_case(i[1]).strip(".").strip()
     for j in reversed(branch(i[0])):
         i.insert(2, j)
     i.insert(1, i[0][:4])
@@ -54,10 +54,9 @@ m = len(max(data, key=lambda x:len(x)))
 for i in data:
     i += [""]*(m-len(i))
 
-print(data[0])
-
 for i in range(len(data)):
     data[i] = {title:value for (title, value) in list(zip("ID,year,name,B1,B2,hostel,room".split(","), data[i]))}
 
 import json
 json.dump(data, open("everyone.json", 'w'), separators=(',', ':'))
+open("everyone.js", 'w').write(f"var everyone = {json.dumps(data, separators=(',', ':'))}")

@@ -95,9 +95,9 @@ function apply_filters() {
         return matches == filters.length
     })
     logtime(stime, "apply_filters")
-    if(window.innerWidth >= 985) {
+    // if(window.innerWidth >= 985) {
         resolve_query()
-    }
+    // }
 }
 
 function close_filters_tab() {
@@ -136,7 +136,24 @@ function resolve_query() {
     display_results(results)
 }
 
+var branch_codes = {'A1': 'B.E. Chemical', 'A3': 'B.E. EEE', 'A4': 'B.E. Mechanical', 'A7': 'B.E. CSE', 'A8': 'B.E. EnI', 'AA': 'B.E. ECE', 'B1': 'M.Sc. Biology', 'B2': 'M.Sc. Chemistry', 'B3': 'M.Sc. Economics', 'B4': 'M.Sc. Maths', 'B5': 'M.Sc. Physics', "PHD": "PHD", "H": "Higher Degree"}
+
 function display_results(results) {
+    gid("results-container").innerHTML = results.map(person=>`
+    <div class="student">
+        <div class="place">
+            <div class="hostel">${person["hostel"]}</div>
+            <div class="room">${person["room"]}</div>
+        </div>
+        <div class="year">${person["year"]}</div>
+        <div class="info">
+            <div class="name" style="font-size: ${Math.min(1.5, lerp(max(person["name"].split(/\s+/), key=e=>e.length).length, 7, 15, 1.5, 0.925))}em">${person["name"].replace(/(?<=[a-zA-Z\.]{9,})\s+/g, "<br>").replace(/\s+(?=[a-zA-Z\.]{9,})/g, "<br>")}</div>
+            <div class="branch">${branch_codes[person["B1"]]}</div>
+            <div class="branch">${branch_codes[person["B2"]]??""}</div>
+            <div class="student-id">${person["ID"]}</div>
+        </div>
+    </div>
+    `).join("")
     // gid("results").innerHTML = results.map(ele=>`<div class="student">
     // <div class="student-room">
     // ${ele[1]}
