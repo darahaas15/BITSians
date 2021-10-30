@@ -33,8 +33,6 @@ window.onload = ()=>{
     // Setup 'Select all' buttons
     setup_select_all()
 
-    alert(`${everyone.length} results found`)
-
     query_input = gid("query")
     // Initial call to show results
     resolve_query()
