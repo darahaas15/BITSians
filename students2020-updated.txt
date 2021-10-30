@@ -1,0 +1,858 @@
+2020A1PS0645G --- Medha Hebbar --- B.E. Chemical --- CH4 --- 111
+2020A1PS0792G --- Shaunak Warune --- B.E. Chemical --- CH1 --- 314
+2020A1PS0822G --- Prakhar Vishal Karode --- B.E. Chemical --- CH1 --- 315
+2020A1PS0836G --- Tanmay Yadav --- B.E. Chemical --- CH1 --- 317
+2020A1PS1182G --- Pangarkar Viraj Sujeet --- B.E. Chemical --- AH9 --- 216
+2020A1PS1185G --- Harsh Ranjan --- B.E. Chemical --- AH9 --- 218
+2020A1PS1202G --- Rishab Manjunath Srivatsa --- B.E. Chemical --- AH9 --- 223
+2020A1PS1318G --- Nikhil Rajendra Shah --- B.E. Chemical --- AH9 --- 250
+2020A1PS1322G --- Varun S Mohan --- B.E. Chemical --- AH9 --- 252
+2020A1PS1331G --- Kavya --- B.E. Chemical --- CH4 --- 165
+2020A1PS1572G --- Chinmay Muragesh Sabane --- B.E. Chemical --- AH2 --- 125
+2020A1PS1578G --- Vishwajeet Singh --- B.E. Chemical --- AH2 --- 128
+2020A1PS1620G --- Grudhanti Adbuth Reddy --- B.E. Chemical
+2020A1PS1650G --- Rishabh Hemant Bandodkar --- B.E. Chemical
+2020A1PS1906G --- Ayushmaan Kushwaha --- B.E. Chemical --- AH1 --- 235
+2020A1PS1914G --- Rohini Bharat Vishal Tripathi --- B.E. Chemical --- CH4 --- 240
+2020A1PS1915G --- Vivswan Padmeshya --- B.E. Chemical --- AH1 --- 245
+2020A1PS1925G --- Sayantan Karmakar --- B.E. Chemical
+2020A1PS1931G --- Avneesh Rohit Pai --- B.E. Chemical --- AH1 --- 258
+2020A1PS1939G --- Devdas Shenoy Payyanur --- B.E. Chemical --- AH1 --- 304
+2020A1PS1948G --- Pranav Ghawat --- B.E. Chemical --- AH1 --- 312
+2020A1PS1958G --- Ved Gurudatt Zatekar --- B.E. Chemical
+2020A1PS1962G --- Padmanabhuni Rohini Nivedita --- B.E. Chemical --- CH4 --- 247
+2020A1PS1963G --- Nikunj Vinod Bende --- B.E. Chemical --- AH1 --- 322
+2020A1PS1964G --- Ananya Ramanathan Iyer --- B.E. Chemical --- CH4 --- 248
+2020A1PS1969G --- Swapnil Shukla --- B.E. Chemical --- AH1 --- 327
+2020A1PS1970G --- Saieesh Kapil Sukhrani --- B.E. Chemical --- AH1 --- 329
+2020A1PS1974G --- Vivek Srinivasan --- B.E. Chemical
+2020A1PS1975G --- Ishika Bhardwaj --- B.E. Chemical --- CH4 --- 251
+2020A1PS1977G --- Aryan Kuhad --- B.E. Chemical --- AH1 --- 335
+2020A1PS1979G --- Basudeba Jha --- B.E. Chemical --- AH1 --- 336
+2020A1PS1983G --- Chaitanya Kandari --- B.E. Chemical
+2020A1PS1984G --- Aman Konar --- B.E. Chemical
+2020A1PS1987G --- Ishan Kundu --- B.E. Chemical --- AH1 --- 345
+2020A1PS1992G --- Abhimanyu Chadha --- B.E. Chemical --- AH1 --- 348
+2020A1PS1996G --- Tushankaa Vaskar Barai --- B.E. Chemical --- CH4 --- 274
+2020A1PS2003G --- Thanki Meet Dilip --- B.E. Chemical --- AH1 --- 358
+2020A1PS2009G --- Nivid H. Kher --- B.E. Chemical --- CH3 --- 104
+2020A1PS2010G --- Noyonika Ghosh --- B.E. Chemical --- CH4 --- 275
+2020A1PS2015G --- Shwetabh Vats --- B.E. Chemical --- CH3 --- 106
+2020A1PS2029G --- Kartik Sengupta --- B.E. Chemical --- CH3 --- 116
+2020A1PS2046G --- Archita Srivastava --- B.E. Chemical --- CH4 --- 303
+2020A1PS2048G --- Anuj Girish Pradhan --- B.E. Chemical --- CH3 --- 129
+2020A1PS2049G --- Jain Sarthak Gaurav --- B.E. Chemical --- CH3 --- 130
+2020A1PS2052G --- Shravani Sachin Kulkarni --- B.E. Chemical
+2020A1PS2058G --- Shruti Sen --- B.E. Chemical --- CH4 --- 326
+2020A1PS2062G --- Anoushka Thakur --- B.E. Chemical --- CH4 --- 336
+2020A1PS2064G --- Ishika Praharaj --- B.E. Chemical --- CH4 --- 342
+2020A1PS2070G --- Ayush Shivam --- B.E. Chemical --- CH3 --- 137
+2020A1PS2077G --- Ranga Yash Gopal --- B.E. Chemical --- CH3 --- 204
+2020A1PS2083G --- Abijith Sarath Menon --- B.E. Chemical --- CH3 --- 207
+2020A1PS2086G --- Saumya Ajay Kumar --- B.E. Chemical --- CH4 --- 352
+2020A1PS2089G --- Aman Rahman --- B.E. Chemical --- CH3 --- 210
+2020A1PS2090G --- Koustav Panda --- B.E. Chemical --- CH3 --- 211
+2020A1PS2092G --- Pratul Garg --- B.E. Chemical --- CH3 --- 212
+2020A1PS2093G --- Arya Kulkarni --- B.E. Chemical --- CH3 --- 213
+2020A1PS2105G --- Tigmanshu --- B.E. Chemical --- CH3 --- 220
+2020A1PS2111G --- Arkadip Patra --- B.E. Chemical --- CH3 --- 225
+2020A1PS2112G --- Sanskar Mohapatra --- B.E. Chemical --- CH3 --- 226
+2020A1PS2119G --- Devang Umesh Sharma --- B.E. Chemical --- CH3 --- 230
+2020A1PS2126G --- Kartik Chopra --- B.E. Chemical --- CH3 --- 235
+2020A3PS0420G --- Tanish Gupta --- B.E. EEE --- CH1 --- 213
+2020A3PS0429G --- Shejwalkar Ashwin --- B.E. EEE --- CH1 --- 216
+2020A3PS0443G --- Rushil Parihar --- B.E. EEE --- CH1 --- 220
+2020A3PS0445G --- Shyam Sasidharan Poduval --- B.E. EEE --- CH1 --- 221
+2020A3PS0468G --- Prakhar Garg --- B.E. EEE --- CH1 --- 225
+2020A3PS0487G --- Chandragiri Vedaanta Prasad --- B.E. EEE --- CH1 --- 228
+2020A3PS0497G --- Aayushraj Anuj Singh --- B.E. EEE --- CH1 --- 235
+2020A3PS0501G --- Irawati Rahul Thete --- B.E. EEE --- CH4 --- 106
+2020A3PS0513G --- Abhishek R Bhat --- B.E. EEE --- CH1 --- 239
+2020A3PS0519G --- Ajay Krishna Gurubaran --- B.E. EEE --- CH1 --- 240
+2020A3PS0520G --- Abhijeet Kar --- B.E. EEE --- CH1 --- 241
+2020A3PS0522G --- Shrivatsa Maheshwari --- B.E. EEE --- CH1 --- 243
+2020A3PS0529G --- Parag Goyal --- B.E. EEE --- CH1 --- 245
+2020A3PS0543G --- Siddhant Tushar Joshi --- B.E. EEE --- CH1 --- 250
+2020A3PS0550G --- Piyush Upadhyay --- B.E. EEE --- CH1 --- 253
+2020A3PS0551G --- Ayush Gupta --- B.E. EEE --- CH1 --- 254
+2020A3PS0554G --- Rishik Racha --- B.E. EEE --- CH1 --- 258
+2020A3PS0560G --- Akhil A Binu --- B.E. EEE --- CH1 --- 260
+2020A3PS0561G --- Rudraraju Venkata Ashish Varma --- B.E. EEE --- CH1 --- 261
+2020A3PS0566G --- Prayag Mohanty --- B.E. EEE --- CH1 --- 263
+2020A3PS0567G --- Arihant Bansal --- B.E. EEE --- CH1 --- 265
+2020A3PS0574G --- Arijeet Sinha --- B.E. EEE --- CH1 --- 267
+2020A3PS0575G --- Akshay Keshwani --- B.E. EEE --- CH1 --- 268
+2020A3PS0586G --- Shrish Dwivedi --- B.E. EEE --- CH1 --- 269
+2020A3PS1001G --- Ananya Krishna Sarva --- B.E. EEE --- CH4 --- 118
+2020A3PS1054G --- Rohit Bevinahally --- B.E. EEE --- AH9 --- 130
+2020A3PS1069G --- Akash Ranjan --- B.E. EEE --- AH9 --- 133
+2020A3PS1089G --- Khushi P S --- B.E. EEE --- CH4 --- 149
+2020A3PS1092G --- Muttineni Prapul --- B.E. EEE --- AH9 --- 142
+2020A3PS1096G --- Aakash Gupta --- B.E. EEE --- AH9 --- 147
+2020A3PS1099G --- Varada Tirumala Vasu --- B.E. EEE --- AH9 --- 148
+2020A3PS1100G --- Sharad Agarwal --- B.E. EEE
+2020A3PS1251G --- Aaditya Raghavan --- B.E. EEE --- AH9 --- 232
+2020A3PS1252G --- Shreyash Singh --- B.E. EEE --- AH9 --- 233
+2020A3PS1257G --- Harsh Singh --- B.E. EEE --- AH9 --- 234
+2020A3PS1283G --- Ankit Bhattacharya --- B.E. EEE --- AH9 --- 243
+2020A3PS1297G --- Ambekar Soumitra Sudhir --- B.E. EEE --- AH9 --- 246
+2020A3PS1412G --- Shingote Sahil Subhash --- B.E. EEE --- AH9 --- 316
+2020A3PS1431G --- Vikram Vaidyanathan Venkatraman --- B.E. EEE --- AH9 --- 326
+2020A3PS1444G --- Pramath Balisavira Guruprasanna --- B.E. EEE --- AH9 --- 331
+2020A3PS1445G --- Simran Mishra --- B.E. EEE --- CH4 --- 175
+2020A3PS1446G --- Tejas Hemant Page --- B.E. EEE --- AH9 --- 332
+2020A3PS1447G --- Akkinepalli Ashrith Deshmukh --- B.E. EEE --- AH9 --- 333
+2020A3PS1448G --- Yash Jiwani --- B.E. EEE --- AH9 --- 334
+2020A3PS1449G --- Siddh Atul Gosar --- B.E. EEE --- AH9 --- 335
+2020A3PS1450G --- Vivek Mohan --- B.E. EEE --- AH9 --- 336
+2020A3PS1451G --- Ishan Gupta --- B.E. EEE --- AH9 --- 340
+2020A3PS1452G --- Jain Arav Vinay --- B.E. EEE --- AH9 --- 341
+2020A3PS1453G --- Siddharth Paliwal --- B.E. EEE --- AH9 --- 342
+2020A3PS1495G --- Chetan Keshav Ghodke --- B.E. EEE --- AH2 --- 102
+2020A3PS1602G --- Pranav G --- B.E. EEE
+2020A3PS1603G --- Harish Krishna A --- B.E. EEE --- AH1 --- 144
+2020A3PS1607G --- Rishabh M Chugh --- B.E. EEE --- AH2 --- 145
+2020A3PS1608G --- Jaskeerat Singh Ahluwalia --- B.E. EEE --- AH2 --- 146
+2020A3PS1611G --- Medha R S --- B.E. EEE --- CH4 --- 204
+2020A3PS1749G --- Manan Uppadhyay --- B.E. EEE --- AH2 --- 316
+2020A3PS1750G --- Chirag Agrawal --- B.E. EEE --- AH2 --- 318
+2020A3PS1751G --- Vansh Paliwal --- B.E. EEE --- AH2 --- 319
+2020A3PS1754G --- Tummalapalli Dinesh --- B.E. EEE --- AH2 --- 320
+2020A3PS1756G --- Ishan Abhay Yagnik --- B.E. EEE --- AH2 --- 321
+2020A3PS1757G --- Visisht Bhardwaj --- B.E. EEE --- AH2 --- 323
+2020A3PS1758G --- Aditya Agarwal --- B.E. EEE --- AH2 --- 324
+2020A3PS1759G --- Bhavya Shah --- B.E. EEE --- AH2 --- 325
+2020A3PS1760G --- Suchetan R S --- B.E. EEE --- AH2 --- 326
+2020A3PS1761G --- Harish Bhardwaj --- B.E. EEE --- AH2 --- 327
+2020A3PS1762G --- Sparsh Mittal --- B.E. EEE
+2020A3PS1764G --- Aryan Saluja --- B.E. EEE --- AH2 --- 328
+2020A3PS1765G --- Milind Singh Rao --- B.E. EEE --- AH2 --- 329
+2020A3PS1766G --- Sumedha Panja --- B.E. EEE
+2020A3PS1767G --- Saumya Shrivastava --- B.E. EEE
+2020A3PS1768G --- Badal Chandhariyavi --- B.E. EEE --- AH2 --- 331
+2020A3PS1769G --- Daksh Chauhan --- B.E. EEE
+2020A3PS1770G --- Anurag --- B.E. EEE --- AH2 --- 332
+2020A3PS1771G --- Siddhant Ojha --- B.E. EEE
+2020A3PS1832G --- Siddhant Singh Vattsa --- B.E. EEE --- AH1 --- 111
+2020A3PS1965G --- Satwik Sahu --- B.E. EEE --- AH1 --- 324
+2020A3PS2002G --- Sameer Bansal --- B.E. EEE --- AH1 --- 356
+2020A3PS2056G --- Ansh Srivastava --- B.E. EEE --- CH3 --- 132
+2020A3PS2081G --- Praggya Sharma --- B.E. EEE --- CH4 --- 344
+2020A3PS2095G --- Hrishikesh Patil --- B.E. EEE --- CH3 --- 214
+2020A3PS2128G --- Krishna Prashanth Sura --- B.E. EEE --- CH3 --- 237
+2020A4PS0521G --- Ishan Tandon --- B.E. Mechanical --- CH1 --- 242
+2020A4PS0771G --- Darsh Menon --- B.E. Mechanical --- CH1 --- 311
+2020A4PS0795G --- Deepali Seth --- B.E. Mechanical --- CH4 --- 115
+2020A4PS1002G --- Sandesh Kantimahanti --- B.E. Mechanical
+2020A4PS1094G --- Prathamesh Rahul Pingle --- B.E. Mechanical --- AH9 --- 146
+2020A4PS1111G --- Yash Agarwal --- B.E. Mechanical --- AH9 --- 150
+2020A4PS1116G --- Vaibhav Joshi --- B.E. Mechanical --- AH9 --- 152
+2020A4PS1137G --- Yash Deshpande --- B.E. Mechanical --- AH9 --- 156
+2020A4PS1189G --- Ayush Kishor Hinsu --- B.E. Mechanical
+2020A4PS1191G --- Baibhav Padhy --- B.E. Mechanical --- AH9 --- 219
+2020A4PS1196G --- Vidit Damele --- B.E. Mechanical --- AH9 --- 221
+2020A4PS1200G --- Anuraag Wange --- B.E. Mechanical --- AH9 --- 222
+2020A4PS1264G --- Nikhil Srivastava --- B.E. Mechanical --- AH9 --- 240
+2020A4PS1334G --- Ashish Anand --- B.E. Mechanical --- AH9 --- 253
+2020A4PS1356G --- Dhruv Sawant --- B.E. Mechanical --- AH9 --- 258
+2020A4PS1364G --- Abhimanyu --- B.E. Mechanical --- AH9 --- 263
+2020A4PS1473G --- Jaykumar Laxman Jadhav --- B.E. Mechanical --- AH9 --- 361
+2020A4PS1481G --- Ashish Bardia --- B.E. Mechanical --- AH9 --- 364
+2020A4PS1483G --- Mitesh Bhardwaj --- B.E. Mechanical --- AH9 --- 365
+2020A4PS1486G --- Harsh Sihag --- B.E. Mechanical --- AH9 --- 368
+2020A4PS1487G --- Madhura Dilip Godbole --- B.E. Mechanical --- CH4 --- 181
+2020A4PS1505G --- Jatin Kishnani --- B.E. Mechanical --- AH2 --- 108
+2020A4PS1556G --- Shaurya Tandon --- B.E. Mechanical
+2020A4PS1558G --- Aryama Avadh --- B.E. Mechanical --- AH2 --- 119
+2020A4PS1564G --- Ravula Akshay Reddy --- B.E. Mechanical
+2020A4PS1567G --- Pranav Trivedi --- B.E. Mechanical
+2020A4PS1591G --- Anish Chandrashekhar Paralikar --- B.E. Mechanical --- AH2 --- 141
+2020A4PS1619G --- Runwal Ayush Prashant --- B.E. Mechanical --- AH2 --- 151
+2020A4PS1625G --- Avinab Neogy --- B.E. Mechanical --- AH2 --- 152
+2020A4PS1631G --- Satyam Jha --- B.E. Mechanical --- AH2 --- 156
+2020A4PS1632G --- Joseph Kurian --- B.E. Mechanical --- AH2 --- 157
+2020A4PS1649G --- Thomas Biju --- B.E. Mechanical --- CH2 --- 104
+2020A4PS1651G --- Karri Sai Akshit --- B.E. Mechanical
+2020A4PS1810G --- Mamidisetti Venkata Siddarth --- B.E. Mechanical --- AH2 --- 362
+2020A4PS1811G --- Subhrangam Bharali --- B.E. Mechanical --- AH2 --- 363
+2020A4PS1813G --- Siddharth Upadhyay --- B.E. Mechanical --- AH2 --- 364
+2020A4PS1814G --- Puneet Mall --- B.E. Mechanical --- AH1 --- 101
+2020A4PS1815G --- Shivang Singh --- B.E. Mechanical
+2020A4PS1816G --- Shashank Gupta --- B.E. Mechanical --- AH1 --- 102
+2020A4PS1817G --- Pragun Sharma --- B.E. Mechanical --- AH1 --- 103
+2020A4PS1819G --- Darshna Songara --- B.E. Mechanical --- CH4 --- 224
+2020A4PS1822G --- Neha John Eluvathingal --- B.E. Mechanical --- CH4 --- 225
+2020A4PS1823G --- Vineet Kumar --- B.E. Mechanical --- AH1 --- 104
+2020A4PS1824G --- Ishan Sathish Suvarna --- B.E. Mechanical --- AH1 --- 105
+2020A4PS1825G --- Melvin George Chittilappilly --- B.E. Mechanical --- AH1 --- 106
+2020A4PS1826G --- Saransh Goel --- B.E. Mechanical --- AH1 --- 107
+2020A4PS1827G --- Parth Singhal --- B.E. Mechanical --- AH1 --- 109
+2020A4PS1829G --- Ayush Kumar --- B.E. Mechanical
+2020A4PS1834G --- Pratham Chandra Jha --- B.E. Mechanical --- AH1 --- 113
+2020A4PS1835G --- G Rahul --- B.E. Mechanical --- AH1 --- 114
+2020A4PS1836G --- Ayush Das --- B.E. Mechanical
+2020A4PS1838G --- Ruchit Tarun Agrawal --- B.E. Mechanical --- AH1 --- 117
+2020A4PS1841G --- Mydeo Rohit Prasad --- B.E. Mechanical --- AH1 --- 122
+2020A4PS1848G --- Patel Vraj Parimal --- B.E. Mechanical --- AH1 --- 126
+2020A4PS1850G --- Annamdevula Mohan Manobhi Ram --- B.E. Mechanical --- AH1 --- 127
+2020A4PS1858G --- Aditya Pratap Singh Tomar --- B.E. Mechanical --- AH1 --- 136
+2020A4PS1866G --- Dev Bajaj --- B.E. Mechanical --- AH1 --- 148
+2020A4PS1867G --- Anirudha Shukla --- B.E. Mechanical --- AH1 --- 151
+2020A4PS1869G --- Anukarsh Saxena --- B.E. Mechanical --- AH1 --- 153
+2020A4PS1870G --- Gaurav Vijit Nair --- B.E. Mechanical --- AH1 --- 154
+2020A4PS1873G --- Aditya Verma --- B.E. Mechanical --- AH1 --- 157
+2020A4PS1879G --- Parandekar Aditya Jaydeep --- B.E. Mechanical --- AH1 --- 203
+2020A4PS1880G --- Rohan Kanna --- B.E. Mechanical --- AH1 --- 205
+2020A4PS1882G --- Pradyuman Turlapati --- B.E. Mechanical --- AH1 --- 208
+2020A4PS1883G --- Om Kiran Diwan --- B.E. Mechanical --- AH1 --- 210
+2020A4PS1885G --- Aadithya Iyer --- B.E. Mechanical --- AH1 --- 212
+2020A4PS1888G --- Chinmay Ranka --- B.E. Mechanical --- AH1 --- 215
+2020A4PS1894G --- Aman Sharma --- B.E. Mechanical --- AH1 --- 220
+2020A4PS1897G --- Kshitij Tiwari --- B.E. Mechanical --- AH1 --- 222
+2020A4PS1898G --- Pritesh Jain --- B.E. Mechanical --- AH1 --- 223
+2020A4PS1900G --- Shreyansh Pathak --- B.E. Mechanical --- AH1 --- 224
+2020A4PS1901G --- Shlok Sinha --- B.E. Mechanical --- AH1 --- 228
+2020A4PS1902G --- Aryaman Joshi --- B.E. Mechanical --- AH1 --- 230
+2020A4PS1903G --- Punya Tewani --- B.E. Mechanical --- AH1 --- 231
+2020A4PS1904G --- Venkata Naga Sai Bharath Thatha --- B.E. Mechanical --- AH1 --- 232
+2020A4PS1928G --- Nitish Karthikeyan --- B.E. Mechanical --- AH1 --- 256
+2020A4PS1935G --- Pachpande Nishit Chandrashekhar --- B.E. Mechanical --- AH1 --- 302
+2020A4PS1938G --- Prathamesh Vinayak Killedar --- B.E. Mechanical --- AH1 --- 303
+2020A4PS1940G --- Aditya Ramakrishnan Iyer --- B.E. Mechanical --- AH1 --- 306
+2020A4PS1941G --- Pransu Kumar --- B.E. Mechanical --- AH1 --- 307
+2020A4PS1945G --- Rachit Hegde --- B.E. Mechanical --- AH1 --- 225
+2020A4PS1946G --- Vedant Ravindra Gaidhani --- B.E. Mechanical --- AH1 --- 311
+2020A4PS1952G --- Ekansh Gupta --- B.E. Mechanical --- AH1 --- 315
+2020A4PS1972G --- Yash Vijaykumar Chavan --- B.E. Mechanical --- AH1 --- 332
+2020A4PS1985G --- Ambalgi Pushkaraj Vinay --- B.E. Mechanical --- AH1 --- 342
+2020A4PS1986G --- Ammar Ahmed Mallick --- B.E. Mechanical --- AH1 --- 344
+2020A4PS1988G --- Akash Sumeet Bodhankar --- B.E. Mechanical --- AH1 --- 346
+2020A4PS1990G --- Rohit Patel --- B.E. Mechanical
+2020A4PS2001G --- Wani Shreyas Sakhahari --- B.E. Mechanical
+2020A4PS2006G --- Dhyey Bhatt --- B.E. Mechanical --- AH1 --- 364
+2020A4PS2022G --- Santhosh Sivakumar --- B.E. Mechanical --- CH3 --- 112
+2020A4PS2026G --- Roehit Gupta --- B.E. Mechanical --- CH3 --- 114
+2020A4PS2061G --- Urvi Marchino --- B.E. Mechanical --- CH4 --- 331
+2020A4PS2065G --- Atul A --- B.E. Mechanical
+2020A4PS2068G --- Harsh Tyagi --- B.E. Mechanical
+2020A4PS2078G --- S Umashankar --- B.E. Mechanical --- CH3 --- 205
+2020A4PS2104G --- Shounak Sadanand Nafde --- B.E. Mechanical
+2020A4PS2107G --- Aditya Makhija --- B.E. Mechanical --- CH3 --- 221
+2020A4PS2108G --- Shiraskar Soham Vijay --- B.E. Mechanical --- CH3 --- 222
+2020A4PS2130G --- Anniket Jain --- B.E. Mechanical
+2020A4PS2131G --- Kanha Mishra --- B.E. Mechanical --- CH3 --- 238
+2020A7PS0001G --- Aniket Minesh Tendulkar --- B.E. CSE --- CH1 --- 102
+2020A7PS0010G --- Amitava Chakrabarti --- B.E. CSE --- CH1 --- 103
+2020A7PS0018G --- Chunduru Rohit --- B.E. CSE
+2020A7PS0056G --- Prateek Upadhya --- B.E. CSE --- CH1 --- 106
+2020A7PS0061G --- Sohan S Desai --- B.E. CSE --- CH1 --- 107
+2020A7PS0084G --- Garvit Sethi --- B.E. CSE --- CH1 --- 110
+2020A7PS0085G --- Patel Dharmik Rohitkumar --- B.E. CSE --- CH1 --- 111
+2020A7PS0088G --- Ansh Lalchandani --- B.E. CSE --- CH1 --- 114
+2020A7PS0096G --- Praneeth B --- B.E. CSE --- CH1 --- 115
+2020A7PS0098G --- Metukuru Yogesh --- B.E. CSE --- AH1 --- 211
+2020A7PS0101G --- Gidwani Mohak Harish --- B.E. CSE --- CH1 --- 116
+2020A7PS0103G --- Naman Aggarwal --- B.E. CSE --- CH1 --- 117
+2020A7PS0104G --- Parth Sharma --- B.E. CSE --- CH1 --- 119
+2020A7PS0105G --- Karthik Roddom --- B.E. CSE
+2020A7PS0106G --- Venkatesh Ajit Pai --- B.E. CSE --- CH1 --- 122
+2020A7PS0107G --- Jatin Manchanda --- B.E. CSE --- CH1 --- 123
+2020A7PS0109G --- Dhruv Johari --- B.E. CSE
+2020A7PS0114G --- Mohite Piyush Shrinivas --- B.E. CSE --- CH1 --- 125
+2020A7PS0115G --- Akshay Naresh Painjane --- B.E. CSE --- CH1 --- 127
+2020A7PS0116G --- Akhil Bansal --- B.E. CSE --- CH1 --- 128
+2020A7PS0117G --- Shikhar Agarwal --- B.E. CSE --- CH1 --- 129
+2020A7PS0119G --- Nabar Omkar Ashish Sonali --- B.E. CSE --- CH1 --- 130
+2020A7PS0120G --- Monit Agrawal --- B.E. CSE --- CH1 --- 131
+2020A7PS0124G --- Yash Sunil Ahirrao --- B.E. CSE --- CH1 --- 133
+2020A7PS0126G --- Pankhedkar Ashish Milind --- B.E. CSE
+2020A7PS0127G --- Suryansh Singhai --- B.E. CSE --- CH1 --- 135
+2020A7PS0130G --- Milind Kumar Prasad --- B.E. CSE --- CH1 --- 136
+2020A7PS0131G --- Nikhil Jindal --- B.E. CSE --- CH1 --- 137
+2020A7PS0132G --- Gaurang Nilesh Pendse --- B.E. CSE --- CH1 --- 138
+2020A7PS0134G --- Anvesh Kumar Sawarn --- B.E. CSE --- CH1 --- 140
+2020A7PS0135G --- Rishi Roy --- B.E. CSE --- CH1 --- 141
+2020A7PS0136G --- Gurjas Singh Chawla --- B.E. CSE --- CH3 --- 304
+2020A7PS0138G --- Shahil Singh Rawat --- B.E. CSE --- CH1 --- 142
+2020A7PS0141G --- Risham Bindra --- B.E. CSE --- CH4 --- 103
+2020A7PS0142G --- S Ravi Sanker --- B.E. CSE --- CH1 --- 145
+2020A7PS0143G --- Bharath Shridhar Hegde --- B.E. CSE --- CH1 --- 146
+2020A7PS0144G --- Aditya Hriday Sahu --- B.E. CSE --- CH1 --- 149
+2020A7PS0146G --- Shreya Nehra --- B.E. CSE --- CH4 --- 104
+2020A7PS0148G --- Naishadh Nehalbhai Sheth --- B.E. CSE
+2020A7PS0151G --- E.r.v.jyothiraditya --- B.E. CSE --- CH1 --- 151
+2020A7PS0152G --- Yash Agrawal --- B.E. CSE --- CH1 --- 152
+2020A7PS0153G --- Mane Atharv Mahesh --- B.E. CSE --- CH1 --- 154
+2020A7PS0154G --- Aditya Khillan --- B.E. CSE --- CH1 --- 155
+2020A7PS0171G --- Satyam Bansal --- B.E. CSE
+2020A7PS0179G --- Avi Goyal --- B.E. CSE --- CH1 --- 156
+2020A7PS0413G --- Vivan Maitreya --- B.E. CSE --- CH1 --- 209
+2020A7PS0953G --- Rahul M. Biju --- B.E. CSE --- CH1 --- 333
+2020A7PS0954G --- Dhruvit Parag Jhaveri --- B.E. CSE --- CH1 --- 334
+2020A7PS0957G --- Alwin Helor --- B.E. CSE --- CH1 --- 335
+2020A7PS0958G --- Sarthak Nahta --- B.E. CSE --- CH1 --- 336
+2020A7PS0960G --- Agrim Rai --- B.E. CSE --- CH1 --- 337
+2020A7PS0961G --- Yash Thakur --- B.E. CSE --- CH1 --- 338
+2020A7PS0962G --- Ahmad Mujtaba --- B.E. CSE --- CH1 --- 339
+2020A7PS0963G --- Shaurya Agarwal --- B.E. CSE --- CH1 --- 340
+2020A7PS0964G --- Harshit Samar --- B.E. CSE --- CH1 --- 341
+2020A7PS0965G --- Alimchandani Vedant Ravi --- B.E. CSE --- CH1 --- 342
+2020A7PS0966G --- Deepak Kumar Jha --- B.E. CSE --- CH1 --- 343
+2020A7PS0967G --- Vishesh Agrawal --- B.E. CSE --- CH1 --- 344
+2020A7PS0968G --- Robin Raj --- B.E. CSE --- CH1 --- 348
+2020A7PS0969G --- Vardaan Kakar --- B.E. CSE --- CH1 --- 249
+2020A7PS0970G --- Anirudh Mukherjee --- B.E. CSE --- CH1 --- 350
+2020A7PS0971G --- Kondur Saiyeshwanthvarma --- B.E. CSE --- CH1 --- 352
+2020A7PS0972G --- Advait Naresh Jishnani --- B.E. CSE --- CH1 --- 354
+2020A7PS0973G --- Pranav Shailesh Ruparel --- B.E. CSE --- CH1 --- 355
+2020A7PS0974G --- Yash Dabhade --- B.E. CSE --- CH1 --- 359
+2020A7PS0975G --- Tushar Kumar Singh --- B.E. CSE --- CH1 --- 361
+2020A7PS0976G --- Tanmay Tushar Bankar --- B.E. CSE --- CH1 --- 362
+2020A7PS0977G --- Om Kulkarni --- B.E. CSE --- CH1 --- 363
+2020A7PS0979G --- Soham Viren Shah --- B.E. CSE --- CH1 --- 364
+2020A7PS0980G --- Ashmit Khandelwal --- B.E. CSE --- CH1 --- 365
+2020A7PS0981G --- Aakash Tiwari --- B.E. CSE
+2020A7PS0982G --- Vardhan Manish Palod --- B.E. CSE
+2020A7PS0983G --- Saket B --- B.E. CSE --- CH1 --- 368
+2020A7PS0984G --- Tushar Bajaj --- B.E. CSE --- CH1 --- 369
+2020A7PS0985G --- Sudipt Vyas --- B.E. CSE --- CH1 --- 371
+2020A7PS0986G --- Arpit Singh --- B.E. CSE --- CH1 --- 373
+2020A7PS0987G --- Aaryan Marar --- B.E. CSE --- CH1 --- 375
+2020A7PS0988G --- Ajit Chandrashekar Suryanarayana --- B.E. CSE --- CH1 --- 376
+2020A7PS0989G --- Aryan Goyal --- B.E. CSE --- CH1 --- 377
+2020A7PS0990G --- Sukruth Shivaram --- B.E. CSE --- CH1 --- 378
+2020A7PS0991G --- Abhishek Kumar Jha --- B.E. CSE --- CH1 --- 379
+2020A7PS1003G --- Shreyas Hebbar S --- B.E. CSE --- CH1 --- 380
+2020A7PS1004G --- Rushabh Jignesh Shah --- B.E. CSE --- CH1 --- 381
+2020A7PS1005G --- Nijasure Amod Mangesh --- B.E. CSE --- CH1 --- 382
+2020A7PS1006G --- Shray Narang --- B.E. CSE --- CH1 --- 384
+2020A7PS1007G --- Maanav Ramesh --- B.E. CSE --- CH1 --- 385
+2020A7PS1008G --- Shubham Kalantri --- B.E. CSE
+2020A7PS1009G --- Siddhant Satyanaik --- B.E. CSE --- AH9 --- 102
+2020A7PS1010G --- Anurag Minesh Tendulkar --- B.E. CSE --- AH9 --- 105
+2020A7PS1011G --- Viraj Sharma --- B.E. CSE --- AH9 --- 106
+2020A7PS1012G --- Manali Sameer Mahajan --- B.E. CSE --- CH4 --- 120
+2020A7PS1013G --- Padmawar Saraswati --- B.E. CSE --- CH4 --- 121
+2020A7PS1014G --- Saisrinivas Mamunuru --- B.E. CSE --- AH9 --- 107
+2020A7PS1015G --- Aniket Sahoo --- B.E. CSE --- AH9 --- 108
+2020A7PS1016G --- Pratyush Badri --- B.E. CSE --- AH9 --- 109
+2020A7PS1017G --- Rajarshi Ray --- B.E. CSE --- AH9 --- 111
+2020A7PS1221G --- Kshitij Gaur --- B.E. CSE --- AH9 --- 225
+2020A7PS1222G --- Pratham Bhatnagar --- B.E. CSE --- AH9 --- 226
+2020A7PS1223G --- Neel Prashant Dhapare --- B.E. CSE
+2020A7PS1224G --- Yash Yogesh Yelmame --- B.E. CSE --- AH9 --- 227
+2020A7PS1228G --- Gurbaaz Singh Gill --- B.E. CSE --- AH9 --- 228
+2020A7PS1271G --- Khushi Nagendra Harsure --- B.E. CSE --- CH4 --- 164
+2020A7PS1368G --- Tanmay Patel --- B.E. CSE
+2020A7PS1370G --- Ayush Paine --- B.E. CSE --- AH9 --- 266
+2020A7PS1371G --- Subramanian V --- B.E. CSE --- AH9 --- 267
+2020A7PS1372G --- Jahanvi Makkar --- B.E. CSE --- CH4 --- 166
+2020A7PS1373G --- Dev Goyal --- B.E. CSE --- AH9 --- 268
+2020A7PS1376G --- Anirudh Pupneja --- B.E. CSE --- AH9 --- 269
+2020A7PS1377G --- Ayan Hazarika --- B.E. CSE --- AH9 --- 270
+2020A7PS1379G --- Vaibhav Jaiswal --- B.E. CSE --- AH9 --- 271
+2020A7PS1381G --- Aditya Agrawal --- B.E. CSE --- AH9 --- 272
+2020A7PS1382G --- Vibhav Moqtik Bawase --- B.E. CSE --- AH9 --- 274
+2020A7PS1383G --- Harsh Sharma --- B.E. CSE --- AH9 --- 275
+2020A7PS1384G --- Arnav Naresh Borkar --- B.E. CSE
+2020A7PS1386G --- Yajamanyam Darahaas --- B.E. CSE --- AH9 --- 301
+2020A7PS1388G --- Priyansh Vyas --- B.E. CSE --- AH9 --- 302
+2020A7PS1390G --- Ritesh Ramkumar --- B.E. CSE --- AH9 --- 303
+2020A7PS1391G --- Ojas Kanth --- B.E. CSE --- AH9 --- 304
+2020A7PS1392G --- Pranav Shailendra Mandlik --- B.E. CSE --- AH9 --- 306
+2020A7PS1394G --- Bhosale Ajit Chandrashekhar --- B.E. CSE --- AH9 --- 307
+2020A7PS1430G --- Rijul Radhu --- B.E. CSE
+2020A7PS1685G --- Yuvraj Singh Bhadauria --- B.E. CSE
+2020A7PS1686G --- Yash Raj --- B.E. CSE --- AH2 --- 212
+2020A7PS1687G --- Saaransh Marwah --- B.E. CSE --- AH2 --- 213
+2020A7PS1688G --- Bohara Shubham Kailashchandra --- B.E. CSE --- AH2 --- 214
+2020A7PS1689G --- Manav Riddhish Tanna --- B.E. CSE --- AH2 --- 215
+2020A7PS1690G --- Paul Titus Pallithottathu --- B.E. CSE --- AH2 --- 216
+2020A7PS1691G --- Rohan Gupta --- B.E. CSE --- AH2 --- 217
+2020A7PS1692G --- Yugaaditya Achhara --- B.E. CSE --- AH2 --- 219
+2020A7PS1693G --- Ananya Gupta --- B.E. CSE --- CH4 --- 212
+2020A7PS1694G --- Pranav Srinivas --- B.E. CSE
+2020A7PS1695G --- Pranjal Rajiv Parashar --- B.E. CSE --- AH2 --- 220
+2020A7PS1696G --- Manank Patel --- B.E. CSE --- AH2 --- 221
+2020A7PS1697G --- Siddhavatam Rohan Sahay --- B.E. CSE --- AH2 --- 222
+2020A7PS1698G --- Aashay Agarwal --- B.E. CSE --- AH2 --- 224
+2020A7PS1699G --- Raunak Kumar --- B.E. CSE --- AH2 --- 225
+2020A7PS1700G --- Raghav Kumar --- B.E. CSE --- AH2 --- 226
+2020A7PS1701G --- Arjun Jeewan --- B.E. CSE --- AH2 --- 227
+2020A7PS1702G --- Shashwat Jain --- B.E. CSE --- AH2 --- 229
+2020A7PS1703G --- Shobhit Gangwal --- B.E. CSE --- AH2 --- 230
+2020A7PS1704G --- Yuvraj Ahuja --- B.E. CSE --- AH2 --- 231
+2020A7PS1705G --- Stivon Bright --- B.E. CSE --- AH2 --- 232
+2020A7PS1706G --- S I Harini --- B.E. CSE --- CH4 --- 213
+2020A7PS1707G --- Mohit Sharma --- B.E. CSE --- AH2 --- 233
+2020A7PS1708G --- Samay Tyagi --- B.E. CSE --- AH2 --- 234
+2020A7PS1709G --- Lavkush Sharma --- B.E. CSE --- AH2 --- 235
+2020A7PS1710G --- Saahil Mittal --- B.E. CSE --- AH2 --- 236
+2020A7PS1711G --- Rout Sandeepkumaar Rudranarayan --- B.E. CSE --- AH2 --- 237
+2020A7PS1712G --- Harsh Gujarathi --- B.E. CSE --- AH2 --- 238
+2020A7PS1713G --- Yash Khanna --- B.E. CSE --- AH2 --- 239
+2020A7PS1714G --- Pranay Nandan Varshney --- B.E. CSE --- AH2 --- 240
+2020A7PS1715G --- Ayush Mishra --- B.E. CSE --- AH2 --- 241
+2020A7PS1716G --- Rishabh Raj --- B.E. CSE --- AH2 --- 242
+2020A7PS1717G --- Sahil Agarwal --- B.E. CSE --- AH2 --- 243
+2020A7PS1718G --- Shreyash Jha --- B.E. CSE --- AH2 --- 244
+2020A7PS1719G --- Gowaikar Shreeyash Mukul --- B.E. CSE --- AH2 --- 246
+2020A7PS1720G --- Khakhi Shrey Alpesh --- B.E. CSE --- AH2 --- 248
+2020A7PS1721G --- Atharva A Limaye --- B.E. CSE --- AH2 --- 249
+2020A7PS1722G --- Atharv Manohar Shimpi --- B.E. CSE
+2020A7PS1723G --- Soham Rohit Chitnis --- B.E. CSE --- AH2 --- 250
+2020A7PS1724G --- Krisha Vinay Sanghvi --- B.E. CSE --- CH4 --- 214
+2020A7PS1725G --- Dhruv Rohira --- B.E. CSE --- AH2 --- 252
+2020A7PS1726G --- Ragunanthan S --- B.E. CSE --- AH2 --- 253
+2020A7PS1727G --- Urvish Kaushal Mehta --- B.E. CSE --- AH2 --- 254
+2020A7PS1728G --- Krishanu Shah --- B.E. CSE --- AH2 --- 256
+2020A7PS1729G --- Sonesh Kumar Swain --- B.E. CSE --- AH2 --- 257
+2020A7PS1730G --- Mandar Joshi --- B.E. CSE --- AH2 --- 259
+2020A7PS1731G --- Yash Aditya --- B.E. CSE --- AH2 --- 261
+2020A7PS1732G --- Ankush Garg --- B.E. CSE --- AH2 --- 301
+2020A7PS1733G --- Ambole Sushant Sadashiv --- B.E. CSE
+2020A7PS1734G --- Shubh Mehrotra --- B.E. CSE
+2020A7PS1735G --- Y S G Akshay --- B.E. CSE --- AH2 --- 303
+2020A7PS1736G --- Kamaljeet Sahoo --- B.E. CSE --- AH2 --- 304
+2020A7PS2129G --- Dwij Nitin Dixit --- B.E. CSE
+2020A8PS0331G --- Amogh Milind Patwardhan --- B.E. EnI --- CH1 --- 171
+2020A8PS0357G --- Atharva Umesh Sakunde --- B.E. EnI --- CH1 --- 177
+2020A8PS0441G --- Gaurav Basu --- B.E. EnI --- CH1 --- 219
+2020A8PS0552G --- Keshav Rathi --- B.E. EnI --- CH1 --- 255
+2020A8PS0553G --- Sapale Om Shailesh --- B.E. EnI --- CH1 --- 256
+2020A8PS0562G --- Abu Zar Talib --- B.E. EnI --- CH1 --- 262
+2020A8PS0712G --- Shikhar Srivastava --- B.E. EnI --- CH1 --- 303
+2020A8PS0715G --- Barath M --- B.E. EnI --- CH1 --- 306
+2020A8PS0718G --- Prakhar Agarwal --- B.E. EnI --- CH1 --- 307
+2020A8PS0728G --- R K Vaishnav Prasad --- B.E. EnI --- CH1 --- 308
+2020A8PS0881G --- Utsmay Kumar --- B.E. EnI
+2020A8PS1114G --- Pranav V C --- B.E. EnI --- AH9 --- 151
+2020A8PS1125G --- Vaishnavi Bharadwaj --- B.E. EnI --- CH4 --- 150
+2020A8PS1131G --- Ishan Vikas Kantia --- B.E. EnI --- AH9 --- 155
+2020A8PS1139G --- Kota Venkata Krishna Surya --- B.E. EnI --- AH9 --- 157
+2020A8PS1144G --- Punglia Shaanil --- B.E. EnI --- AH9 --- 160
+2020A8PS1248G --- Rahul Bajaj --- B.E. EnI --- AH9 --- 231
+2020A8PS1280G --- Aaditya Raj --- B.E. EnI --- AH9 --- 242
+2020A8PS1286G --- Kunal Bhakri --- B.E. EnI --- AH9 --- 245
+2020A8PS1300G --- Ghotavadekar Atharva Ajay --- B.E. EnI --- AH9 --- 247
+2020A8PS1301G --- Aayush Ramnath Nayak --- B.E. EnI --- AH9 --- 248
+2020A8PS1302G --- Suhaas K Kaushik --- B.E. EnI --- AH9 --- 249
+2020A8PS1455G --- Harshit Bansal --- B.E. EnI --- AH9 --- 343
+2020A8PS1478G --- Rajimwale Janhvi Manoj --- B.E. EnI --- CH4 --- 180
+2020A8PS1479G --- Jash Sanjil Zaveri --- B.E. EnI
+2020A8PS1480G --- Ashutosh Pandey --- B.E. EnI --- AH9 --- 362
+2020A8PS1484G --- Rohan Vivek Divekar --- B.E. EnI --- AH9 --- 366
+2020A8PS1488G --- Aryan Kohli --- B.E. EnI
+2020A8PS1489G --- Potdar Dhruv Pankaj --- B.E. EnI --- AH9 --- 370
+2020A8PS1490G --- Aman Dudeja --- B.E. EnI --- AH9 --- 374
+2020A8PS1491G --- Harsh Tiwari --- B.E. EnI --- AH9 --- 126
+2020A8PS1492G --- Sathvik R Shetty --- B.E. EnI --- AH9 --- 110
+2020A8PS1494G --- Rudranil Das Gupta --- B.E. EnI --- AH2 --- 101
+2020A8PS1501G --- Parth Falgun Chokshi --- B.E. EnI --- AH2 --- 105
+2020A8PS1502G --- Jha Abhinav Anand --- B.E. EnI --- AH2 --- 107
+2020A8PS1506G --- Ansh Gupta --- B.E. EnI --- AH2 --- 109
+2020A8PS1507G --- Tanmay Khandelwal --- B.E. EnI
+2020A8PS1512G --- Darshan Mohan Khade --- B.E. EnI --- AH2 --- 111
+2020A8PS1609G --- Rajdeep Das --- B.E. EnI --- AH2 --- 147
+2020A8PS1612G --- Sagar Kulkarni --- B.E. EnI
+2020A8PS1613G --- Patil Kunal Sanjaykumar --- B.E. EnI --- AH2 --- 148
+2020A8PS1755G --- Vedaant Rath --- B.E. EnI
+2020A8PS1772G --- Rishi Jain --- B.E. EnI --- AH2 --- 334
+2020A8PS1773G --- Kumar Naman --- B.E. EnI --- AH2 --- 336
+2020A8PS1774G --- Naitik Nilesh Dhanani --- B.E. EnI --- AH2 --- 337
+2020A8PS1775G --- Kushagr Kapoor --- B.E. EnI
+2020A8PS1777G --- Akanksha Dasmohapatra --- B.E. EnI --- CH4 --- 219
+2020A8PS1778G --- Vibhav Pandey --- B.E. EnI --- AH2 --- 339
+2020A8PS1780G --- Aviral Singhal --- B.E. EnI --- AH2 --- 340
+2020A8PS1781G --- Vahora Abdulrahim Abdulhannan --- B.E. EnI
+2020A8PS1782G --- Arnav Saraf --- B.E. EnI
+2020A8PS1783G --- Rishit Thakur --- B.E. EnI --- AH2 --- 341
+2020A8PS1786G --- Rachit Chaudhary --- B.E. EnI --- AH2 --- 344
+2020A8PS1789G --- Sankalp Singh --- B.E. EnI --- AH2 --- 346
+2020A8PS1791G --- Akshat Kumar --- B.E. EnI --- AH2 --- 348
+2020A8PS1792G --- Abhimanyu Malik --- B.E. EnI --- AH2 --- 349
+2020A8PS1793G --- Aryaman Mehrotra --- B.E. EnI --- AH2 --- 350
+2020A8PS1795G --- Suyash Iyengar --- B.E. EnI --- AH2 --- 351
+2020A8PS1797G --- Ananth Raghav --- B.E. EnI --- AH2 --- 352
+2020A8PS1798G --- Rochishnu Pramanik --- B.E. EnI --- AH2 --- 353
+2020A8PS1800G --- Amaan Sadriwala --- B.E. EnI --- AH2 --- 355
+2020A8PS1801G --- Swarnab Garang --- B.E. EnI --- AH2 --- 356
+2020A8PS1802G --- Nishkarsh Jain --- B.E. EnI --- AH2 --- 357
+2020A8PS1803G --- P V S Chirag --- B.E. EnI
+2020A8PS1804G --- Samanwita Mukherjee --- B.E. EnI --- CH4 --- 223
+2020A8PS1806G --- Somardh Shah --- B.E. EnI --- AH2 --- 359
+2020A8PS1807G --- Rounak Bhatia --- B.E. EnI --- AH2 --- 360
+2020A8PS1808G --- Muppalaneni Vinayak Surya Teja --- B.E. EnI --- AH2 --- 361
+2020A8PS1926G --- Rishabh Bijoy Dowerah --- B.E. EnI --- AH1 --- 255
+2020A8PS1995G --- Ayush Sharma --- B.E. EnI --- AH1 --- 350
+2020A8PS2013G --- Ashutosh Agarwal --- B.E. EnI
+2020A8PS2036G --- Sakshi Gupta --- B.E. EnI --- CH4 --- 278
+2020A8PS2039G --- Amrit Kumar Sinha --- B.E. EnI --- CH3 --- 123
+2020A8PS2054G --- Sneha Saraswat --- B.E. EnI --- CH4 --- 319
+2020A8PS2057G --- Bhadri Avani Mangirish --- B.E. EnI --- CH4 --- 325
+2020A8PS2085G --- Arjun Nag --- B.E. EnI
+2020AAPS0197G --- Aditya Shirish Kamat --- B.E. ECE
+2020AAPS0205G --- Aditya Kiran Patil --- B.E. ECE --- CH1 --- 157
+2020AAPS0239G --- Sushil Nayak --- B.E. ECE --- CH1 --- 158
+2020AAPS0248G --- H R Vedanth --- B.E. ECE --- CH1 --- 161
+2020AAPS0302G --- Atharv Mahesh Deshpande --- B.E. ECE --- CH1 --- 164
+2020AAPS0306G --- Aayush Kumar --- B.E. ECE --- CH1 --- 165
+2020AAPS0308G --- Himanish Madhuri Agarwal --- B.E. ECE --- CH1 --- 166
+2020AAPS0317G --- Sanyam Bhandari --- B.E. ECE --- CH1 --- 167
+2020AAPS0321G --- Daksh Goel --- B.E. ECE --- CH1 --- 168
+2020AAPS0327G --- Swayam Sidhant Pal --- B.E. ECE --- CH1 --- 169
+2020AAPS0330G --- Rishav Mukherji --- B.E. ECE --- CH1 --- 170
+2020AAPS0334G --- Kumar Krish --- B.E. ECE --- CH1 --- 172
+2020AAPS0352G --- Vishesh Gupta --- B.E. ECE --- CH1 --- 175
+2020AAPS0353G --- Deshmukh Abhishek Dhanaji --- B.E. ECE
+2020AAPS0363G --- Manan Arora --- B.E. ECE --- CH1 --- 181
+2020AAPS0378G --- Pujala Eswardeep --- B.E. ECE --- CH1 --- 203
+2020AAPS0385G --- Shreyas Samudravijay Patil --- B.E. ECE --- CH1 --- 206
+2020AAPS0395G --- Hriday Anil Khurana --- B.E. ECE --- CH1 --- 207
+2020AAPS0396G --- Gaurav Chaturvedi --- B.E. ECE --- CH1 --- 208
+2020AAPS0410G --- Poornima K --- B.E. ECE
+2020AAPS0422G --- Priyanshu Pandey --- B.E. ECE --- CH1 --- 215
+2020AAPS1018G --- Hrithik Jayasankar --- B.E. ECE --- AH9 --- 112
+2020AAPS1019G --- Karve Avani Abhijit --- B.E. ECE --- CH4 --- 122
+2020AAPS1020G --- Saketh Varma Avanigadda --- B.E. ECE
+2020AAPS1021G --- Pranav Lekshminarayanan --- B.E. ECE --- AH9 --- 114
+2020AAPS1022G --- Anusha Rao --- B.E. ECE --- CH4 --- 125
+2020AAPS1023G --- Saloni Santosh Prabhu --- B.E. ECE --- CH4 --- 126
+2020AAPS1024G --- Anshul Rajesh Raje --- B.E. ECE --- AH9 --- 115
+2020AAPS1025G --- Nidhi Agrawal --- B.E. ECE --- CH4 --- 136
+2020AAPS1026G --- Sidaarth Balaji --- B.E. ECE --- AH9 --- 116
+2020AAPS1027G --- Anish Nandigama --- B.E. ECE --- AH9 --- 117
+2020AAPS1028G --- Arjun Ravoori --- B.E. ECE
+2020AAPS1029G --- Amogh Rai --- B.E. ECE --- AH9 --- 118
+2020AAPS1030G --- Vihal J Rotti --- B.E. ECE --- AH9 --- 119
+2020AAPS1031G --- Rushil Gera Batra --- B.E. ECE --- AH9 --- 121
+2020AAPS1036G --- Shreya Sai Pandloore --- B.E. ECE
+2020AAPS1039G --- Siddharth Singh --- B.E. ECE --- AH9 --- 128
+2020AAPS1040G --- Bhandarkar Dhanashree Samir --- B.E. ECE --- CH4 --- 142
+2020AAPS1045G --- Ishita Kumari --- B.E. ECE --- CH4 --- 148
+2020AAPS1047G --- Sidhaant Sachin Thakker --- B.E. ECE
+2020AAPS1051G --- Debanshu Mishra --- B.E. ECE --- AH9 --- 129
+2020AAPS1052G --- Julio Gustavo Fernando Sa --- B.E. ECE
+2020AAPS1058G --- Shiradhonkar Mihir Ashish --- B.E. ECE --- AH9 --- 132
+2020AAPS1065G --- Akshat Agrawal --- B.E. ECE
+2020AAPS1071G --- Vedanth Parthasarathy --- B.E. ECE --- AH9 --- 134
+2020AAPS1075G --- Advitiya Arora --- B.E. ECE --- AH9 --- 137
+2020AAPS1237G --- Arnav Mishra --- B.E. ECE --- AH9 --- 229
+2020AAPS1239G --- Krish Vipul Shah --- B.E. ECE --- AH9 --- 230
+2020AAPS1275G --- Yash Vardhan Gupta --- B.E. ECE --- AH9 --- 241
+2020AAPS1400G --- Dhruv Kalpesh Kikani --- B.E. ECE
+2020AAPS1405G --- Amireddy Vinay Kumar Reddy --- B.E. ECE --- AH9 --- 308
+2020AAPS1406G --- Jaltare Anish --- B.E. ECE --- AH9 --- 310
+2020AAPS1407G --- Jitarth Bhavesh Patel --- B.E. ECE --- AH9 --- 313
+2020AAPS1410G --- Tanishq Gupta --- B.E. ECE --- AH9 --- 315
+2020AAPS1413G --- Parikshit Gupta --- B.E. ECE --- AH9 --- 320
+2020AAPS1418G --- Aditya Deepak Pai --- B.E. ECE --- AH9 --- 321
+2020AAPS1422G --- Shubhi Bhandari --- B.E. ECE --- CH4 --- 168
+2020AAPS1423G --- Neev Sikka --- B.E. ECE --- AH9 --- 324
+2020AAPS1424G --- Anoushka Chakrabarty --- B.E. ECE --- CH4 --- 170
+2020AAPS1425G --- Nirmay Kishor Naik --- B.E. ECE --- AH9 --- 325
+2020AAPS1429G --- Yash Nilesh Soman --- B.E. ECE
+2020AAPS1434G --- Vatsal Harshesh Parekh --- B.E. ECE --- AH9 --- 327
+2020AAPS1438G --- Edwin Joseph --- B.E. ECE
+2020AAPS1441G --- Ashutosh Karanam --- B.E. ECE --- AH9 --- 329
+2020AAPS1442G --- Nitin Shekhawat --- B.E. ECE --- AH9 --- 330
+2020AAPS1598G --- Puneet Tyagi --- B.E. ECE --- AH2 --- 142
+2020AAPS1737G --- Aaditi Ajay Kapre --- B.E. ECE --- CH4 --- 215
+2020AAPS1738G --- Ahuja Abhaypreet Singh Paramjit Singh --- B.E. ECE --- AH2 --- 305
+2020AAPS1739G --- Abhay Raj Mishra --- B.E. ECE --- AH2 --- 306
+2020AAPS1740G --- Kushant Sudhir Agrawal --- B.E. ECE
+2020AAPS1741G --- Chithambarash S E --- B.E. ECE --- AH2 --- 307
+2020AAPS1742G --- Rasik Shyam --- B.E. ECE --- AH2 --- 308
+2020AAPS1743G --- Javeri Sahil Lokesh --- B.E. ECE --- AH2 --- 310
+2020AAPS1744G --- Aayush --- B.E. ECE --- AH2 --- 312
+2020AAPS1745G --- Tanay Pankaj Patni --- B.E. ECE --- AH2 --- 313
+2020AAPS1746G --- Soorya Narayanan N --- B.E. ECE
+2020AAPS1747G --- Rishabh Kumar Bhakta --- B.E. ECE --- AH2 --- 314
+2020AAPS1748G --- Abhijay Vikas Sinha --- B.E. ECE --- AH2 --- 315
+2020AAPS1981G --- Raval Priyanshu Vibhashkumar --- B.E. ECE --- AH1 --- 339
+2020AAPS2116G --- Ritvik Rao Alleni --- B.E. ECE --- CH3 --- 229
+2020B1A11033G --- Rohit Chebbi --- M.Sc. Biology + B.E. Chemical --- AH9 --- 124
+2020B1A11967G --- Anirudha Tonge --- M.Sc. Biology + B.E. Chemical --- AH1 --- 325
+2020B1A12082G --- Vitthal Bajpai --- M.Sc. Biology + B.E. Chemical --- CH3 --- 206
+2020B1A12106G --- Megh Gupta --- M.Sc. Biology + B.E. Chemical --- AH1 --- 246
+2020B1A30862G --- Vaibhav Ratan --- M.Sc. Biology + B.E. EEE --- CH1 --- 323
+2020B1A31680G --- Kushal Ramesh Chadmiya --- M.Sc. Biology + B.E. EEE --- AH2 --- 207
+2020B1A31957G --- Jatin Singhal --- M.Sc. Biology + B.E. EEE --- AH1 --- 319
+2020B1A31976G --- Ritesh Vijay Bhapkar --- M.Sc. Biology + B.E. EEE --- AH1 --- 334
+2020B1A32008G --- Bhavya Somani --- M.Sc. Biology + B.E. EEE --- CH3 --- 102
+2020B1A32073G --- Rohit Akash R --- M.Sc. Biology + B.E. EEE --- CH3 --- 139
+2020B1A32100G --- Sahil D Salunke --- M.Sc. Biology + B.E. EEE --- CH3 --- 218
+2020B1A40839G --- Piyush Pandey --- M.Sc. Biology + B.E. Mechanical --- CH1 --- 319
+2020B1A40843G --- Jp Sravajit --- M.Sc. Biology + B.E. Mechanical --- CH1 --- 322
+2020B1A40856G --- Thrishna U S --- M.Sc. Biology + B.E. Mechanical --- CH4 --- 117
+2020B1A41367G --- Utkarsh Bharadwaj --- M.Sc. Biology + B.E. Mechanical --- AH9 --- 265
+2020B1A41673G --- Patil Sourabh Ganesh --- M.Sc. Biology + B.E. Mechanical --- AH2 --- 202
+2020B1A41916G --- Noah Pinheiro --- M.Sc. Biology + B.E. Mechanical --- AH1 --- 247
+2020B1A41918G --- Affan Nadeem Qazi --- M.Sc. Biology + B.E. Mechanical
+2020B1A41930G --- Saakshi Adiga S --- M.Sc. Biology + B.E. Mechanical --- CH4 --- 241
+2020B1A41933G --- Ayush Pal --- M.Sc. Biology + B.E. Mechanical --- AH1 --- 261
+2020B1A41937G --- Priyanshu Raj --- M.Sc. Biology + B.E. Mechanical
+2020B1A41942G --- Urjit Ajit Parab --- M.Sc. Biology + B.E. Mechanical --- CH3 --- 240
+2020B1A42098G --- Rishil Shah --- M.Sc. Biology + B.E. Mechanical --- CH3 --- 303
+2020B1A42110G --- Prakhar Agrawal --- M.Sc. Biology + B.E. Mechanical --- CH3 --- 224
+2020B1A42122G --- Rishabh Manish Somani --- M.Sc. Biology + B.E. Mechanical
+2020B1A71589G --- Yash Sharadendu Agrawal --- M.Sc. Biology + B.E. CSE
+2020B1A71947G --- Avni Jain --- M.Sc. Biology + B.E. CSE --- CH4 --- 244
+2020B1A71960G --- Gaurang Aswal --- M.Sc. Biology + B.E. CSE --- AH1 --- 320
+2020B1A71982G --- Sanjana Chawla --- M.Sc. Biology + B.E. CSE --- CH4 --- 261
+2020B1A72018G --- Mudit Satyen Jaju --- M.Sc. Biology + B.E. CSE --- CH3 --- 109
+2020B1A72031G --- Nandish Chokshi --- M.Sc. Biology + B.E. CSE --- CH3 --- 117
+2020B1A72097G --- Jimit Hemal Shah --- M.Sc. Biology + B.E. CSE --- CH3 --- 216
+2020B1A72102G --- Soumil Ghosh --- M.Sc. Biology + B.E. CSE --- CH3 --- 219
+2020B1A80840G --- Mohan Bhat K --- M.Sc. Biology + B.E. EnI --- CH1 --- 320
+2020B1A81684G --- Kushal Srivastava --- M.Sc. Biology + B.E. EnI --- AH2 --- 211
+2020B1A81921G --- Sai Harshavardhan Battu --- M.Sc. Biology + B.E. EnI --- AH1 --- 253
+2020B1A81932G --- Laukik B Nakhwa --- M.Sc. Biology + B.E. EnI --- AH1 --- 260
+2020B1A81944G --- Sameer V Katti --- M.Sc. Biology + B.E. EnI --- AH1 --- 309
+2020B1A82034G --- S Niharika --- M.Sc. Biology + B.E. EnI --- CH4 --- 276
+2020B1A82074G --- Harshil Gupta --- M.Sc. Biology + B.E. EnI --- CH3 --- 140
+2020B1A82076G --- Aryan Vivek Tanniwar --- M.Sc. Biology + B.E. EnI --- CH3 --- 202
+2020B1A82099G --- Sanket Lonkar --- M.Sc. Biology + B.E. EnI --- CH3 --- 217
+2020B1AA0711G --- Aniruddha Atul Nayak --- M.Sc. Biology + B.E. ECE --- CH1 --- 281
+2020B1AA0838G --- Vansh Nitin Jain --- M.Sc. Biology + B.E. ECE --- CH1 --- 318
+2020B1AA1212G --- Parul Munjal --- M.Sc. Biology + B.E. ECE --- CH4 --- 154
+2020B1AA1664G --- Divishtha Malik --- M.Sc. Biology + B.E. ECE --- AH2 --- 201
+2020B1AA1678G --- Aditya Satyendra Mandke --- M.Sc. Biology + B.E. ECE --- AH2 --- 204
+2020B1AA1943G --- Palak Bhandari --- M.Sc. Biology + B.E. ECE --- CH4 --- 242
+2020B1B22041G --- Sumiran Shrenik Kasturi --- M.Sc. Biology + M.Sc. Chemistry --- CH4 --- 281
+2020B1PS1032G --- Archis Prashant Kelkar --- M.Sc. Biology --- AH9 --- 123
+2020B2A11949G --- S V Sumanth --- M.Sc. Chemistry + B.E. Chemical --- AH1 --- 313
+2020B2A11951G --- Siddhant Somvanshi --- M.Sc. Chemistry + B.E. Chemical
+2020B2A11961G --- Aryan Vats --- M.Sc. Chemistry + B.E. Chemical --- AH1 --- 321
+2020B2A11998G --- Adhiraj Gupta --- M.Sc. Chemistry + B.E. Chemical
+2020B2A12004G --- Gunank Agarwal --- M.Sc. Chemistry + B.E. Chemical --- AH1 --- 360
+2020B2A31349G --- Devaamsh Rajesh --- M.Sc. Chemistry + B.E. EEE --- AH9 --- 254
+2020B2A31577G --- Aryansh Tiwari --- M.Sc. Chemistry + B.E. EEE --- AH2 --- 127
+2020B2A31920G --- Avrajit Sarkar --- M.Sc. Chemistry + B.E. EEE
+2020B2A31934G --- Krishna Devaraj --- M.Sc. Chemistry + B.E. EEE --- AH1 --- 301
+2020B2A31956G --- Lanka Nishanth --- M.Sc. Chemistry + B.E. EEE --- AH1 --- 318
+2020B2A31968G --- Varun Thimmarao Gundapaneni --- M.Sc. Chemistry + B.E. EEE --- AH1 --- 326
+2020B2A31971G --- Pawan Mishra --- M.Sc. Chemistry + B.E. EEE --- AH1 --- 331
+2020B2A32020G --- Patil Manas Sudhir --- M.Sc. Chemistry + B.E. EEE --- CH3 --- 110
+2020B2A32080G --- Anchal Satishkumar Malani --- M.Sc. Chemistry + B.E. EEE
+2020B2A41917G --- Aryan Tripathi --- M.Sc. Chemistry + B.E. Mechanical --- AH1 --- 251
+2020B2A41929G --- Kaushik Kumar --- M.Sc. Chemistry + B.E. Mechanical --- AH1 --- 257
+2020B2A41993G --- Suraj Manivannan Nainar --- M.Sc. Chemistry + B.E. Mechanical
+2020B2A42005G --- Aditya Ratley --- M.Sc. Chemistry + B.E. Mechanical --- AH1 --- 361
+2020B2A42007G --- Harshith Harithsa R --- M.Sc. Chemistry + B.E. Mechanical --- AH1 --- 236
+2020B2A42040G --- Anshul Suhag --- M.Sc. Chemistry + B.E. Mechanical
+2020B2A42047G --- Utkarsh Samaddar --- M.Sc. Chemistry + B.E. Mechanical --- CH3 --- 128
+2020B2A42118G --- Abhishek Tiwari --- M.Sc. Chemistry + B.E. Mechanical
+2020B2A71350G --- Shreyas V --- M.Sc. Chemistry + B.E. CSE --- AH9 --- 257
+2020B2A71653G --- Ishi Nigam --- M.Sc. Chemistry + B.E. CSE
+2020B2A71677G --- Shah Rahil Kirankumar --- M.Sc. Chemistry + B.E. CSE --- AH2 --- 203
+2020B2A72037G --- Arindam Pareek --- M.Sc. Chemistry + B.E. CSE --- CH3 --- 121
+2020B2A72072G --- Shanay Rahul Gandhi --- M.Sc. Chemistry + B.E. CSE --- CH3 --- 138
+2020B2A72075G --- Yukta --- M.Sc. Chemistry + B.E. CSE --- CH4 --- 343
+2020B2A72094G --- Priyashi Choudhary --- M.Sc. Chemistry + B.E. CSE --- CH4 --- 349
+2020B2A72109G --- Siddhanth Pandey --- M.Sc. Chemistry + B.E. CSE --- CH3 --- 223
+2020B2A72113G --- Garvit Arora --- M.Sc. Chemistry + B.E. CSE
+2020B2A72127G --- Yash Singhal --- M.Sc. Chemistry + B.E. CSE --- CH3 --- 236
+2020B2A80760G --- Bhamare Yash Prashant --- M.Sc. Chemistry + B.E. EnI --- CH1 --- 310
+2020B2A81199G --- Anuj Ramesh Partani --- M.Sc. Chemistry + B.E. EnI
+2020B2A81587G --- Venkatesh R Hampiholi --- M.Sc. Chemistry + B.E. EnI --- AH2 --- 135
+2020B2A81978G --- Namrata Rajesh Ahuja --- M.Sc. Chemistry + B.E. EnI --- CH4 --- 256
+2020B2A82027G --- Ishaan Shukla --- M.Sc. Chemistry + B.E. EnI --- CH3 --- 115
+2020B2A82032G --- Dikshant --- M.Sc. Chemistry + B.E. EnI --- CH3 --- 119
+2020B2A82042G --- Dhruv Tuli --- M.Sc. Chemistry + B.E. EnI --- CH3 --- 124
+2020B2A82043G --- Abhishek Maheshwari --- M.Sc. Chemistry + B.E. EnI --- CH3 --- 125
+2020B2A82051G --- Ishank Giri --- M.Sc. Chemistry + B.E. EnI
+2020B2A82059G --- Revuru Karthikeya --- M.Sc. Chemistry + B.E. EnI --- CH3 --- 133
+2020B2A82088G --- Kota Venkata Bharghav --- M.Sc. Chemistry + B.E. EnI --- CH3 --- 208
+2020B2A82091G --- Bhavi Jain --- M.Sc. Chemistry + B.E. EnI --- CH4 --- 348
+2020B2A82103G --- Divyam Srivastava --- M.Sc. Chemistry + B.E. EnI
+2020B2A82121G --- Ajaykumar Kashapnoor --- M.Sc. Chemistry + B.E. EnI
+2020B2AA1911G --- Shivam Sanjay Nikam --- M.Sc. Chemistry + B.E. ECE
+2020B2AA2115G --- Saumarjit Goswami --- M.Sc. Chemistry + B.E. ECE
+2020B2PS1953G --- Anagha Rajesh --- M.Sc. Chemistry --- CH4 --- 246
+2020B3A10421G --- Pethani Prit --- M.Sc. Economics + B.E. Chemical --- CH1 --- 214
+2020B3A10484G --- Ritavya Rawat --- M.Sc. Economics + B.E. Chemical
+2020B3A11034G --- Prakhar Chaudhary --- M.Sc. Economics + B.E. Chemical --- AH9 --- 127
+2020B3A30559G --- Riddhi Pravin Zantye --- M.Sc. Economics + B.E. EEE --- CH4 --- 107
+2020B3A31150G --- Aman Anand --- M.Sc. Economics + B.E. EEE --- AH9 --- 162
+2020B3A31513G --- Divith Mahajan --- M.Sc. Economics + B.E. EEE --- AH2 --- 112
+2020B3A31776G --- Manisha Mathur --- M.Sc. Economics + B.E. EEE --- CH4 --- 218
+2020B3A40563G --- Anish Rajiv Dhaimodkar --- M.Sc. Economics + B.E. Mechanical
+2020B3A41153G --- Rishin Bergman --- M.Sc. Economics + B.E. Mechanical --- AH9 --- 163
+2020B3A41161G --- Anubhav Kashyap --- M.Sc. Economics + B.E. Mechanical --- AH9 --- 206
+2020B3A41496G --- Madhupalli Satya Manaswi --- M.Sc. Economics + B.E. Mechanical --- AH2 --- 103
+2020B3A41510G --- Guna Shekhar Reddy Pakkiru --- M.Sc. Economics + B.E. Mechanical --- AH2 --- 110
+2020B3A41787G --- Rahul Vaid --- M.Sc. Economics + B.E. Mechanical --- AH2 --- 345
+2020B3A41790G --- Asmit Sharma --- M.Sc. Economics + B.E. Mechanical --- AH2 --- 347
+2020B3A41805G --- Udit Kankariya --- M.Sc. Economics + B.E. Mechanical --- AH2 --- 358
+2020B3A70283G --- Akshat Sandeep Goel --- M.Sc. Economics + B.E. CSE
+2020B3A70362G --- Aryan Milind Pingle --- M.Sc. Economics + B.E. CSE --- CH1 --- 179
+2020B3A70367G --- Muhammed Jibran Faiz Malim --- M.Sc. Economics + B.E. CSE --- CH1 --- 201
+2020B3A70418G --- Balgovind S --- M.Sc. Economics + B.E. CSE --- CH1 --- 210
+2020B3A70449G --- Shivaansh Sodhani --- M.Sc. Economics + B.E. CSE --- CH1 --- 223
+2020B3A70472G --- Aarya Aamish Bhatt --- M.Sc. Economics + B.E. CSE --- CH1 --- 227
+2020B3A70494G --- Ashray Kashyap --- M.Sc. Economics + B.E. CSE --- CH1 --- 233
+2020B3A70511G --- Samyak Sanat Jain --- M.Sc. Economics + B.E. CSE --- CH1 --- 238
+2020B3A70532G --- Bhavesh Agarwal --- M.Sc. Economics + B.E. CSE --- CH1 --- 246
+2020B3A70541G --- Anusheel Solanki --- M.Sc. Economics + B.E. CSE --- CH1 --- 248
+2020B3A70547G --- Arjun Yatin Sankholkar --- M.Sc. Economics + B.E. CSE --- CH1 --- 252
+2020B3A70564G --- Jai Goel --- M.Sc. Economics + B.E. CSE
+2020B3A70568G --- Vidhi Kabra --- M.Sc. Economics + B.E. CSE
+2020B3A70607G --- Mohammed Aman --- M.Sc. Economics + B.E. CSE --- CH1 --- 270
+2020B3A70659G --- Anansh K Shetty --- M.Sc. Economics + B.E. CSE --- CH1 --- 276
+2020B3A70691G --- Shubham Abhay Lulu --- M.Sc. Economics + B.E. CSE --- CH1 --- 277
+2020B3A71085G --- Anish S Kamath --- M.Sc. Economics + B.E. CSE --- AH9 --- 141
+2020B3A71102G --- Vishesh Chitransh --- M.Sc. Economics + B.E. CSE --- AH9 --- 149
+2020B3A71141G --- Kodam Rohit Kisan --- M.Sc. Economics + B.E. CSE --- AH9 --- 158
+2020B3A71142G --- Saahir Jitendra Vaidya --- M.Sc. Economics + B.E. CSE --- AH9 --- 159
+2020B3A71158G --- Rakshit Mandloi --- M.Sc. Economics + B.E. CSE --- AH9 --- 203
+2020B3A71159G --- Prasoon Bagla --- M.Sc. Economics + B.E. CSE --- AH9 --- 205
+2020B3A71165G --- Pratik Lahiri --- M.Sc. Economics + B.E. CSE --- AH9 --- 211
+2020B3A71260G --- Animesh Jajoo --- M.Sc. Economics + B.E. CSE --- AH9 --- 235
+2020B3A71262G --- Anshul Bharti --- M.Sc. Economics + B.E. CSE --- AH9 --- 236
+2020B3A71459G --- Shrey Mehta --- M.Sc. Economics + B.E. CSE --- AH9 --- 352
+2020B3A71462G --- Mehak Batra --- M.Sc. Economics + B.E. CSE --- CH4 --- 179
+2020B3A71464G --- Anish Sreenivas --- M.Sc. Economics + B.E. CSE --- AH9 --- 354
+2020B3A71470G --- Gaurang Sandesh Khatavkar --- M.Sc. Economics + B.E. CSE --- AH9 --- 358
+2020B3A71500G --- Gautam Hanumanmal Jhabak --- M.Sc. Economics + B.E. CSE --- AH2 --- 104
+2020B3A71515G --- Ishan Nerlekar --- M.Sc. Economics + B.E. CSE --- AH2 --- 113
+2020B3A71516G --- Tanmay Satija --- M.Sc. Economics + B.E. CSE
+2020B3A71517G --- Bhavya Bansal --- M.Sc. Economics + B.E. CSE --- AH2 --- 114
+2020B3A71784G --- Abhinav Setia --- M.Sc. Economics + B.E. CSE --- AH2 --- 342
+2020B3A71785G --- Varun Gopal --- M.Sc. Economics + B.E. CSE --- AH2 --- 343
+2020B3A71794G --- Aastha Bharill --- M.Sc. Economics + B.E. CSE --- CH4 --- 220
+2020B3A71799G --- Siddhant Budhiraja --- M.Sc. Economics + B.E. CSE --- AH2 --- 354
+2020B3A71833G --- Alben Dsouza --- M.Sc. Economics + B.E. CSE --- AH1 --- 112
+2020B3A71840G --- Deeptanshu Prakash --- M.Sc. Economics + B.E. CSE --- AH1 --- 121
+2020B3A71857G --- Vidhan Agarwal --- M.Sc. Economics + B.E. CSE --- AH1 --- 134
+2020B3A80430G --- Siddharth Bhaveshbhai Rathod --- M.Sc. Economics + B.E. EnI --- CH1 --- 218
+2020B3A80556G --- Sirigiri Sowmith Reddy --- M.Sc. Economics + B.E. EnI --- CH1 --- 259
+2020B3A80709G --- Akshat Sagar Saboo --- M.Sc. Economics + B.E. EnI --- CH1 --- 280
+2020B3AA0493G --- Vatsal Nadkarni --- M.Sc. Economics + B.E. ECE --- CH1 --- 232
+2020B3AA0573G --- Kartik Anand --- M.Sc. Economics + B.E. ECE --- CH3 --- 301
+2020B3AA1162G --- Harshit Gupta --- M.Sc. Economics + B.E. ECE --- AH9 --- 210
+2020B3AA1172G --- Omkar Alhad Kulkarni --- M.Sc. Economics + B.E. ECE --- AH9 --- 212
+2020B3AA1175G --- Tejas Kulkarni --- M.Sc. Economics + B.E. ECE --- AH9 --- 213
+2020B3AA1177G --- Nakull Mahajan --- M.Sc. Economics + B.E. ECE --- AH9 --- 214
+2020B3AA1456G --- Priyank Pipaliya --- M.Sc. Economics + B.E. ECE --- AH9 --- 350
+2020B3AA1469G --- Varun M Pai --- M.Sc. Economics + B.E. ECE --- AH9 --- 356
+2020B3AA1809G --- Samridh Singh --- M.Sc. Economics + B.E. ECE
+2020B4A11035G --- Diya Sinha --- M.Sc. Maths + B.E. Chemical --- CH4 --- 140
+2020B4A31358G --- Dev Apoorva Shah --- M.Sc. Maths + B.E. EEE --- AH9 --- 262
+2020B4A31681G --- Avik Vipin Joshi --- M.Sc. Maths + B.E. EEE --- AH2 --- 208
+2020B4A31845G --- Yashaswi Piplani --- M.Sc. Maths + B.E. EEE --- AH1 --- 124
+2020B4A31863G --- Divyansh Mudgil --- M.Sc. Maths + B.E. EEE --- AH1 --- 141
+2020B4A31868G --- Sahil Sudesh --- M.Sc. Maths + B.E. EEE --- AH1 --- 152
+2020B4A31872G --- Tanmay Mangal --- M.Sc. Maths + B.E. EEE --- AH1 --- 248
+2020B4A31881G --- Yash Patil --- M.Sc. Maths + B.E. EEE --- AH1 --- 207
+2020B4A31913G --- Manas Milind Khadke --- M.Sc. Maths + B.E. EEE --- AH1 --- 243
+2020B4A32035G --- Mragansh Goel --- M.Sc. Maths + B.E. EEE --- CH3 --- 120
+2020B4A32060G --- Ghag Pranav Pradeep --- M.Sc. Maths + B.E. EEE --- CH3 --- 134
+2020B4A32123G --- Kunal Jain --- M.Sc. Maths + B.E. EEE --- CH3 --- 232
+2020B4A40606G --- Shamita Huchchannavar --- M.Sc. Maths + B.E. Mechanical --- CH4 --- 109
+2020B4A40682G --- Nair Stuti Dilipkumar --- M.Sc. Maths + B.E. Mechanical
+2020B4A41179G --- Aryan Srivastava --- M.Sc. Maths + B.E. Mechanical --- AH9 --- 215
+2020B4A41366G --- Akshat Gokul Khandelwal --- M.Sc. Maths + B.E. Mechanical --- AH9 --- 264
+2020B4A41551G --- Aditya Menon --- M.Sc. Maths + B.E. Mechanical --- AH2 --- 116
+2020B4A41559G --- Aditya Gupta --- M.Sc. Maths + B.E. Mechanical --- AH2 --- 120
+2020B4A41614G --- Aditya Karanth --- M.Sc. Maths + B.E. Mechanical --- AH2 --- 149
+2020B4A41645G --- Jay Barai --- M.Sc. Maths + B.E. Mechanical --- AH2 --- 158
+2020B4A41837G --- Anany Sharma --- M.Sc. Maths + B.E. Mechanical --- AH1 --- 115
+2020B4A41844G --- Pawar Abhinav Maruti --- M.Sc. Maths + B.E. Mechanical
+2020B4A41859G --- Kocheta Pranav Amolkumar --- M.Sc. Maths + B.E. Mechanical --- AH1 --- 138
+2020B4A41877G --- Vanshaj Sahai --- M.Sc. Maths + B.E. Mechanical
+2020B4A41912G --- Ayush Katara --- M.Sc. Maths + B.E. Mechanical --- AH1 --- 242
+2020B4A42096G --- Shreyas P --- M.Sc. Maths + B.E. Mechanical
+2020B4A42132G --- Nitin Gautam --- M.Sc. Maths + B.E. Mechanical --- CH3 --- 239
+2020B4A70625G --- Ankith Praveen --- M.Sc. Maths + B.E. CSE --- CH1 --- 274
+2020B4A70866G --- Sarthak Choudhary --- M.Sc. Maths + B.E. CSE --- CH1 --- 324
+2020B4A71093G --- Hrushikesh Sanjay Kadam --- M.Sc. Maths + B.E. CSE --- AH9 --- 145
+2020B4A71203G --- Aryan Rajesh Shelke --- M.Sc. Maths + B.E. CSE --- AH9 --- 224
+2020B4A71263G --- Adwait Vijay Kanakdande --- M.Sc. Maths + B.E. CSE --- AH9 --- 238
+2020B4A71354G --- Bharath Kalyan B --- M.Sc. Maths + B.E. CSE
+2020B4A71524G --- Kuhu Gupta --- M.Sc. Maths + B.E. CSE --- CH4 --- 201
+2020B4A71581G --- Shivam Thakur --- M.Sc. Maths + B.E. CSE --- AH2 --- 134
+2020B4A71588G --- Devansh Agarwal --- M.Sc. Maths + B.E. CSE
+2020B4A71654G --- Aditi Kashyap --- M.Sc. Maths + B.E. CSE --- CH4 --- 205
+2020B4A71668G --- Divyanshi Chouksey --- M.Sc. Maths + B.E. CSE --- CH4 --- 206
+2020B4A71675G --- Khushi Gupta --- M.Sc. Maths + B.E. CSE --- CH4 --- 208
+2020B4A71849G --- Sejal Rajesh Kumar Sarada --- M.Sc. Maths + B.E. CSE --- CH4 --- 227
+2020B4A71884G --- Lalita Ramanand Pulavarti --- M.Sc. Maths + B.E. CSE --- CH4 --- 233
+2020B4A71909G --- Siddharth Koundal --- M.Sc. Maths + B.E. CSE --- AH1 --- 237
+2020B4A71955G --- Maheshwari Kushal --- M.Sc. Maths + B.E. CSE
+2020B4A71980G --- Arnav Gupta --- M.Sc. Maths + B.E. CSE --- AH1 --- 337
+2020B4A72016G --- Aman Suryavanshi --- M.Sc. Maths + B.E. CSE --- CH3 --- 107
+2020B4A72125G --- Chhadwa Harshit Chetan --- M.Sc. Maths + B.E. CSE --- CH3 --- 234
+2020B4A81357G --- Raaghav Rajesh --- M.Sc. Maths + B.E. EnI --- AH9 --- 259
+2020B4A81571G --- Vedant Gangrade --- M.Sc. Maths + B.E. EnI
+2020B4A81573G --- Divyanshu Singh Yadav --- M.Sc. Maths + B.E. EnI --- AH2 --- 126
+2020B4A81590G --- Swayam Ranjan --- M.Sc. Maths + B.E. EnI --- AH2 --- 140
+2020B4A81659G --- Shrey Garg --- M.Sc. Maths + B.E. EnI
+2020B4A81683G --- Yash Chauhan --- M.Sc. Maths + B.E. EnI --- AH2 --- 210
+2020B4A81830G --- Keegan Louis Moraes --- M.Sc. Maths + B.E. EnI --- AH1 --- 110
+2020B4A81851G --- Aditya Rajshekhar Halli --- M.Sc. Maths + B.E. EnI --- AH1 --- 129
+2020B4A81910G --- Abinidhi G --- M.Sc. Maths + B.E. EnI --- CH4 --- 238
+2020B4A81991G --- Nirmal Bhaskar Thamattoor --- M.Sc. Maths + B.E. EnI
+2020B4A81994G --- Saicharan Ritwik Chinni --- M.Sc. Maths + B.E. EnI
+2020B4AA0714G --- Shreyas K --- M.Sc. Maths + B.E. ECE --- CH1 --- 305
+2020B4AA0758G --- Khadke Tejas Hemant --- M.Sc. Maths + B.E. ECE --- CH1 --- 309
+2020B4AA0785G --- Shreya Anand Agrawal --- M.Sc. Maths + B.E. ECE --- CH4 --- 113
+2020B4AA1670G --- Shriyanshi Vashisth Tiwari --- M.Sc. Maths + B.E. ECE --- CH4 --- 207
+2020B4AA1679G --- Tanishq Joshi --- M.Sc. Maths + B.E. ECE --- AH2 --- 205
+2020B4AA1846G --- Bhavya Nikhil Mehta --- M.Sc. Maths + B.E. ECE
+2020B4AA1856G --- Stitiprangya Patra --- M.Sc. Maths + B.E. ECE --- AH1 --- 133
+2020B4AA1860G --- Amrtanshu Bharadwaj --- M.Sc. Maths + B.E. ECE --- AH1 --- 139
+2020B4AA1875G --- Abhishek Chhapolia --- M.Sc. Maths + B.E. ECE --- AH1 --- 202
+2020B4AA1907G --- Dhriti Nerurkar --- M.Sc. Maths + B.E. ECE --- CH4 --- 235
+2020B4AA1999G --- Maney Savio Kidangan --- M.Sc. Maths + B.E. ECE --- AH1 --- 354
+2020B4AA2025G --- Ishaan Majumdar --- M.Sc. Maths + B.E. ECE --- CH3 --- 113
+2020B4AA2120G --- Om Dee --- M.Sc. Maths + B.E. ECE --- CH3 --- 231
+2020B5A12133G --- Rudransh Sharma --- M.Sc. Physics + B.E. Chemical
+2020B5A30707G --- M Shri Ram Chandra Vaibhav --- M.Sc. Physics + B.E. EEE --- CH1 --- 278
+2020B5A30708G --- Abhinav Srivastava --- M.Sc. Physics + B.E. EEE --- CH1 --- 279
+2020B5A30779G --- Mukund Kumar Choudhary --- M.Sc. Physics + B.E. EEE --- CH1 --- 313
+2020B5A31180G --- Sabyasachi Ghosh --- M.Sc. Physics + B.E. EEE --- CH1 --- 104
+2020B5A31847G --- Ansh Bhardwaj --- M.Sc. Physics + B.E. EEE --- AH1 --- 125
+2020B5A31864G --- Anshul Raj Choudhary --- M.Sc. Physics + B.E. EEE --- AH1 --- 142
+2020B5A31892G --- Utkarsh Lodha --- M.Sc. Physics + B.E. EEE --- AH1 --- 218
+2020B5A32050G --- Nirmal S --- M.Sc. Physics + B.E. EEE --- CH3 --- 131
+2020B5A32124G --- Pranav Jain --- M.Sc. Physics + B.E. EEE --- CH3 --- 233
+2020B5A40268G --- Varun Venkatasubramanian --- M.Sc. Physics + B.E. Mechanical --- CH1 --- 163
+2020B5A40618G --- Om Shahi --- M.Sc. Physics + B.E. Mechanical --- CH1 --- 273
+2020B5A41219G --- Avani Sharan --- M.Sc. Physics + B.E. Mechanical --- CH4 --- 162
+2020B5A41624G --- Anushka P Nair --- M.Sc. Physics + B.E. Mechanical
+2020B5A41635G --- Mohit --- M.Sc. Physics + B.E. Mechanical --- AH1 --- 144
+2020B5A41891G --- Krishna Prasad S --- M.Sc. Physics + B.E. Mechanical --- AH1 --- 217
+2020B5A70335G --- Raghuvansh S --- M.Sc. Physics + B.E. CSE --- CH1 --- 174
+2020B5A70502G --- Mantha Sai Gurunath Subrahmanyam --- M.Sc. Physics + B.E. CSE --- CH1 --- 237
+2020B5A70627G --- Aditya Dubey --- M.Sc. Physics + B.E. CSE --- CH1 --- 275
+2020B5A70775G --- Ishaan Suraj Kudchadkar --- M.Sc. Physics + B.E. CSE --- CH1 --- 312
+2020B5A70872G --- Abhrajeet Mukherjee --- M.Sc. Physics + B.E. CSE --- CH1 --- 325
+2020B5A71157G --- Shreyash Patel --- M.Sc. Physics + B.E. CSE --- AH9 --- 202
+2020B5A71553G --- Pranjal Mittal --- M.Sc. Physics + B.E. CSE --- AH2 --- 117
+2020B5A71839G --- B Sarvesh --- M.Sc. Physics + B.E. CSE --- AH1 --- 119
+2020B5A71843G --- Vineeth Vignaraj --- M.Sc. Physics + B.E. CSE --- AH1 --- 123
+2020B5A71862G --- Naman Ajay Markhedkar --- M.Sc. Physics + B.E. CSE --- AH1 --- 140
+2020B5A71865G --- Pranav Srikanth --- M.Sc. Physics + B.E. CSE --- AH1 --- 145
+2020B5A71874G --- Krishnam Garg --- M.Sc. Physics + B.E. CSE --- AH1 --- 160
+2020B5A71886G --- Rhythm Chouhan --- M.Sc. Physics + B.E. CSE --- AH1 --- 213
+2020B5A71896G --- Gautham Swaminathan --- M.Sc. Physics + B.E. CSE --- AH1 --- 221
+2020B5A71954G --- Aryan Praveen Agrawal --- M.Sc. Physics + B.E. CSE --- AH1 --- 316
+2020B5A72045G --- Aditya Bhat --- M.Sc. Physics + B.E. CSE --- CH3 --- 127
+2020B5A80571G --- Ganesh Hanchanahal --- M.Sc. Physics + B.E. EnI --- CH1 --- 266
+2020B5A81570G --- Bhavya L Narayanan --- M.Sc. Physics + B.E. EnI --- CH4 --- 203
+2020B5A81887G --- Kulkarni Soham Girish --- M.Sc. Physics + B.E. EnI --- AH1 --- 214
+2020B5A81973G --- Nitish Bharadwaj Putrevu --- M.Sc. Physics + B.E. EnI --- AH1 --- 233
+2020B5AA0833G --- Shlok Kakkar --- M.Sc. Physics + B.E. ECE --- CH1 --- 316
+2020B5AA1569G --- Anant Jain --- M.Sc. Physics + B.E. ECE --- AH2 --- 122
+2020B5AA1852G --- Anushk Srivastav --- M.Sc. Physics + B.E. ECE --- AH1 --- 130
+2020B5AA1853G --- Rahul Gupta --- M.Sc. Physics + B.E. ECE --- AH1 --- 131
+2020B5AA1854G --- Angad Singh --- M.Sc. Physics + B.E. ECE --- AH1 --- 132
+2020B5AA1889G --- Rohan Fulwani --- M.Sc. Physics + B.E. ECE --- AH1 --- 216
+2020B5AA1893G --- Hardik Goel --- M.Sc. Physics + B.E. ECE --- AH1 --- 219
+2020B5AA1922G --- B V N Nanda Kumar --- M.Sc. Physics + B.E. ECE --- AH1 --- 254
+2020B5AA2044G --- Priyanshu Agrawal --- M.Sc. Physics + B.E. ECE --- CH3 --- 126
+2020B5PS0254G --- Abhir Mehrotra --- M.Sc. Physics --- CH1 --- 162
+2020B5PS1890G --- Anurag Gupta --- M.Sc. Physics
+2020B5PS2021G --- R Ananthan --- M.Sc. Physics --- CH3 --- 111
+2020B5TS0951G --- Tanmayee Srinivas --- M.Sc. Physics

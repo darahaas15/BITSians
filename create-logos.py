@@ -1,0 +1,19 @@
+from PIL import Image
+
+img = Image.open("images/logo.png").convert("RGBA")
+
+newdata = img.getdata()
+
+def process(rgba):
+    if rgba[-1] < 128:
+        rgba = [0, 0, 0, 255]
+    return tuple(rgba)
+
+newdata = list(map(process, newdata))
+img.putdata(newdata)
+
+sizes = (72,96,120,128,144,152,180,192,384,512)
+
+for i in sizes:
+    img.resize((i,i)).save(f"images/logo{i}.png")
+img.resize((192,192)).save("images/apple-touch-icon.png")

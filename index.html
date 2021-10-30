@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All BITSians</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/PNG">
+    <meta name="theme-color" content="#336699">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <script>
+        // If browser supports service workers
+        if("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("sw.js")
+        }
+    </script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="page">
+        <div id="filters-tab">
+            <header>FILTERS<img onclick="close_filters_tab()" src="images/cancel.png"></header>
+            <div id="filters-container">
+                <div class="filter-section" category="year">
+                    <header><category>Year</category><img src="images/select-all.png" alt="" class="select-all-button"></header>
+                    <!-- After element here for click to select all -->
+                    <div class="filter-toggle-container">
+                        <div class="filter-toggle" value="2015">2015</div>
+                        <div class="filter-toggle" value="2016">2016</div>
+                        <div class="filter-toggle" value="2017">2017</div>
+                        <div class="filter-toggle" value="2018">2018</div>
+                        <div class="filter-toggle" value="2019">2019</div>
+                        <div class="filter-toggle" value="2020">2020</div>
+                    </div>
+                </div>
+                <div class="filter-section" category="hostel">
+                    <header><category>Hostel</category><img src="images/select-all.png" alt="" class="select-all-button"></header>
+                    <!-- After element here for click to select all -->
+                    <div class="filter-toggle-container">
+                        <div class="filter-toggle" value="AH1">AH1</div>
+                        <div class="filter-toggle" value="AH2">AH2</div>
+                        <div class="filter-toggle" value="AH3">AH3</div>
+                        <div class="filter-toggle" value="AH4">AH4</div>
+                        <div class="filter-toggle" value="AH5">AH5</div>
+                        <div class="filter-toggle" value="AH6">AH6</div>
+                        <div class="filter-toggle" value="AH7">AH7</div>
+                        <div class="filter-toggle" value="AH8">AH8</div>
+                        <div class="filter-toggle" value="AH9">AH9</div>
+                        <div class="filter-toggle" value="CH1">CH1</div>
+                        <div class="filter-toggle" value="CH2">CH2</div>
+                        <div class="filter-toggle" value="CH3">CH3</div>
+                        <div class="filter-toggle" value="CH4">CH4</div>
+                        <div class="filter-toggle" value="CH5">CH5</div>
+                        <div class="filter-toggle" value="CH6">CH6</div>
+                        <div class="filter-toggle" value="CH7">CH7</div>
+                    </div>
+                </div>
+                <div class="filter-section" category="B1">
+                    <header><category>Primary Degree</category><img src="images/select-all.png" alt="" class="select-all-button"></header>
+                    <!-- After element here for click to select all -->
+                    <div class="filter-toggle-container">
+                        <div class="filter-toggle" value="A1">B.E. Chemical</div>
+                        <div class="filter-toggle" value="A3">B.E. EEE</div>
+                        <div class="filter-toggle" value="A4">B.E. Mechanical</div>
+                        <div class="filter-toggle" value="A7">B.E. CSE</div>
+                        <div class="filter-toggle" value="A8">B.E. EnI</div>
+                        <div class="filter-toggle" value="AA">B.E. ECE</div>
+                        <div class="filter-toggle" value="PHD">PHD</div>
+                        <div class="filter-toggle" value="H">M.E.</div>
+                    </div>
+                </div>
+                <div class="filter-section" category="B2">
+                    <header><category>Secondary Degree</category><img src="images/select-all.png" alt="" class="select-all-button"></header>
+                    <!-- After element here for click to select all -->
+                    <div class="filter-toggle-container">
+                        <div class="filter-toggle" value="B1">M.Sc. Biology</div>
+                        <div class="filter-toggle" value="B2">M.Sc. Chemistry</div>
+                        <div class="filter-toggle" value="B3">M.Sc. Economics</div>
+                        <div class="filter-toggle" value="B4">M.Sc. Math</div>
+                        <div class="filter-toggle" value="B5">M.Sc. Physics</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- \n*\s*(<div class="filter-toggle".*?>.*?</div>)\n\s+ -->
+        <div id="results-tab">
+            <div id="inputs-row"></div>
+            <div id="results-container"></div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="everyone.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+<!-- 
+    YEAR
+    HOSTEL
+    Primary Degree
+    Secondary Degree
+ -->
