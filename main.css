@@ -326,6 +326,7 @@ body {
 }
 
 .student > .year {
+    font-size: 0.9em;
     color: hsl(150, 100%, 50%);
 }
 
