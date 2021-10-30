@@ -187,12 +187,12 @@ body {
     padding: 0.5em;
     padding-bottom: calc(0.5em + 0px);
     display: inline-block;
-    transition: 100ms ease;
-    transition-property: color, background-color;
 }
 
 @media (min-width: 985px) {
     .filter-toggle {
+        transition: 100ms ease;
+        transition-property: color, background-color;
         cursor: pointer;
     }
 }
