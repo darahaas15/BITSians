@@ -130,8 +130,6 @@ body {
     align-items: stretch;
     gap: 10px;
     overflow: auto;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
 }
 
 #filters-container::-webkit-scrollbar {
@@ -139,7 +137,6 @@ body {
 }
 
 .filter-section {
-    scroll-snap-align: start;
     --lightness: 50%;
     --saturation: 75%;
     --hue: 0;
