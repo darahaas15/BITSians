@@ -18,15 +18,6 @@ const max = (iterable, key=e=>e)=>iterable.reduce((acc,val)=>key(acc)>key(val)?a
 const min = (iterable, key=e=>e)=>iterable.reduce((acc,val)=>key(acc)<key(val)?acc:val, iterable[0])
 const gid = id=>document.getElementById(id)
 
-const CRITERIA = {
-    NAME: 0,
-    ROOM: 1,
-    BRANCH: 2
-}
-var CRITERION = 0
-
-var query_input = null
-
 window.onload = ()=>{
     // Setup toggles
     setup_toggles()
@@ -67,6 +58,10 @@ function setup_select_all() {
 
 var filters = []
 
+/**
+ * Create the list of filters from the filters tab, loads it into the global `filters` variable, and returns it
+ */
+
 function load_filters() {
     filters = []
     for(const filter_section of document.getElementsByClassName("filter-section")) {
@@ -74,9 +69,13 @@ function load_filters() {
             filters.push([filter_section.getAttribute("category"), [...filter_section.getElementsByClassName("selected")].map(ele=>ele.getAttribute("value"))])
         }
     }
-    // print("Filters:")
-    // print(filters)
+    return filters
 }
+
+/**
+ * Loads the filters by calling `load_filters()` and returns the filtered list of ALL BITSians
+ * @returns List of all BITSians that match the filters
+ */
 
 function apply_filters() {
     let stime = new Date()
@@ -93,6 +92,10 @@ function apply_filters() {
 
 function close_filters_tab() {
     gid("filters-tab").classList.add("hidden")
+}
+
+function show_filters_tab() {
+    gid("filters-tab").classList.remove("hidden")
 }
 
 function resolve_query() {
