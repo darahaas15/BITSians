@@ -139,8 +139,8 @@ function resolve_query() {
 var branch_codes = {'A1': 'B.E. Chemical', 'A3': 'B.E. EEE', 'A4': 'B.E. Mechanical', 'A7': 'B.E. CSE', 'A8': 'B.E. EnI', 'AA': 'B.E. ECE', 'B1': 'M.Sc. Biology', 'B2': 'M.Sc. Chemistry', 'B3': 'M.Sc. Economics', 'B4': 'M.Sc. Maths', 'B5': 'M.Sc. Physics', "PHD": "PHD", "H": "Higher Degree"}
 
 function display_results(results) {
-    gid("results-container").innerHTML = results.map(person=>`
-    <div class="student">
+    gid("results-container").innerHTML = results.map(person=>
+    `<div class="student">
         <div class="place">
             <div class="hostel">${person["hostel"]}</div>
             <div class="room">${person["room"]}</div>
@@ -152,19 +152,7 @@ function display_results(results) {
             <div class="branch">${branch_codes[person["B2"]]??""}</div>
             <div class="student-id">${person["ID"]}</div>
         </div>
-    </div>
-    `).join("")
-    // gid("results").innerHTML = results.map(ele=>`<div class="student">
-    // <div class="student-room">
-    // ${ele[1]}
-    // </div>
-    // <div class="student-info">
-    // <div class="student-name">${ele[2].replace(/(?<=.{9,})\s+/g, "<br>").replace(/\s+(?=[a-zA-Z\.]{9,})/g, "<br>")}</div> 
-    // <div class="student-branch">${ele[3].replace(" + ", "<br>")}</div>
-    // <div class="student-phone">+91 ${ele[4]}</div>
-    // </div>
-    // </div>
-    // `).join("")
+    </div>`).join("")
 }
 
 /**
