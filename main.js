@@ -112,9 +112,15 @@ function resolve_query() {
     let stime = new Date()
     let query = query_input.value.replace(/\s+/g, ' ')
     let results = []
-    if(/\d/.test(query)) {
+    if(/^\d{1,3}$/.test(query)) {
+        print("Testing against room numbers")
+        results = filtered.map(person=>{
+            let score = scorer_room(query, person["room"])
+            return [score, person]
+        })
+    }
+    else if(/\d/.test(query)) {
         print("Testing against IDs")
-        // Test against ids
         results = filtered.map(person=>{
             let score = scorer_id(query, person["ID"])
             return [score, person]
@@ -198,6 +204,13 @@ function scorer_id(query, text) {
     query = query.toUpperCase()
     if(text.includes(query)) {
         return [query.length, query.length, text.indexOf(query)]
+    }
+    return [0, 0, 0]
+}
+
+function scorer_room(query, text) {
+    if(text == query) {
+        return [3, 3, 0]
     }
     return [0, 0, 0]
 }
