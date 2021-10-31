@@ -199,6 +199,12 @@ body {
     color: black;
 }
 
+.footer {
+    font-size: 0.75em;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 /* RESULTS TAB */
 
 #results-tab {
