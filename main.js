@@ -73,8 +73,10 @@ var filters = []
 function load_filters() {
     filters = []
     for(const filter_section of document.getElementsByClassName("filter-section")) {
-        if(filter_section.getElementsByClassName("selected").length != 0) {
-            filters.push([filter_section.getAttribute("category"), [...filter_section.getElementsByClassName("selected")].map(ele=>ele.getAttribute("value"))])
+        let selected = filter_section.getElementsByClassName("selected")
+        filter_section.getElementsByClassName("selected")
+        if(selected.length != 0) {
+            filters.push([filter_section.getAttribute("category"), [...selected].map(ele=>ele.getAttribute("value"))])
         }
     }
     return filters
@@ -86,18 +88,7 @@ function load_filters() {
  */
 
 function apply_filters() {
-    let stime = new Date()
-    load_filters()
-    filtered = everyone.filter(person=>{
-        let matches = filters.filter(([category, queries])=>{
-            return queries.includes(person[category])
-        }).length
-        return matches == filters.length
-    })
-    logtime(stime, "apply_filters")
-    // if(window.innerWidth >= 985) {
-        resolve_query()
-    // }
+    load_filters(); filtered = everyone.filter(person=>filters.filter(([category, queries])=>queries.includes(person[category])).length == filters.length); resolve_query();
 }
 
 function close_filters_tab() {
@@ -109,35 +100,20 @@ function show_filters_tab() {
 }
 
 function resolve_query() {
-    let stime = new Date()
     let query = query_input.value.replace(/\s+/g, ' ')
     let results = []
     if(/^\d{1,3}$/.test(query)) {
-        print("Testing against room numbers")
-        results = filtered.map(person=>{
-            let score = scorer_room(query, person["room"])
-            return [score, person]
-        })
+        results = filtered.map(person=>[scorer_room(query, person["room"]), person])
     }
     else if(/\d/.test(query)) {
-        print("Testing against IDs")
-        results = filtered.map(person=>{
-            let score = scorer_id(query, person["ID"])
-            return [score, person]
-        })
+        results = filtered.map(person=>[scorer_id(query, person["ID"]), person])
     }
     else {
-        print("Testing against names")
-        results = filtered.map(person=>{
-            let score = scorer_name(query, person["name"])
-            return [score, person]
-        })
+        results = filtered.map(person=>[scorer_name(query, person["name"]), person])
     }
     sort_multiple(results, element=>[-element[0][0], -element[0][1], element[0][2]])
     results = results.filter(element=>element[0][0]).slice(0, MAX_RESULT_COUNT)
     results = results.map(([score, person])=>person)
-    logtime(stime, "resolve_query")
-    print(results)
 
     display_results(results)
 }
