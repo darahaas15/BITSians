@@ -6,7 +6,6 @@ sizes = (72,96,120,128,144,152,180,192,384,512)
 
 for i in sizes:
     img.resize((i,i)).save(f"images/logo{i}.png")
-    
 
 newdata = img.getdata()
 
