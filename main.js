@@ -29,7 +29,7 @@ window.onload = ()=>{
     setup_select_all()
 
     // Store the input element in query_input
-    query_input = gid("query")
+    query_input = document.getElementById("query")
     apply_filters()
     // Initial call to show results
     resolve_query()
@@ -92,11 +92,11 @@ function apply_filters() {
 }
 
 function close_filters_tab() {
-    gid("filters-tab").classList.add("hidden")
+    document.getElementById("filters-tab").classList.add("hidden")
 }
 
 function show_filters_tab() {
-    gid("filters-tab").classList.remove("hidden")
+    document.getElementById("filters-tab").classList.remove("hidden")
 }
 
 function resolve_query() {
@@ -121,7 +121,7 @@ function resolve_query() {
 var branch_codes = {'A1': 'B.E. Chemical', 'A3': 'B.E. EEE', 'A4': 'B.E. Mechanical', 'A7': 'B.E. CSE', 'A8': 'B.E. EnI', 'AA': 'B.E. ECE', 'B1': 'M.Sc. Biology', 'B2': 'M.Sc. Chemistry', 'B3': 'M.Sc. Economics', 'B4': 'M.Sc. Maths', 'B5': 'M.Sc. Physics', "PHD": "PHD", "H": "Higher Degree"}
 
 function display_results(results) {
-    gid("results-container").innerHTML = results.map(person=>
+    document.getElementById("results-container").innerHTML = results.map(person=>
     `<div class="student">
         <div class="place">
             <div class="hostel">${person["hostel"]}</div>
