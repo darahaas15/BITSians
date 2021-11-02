@@ -3,9 +3,9 @@
 
 :root {
     font-family: 'Open Sans', sans-serif;
-
+    
     font-weight: 600;
-
+    
     font-size: 20px;
 }
 
@@ -58,11 +58,11 @@ body {
         position: relative;
         height: 100vh;
     }
-
+    
     #filters-tab {
         width: 40%;
     }
-
+    
     #results-tab {
         width: 60%;
     }
@@ -97,7 +97,7 @@ body {
     font-size: 2em;
     padding: 0.25em;
     /* background-color: antiquewhite; */
-
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -117,7 +117,7 @@ body {
         padding: 0.5em;
         display: block;
     }
-
+    
     #filters-tab > header > img {
         display: none;
     }
@@ -127,12 +127,9 @@ body {
     border-radius: 10px;
     display: grid;
     grid-template-columns: 1fr;
+    align-items: stretch;
     gap: 10px;
     overflow: auto;
-}
-
-#filters-container > * {
-    width: 100%;
 }
 
 #filters-container::-webkit-scrollbar {
@@ -149,11 +146,8 @@ body {
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr;
+    align-items: stretch;
     gap: 1em;
-}
-
-.filter-section > {
-    width: 100%;
 }
 
 [category="year"] {--hue: 150;}
@@ -217,11 +211,8 @@ body {
     background-color: black;
     display: grid;
     grid-template-columns: 1fr;
+    align-items: stretch;
     gap: 10px;
-}
-
-#results-tab > * {
-    width: 100%;
 }
 
 #results-tab > header {
@@ -231,8 +222,9 @@ body {
     height: calc(2em - 0.25em/2); /*For consistency with filters tab*/
     overflow: hidden;
     /* background-color: antiquewhite; */
-
-    display: flex;
+    
+    display: grid;
+    grid-template-columns: min-content 1fr;
     align-items: center;
     gap: 1em;
 }
@@ -268,8 +260,9 @@ body {
         font-size: 3em;
         padding: 0.5em;
         height: calc(3em - 1.25em/2); /*For consistency with filters tab*/
+        grid-template-columns: 1fr;
     }
-
+    
     #results-tab > header > img#filter-img {
         display: none;
     }
@@ -279,8 +272,8 @@ body {
     height: 100%;
     overflow: auto;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 10px;
 }
 
@@ -302,7 +295,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+}
+
+.student > * + * {
+    margin-left: 5px;
 }
 
 .student:nth-child(2n+1) {
