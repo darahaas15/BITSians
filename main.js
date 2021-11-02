@@ -131,7 +131,7 @@ function display_results(results) {
         <div class="info">
             <div class="name" style="font-size: ${Math.min(1.5, lerp(max(person["name"].split(/\s+/), key=e=>e.length).length, 7, 15, 1.5, 0.925))}em">${person["name"]}</div>
             <div class="branch">${branch_codes[person["B1"]]}</div>
-            <div class="branch">${branch_codes[person["B2"]]??""}</div>
+            <div class="branch">${branch_codes[person["B2"]]?branch_codes[person["B2"]]:""}</div>
             <div class="student-id">${person["ID"]}</div>
         </div>
     </div>`).join("")
