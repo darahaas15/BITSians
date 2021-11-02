@@ -144,10 +144,13 @@ body {
     background-color: rgb(25, 25, 25);
     border-radius: 10px;
     padding: 10px;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     align-items: stretch;
-    gap: 1em;
+}
+
+.filter-section > *+* {
+    margin-top: 1em;
 }
 
 [category="year"] {--hue: 150;}
@@ -209,10 +212,12 @@ body {
 
 #results-tab {
     background-color: black;
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: stretch;
-    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#results-tab > *+* {
+    margin-top: 10px;
 }
 
 #results-tab > header {
@@ -272,9 +277,12 @@ body {
     height: 100%;
     overflow: auto;
     border-radius: 10px;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#results-container > * + * {
+    margin-top: 5px;
 }
 
 #results-container::-webkit-scrollbar {
