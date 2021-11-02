@@ -70,8 +70,8 @@ body {
 
 #filters-tab {
     background-color: #000;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 10px;
     z-index: 2;
     transition: left 250ms ease;
@@ -125,11 +125,14 @@ body {
 
 #filters-tab > #filters-container {
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 10px;
     overflow: auto;
+}
+
+#filters-container > * {
+    width: 100%;
 }
 
 #filters-container::-webkit-scrollbar {

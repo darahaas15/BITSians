@@ -129,12 +129,38 @@ function display_results(results) {
         </div>
         <div class="year">${person["year"]}</div>
         <div class="info">
-            <div class="name" style="font-size: ${Math.min(1.5, lerp(max(person["name"].split(/\s+/), key=e=>e.length).length, 7, 15, 1.5, 0.925))}em">${person["name"].replace(/(?<=[a-zA-Z\.]{9,})\s+/g, "<br>").replace(/\s+(?=[a-zA-Z\.]{9,})/g, "<br>")}</div>
+            <div class="name" style="font-size: ${Math.min(1.5, lerp(max(person["name"].split(/\s+/), key=e=>e.length).length, 7, 15, 1.5, 0.925))}em">${person["name"]}</div>
             <div class="branch">${branch_codes[person["B1"]]}</div>
             <div class="branch">${branch_codes[person["B2"]]??""}</div>
             <div class="student-id">${person["ID"]}</div>
         </div>
     </div>`).join("")
+}
+
+/**
+ * Use this instead of relying on regex
+ */
+
+function break_name(name, threshold=9) {
+    const temp = name.split(/\s+/).reduce((acc, val) => {
+        // Get the number of nested arrays
+        const currIndex = acc.length - 1;
+        // Join up the last array and get its length
+        const currLen = acc[currIndex].join(' ').length;
+
+        // If the length of that content and the new word
+        // in the iteration exceeds 20 chars push the new
+        // word to a new array
+        if (currLen + val.length > threshold) {
+            acc.push([val]);
+        }
+        // otherwise add it to the existing array
+        else {
+            acc[currIndex].push(val);
+        }
+        return acc;
+    }, [[]]);
+    print(temp.map(arr=>arr.join(" ")).join("<br>"))
 }
 
 /**
