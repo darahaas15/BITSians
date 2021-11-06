@@ -23,7 +23,7 @@ def remove_transparency(img, bkg_color=[0, 0, 0, 255])->None:
 remove_transparency(img)
 img = apply_padding(img, 1400, 1400)
 
-sizes = (72,96,120,128,144,152,180,192,384,512)
+sizes = (72, 96, 144, 192, 256, 384, 512)
 
 for i in sizes:
     img.resize((i,i)).save(f"images/logo{i}.png")
