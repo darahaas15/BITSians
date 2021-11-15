@@ -30,8 +30,14 @@ self.addEventListener("activate", event => {
 
 self.addEventListener("fetch", event => {
     event.respondWith(get_request(event.request))
+    // event.respondWith(get_basic(event.request).catch(err => caches.match(event.request)))
     // event.respondWith(fetch(event.request).catch(err => caches.match(event.request)))
 });
+
+function get_basic(request) {
+    console.log(`Requesting ${request.url}`)
+    return fetch(request)
+}
 
 async function get_request(request) {
     try {
