@@ -1,12 +1,14 @@
+const log = (text, color = "white") => console.log(`%c${text}`, `color: black; background-color: ${color};`)
+
 const VERSION = 2
 const CURRENT_CACHE = `v${VERSION}`
 const cache_files = "/index.html, /main.css, /main.js, /everyone.js".split(", ")
 
-self.addEventListener("install", event=>{
+self.addEventListener("install", event => {
     event.waitUntil(
         caches
             .open(CURRENT_CACHE)
-            .then(cache=>cache.addAll(cache_files))
+            .then(cache => cache.addAll(cache_files))
             .then(self.skipWaiting())
     )
 });
@@ -26,8 +28,35 @@ self.addEventListener("activate", event => {
     )
 })
 
-self.addEventListener("fetch", event=>{
-    event.respondWith(
-        fetch(event.request).catch(err => caches.match(event.request))
-    )
+self.addEventListener("fetch", event => {
+    event.respondWith(get_request(event.request))
+    // event.respondWith(fetch(event.request).catch(err => caches.match(event.request)))
 });
+
+async function get_request(request) {
+    try {
+        log(`Sending Network Request for ${request.url}`, "rgb(0, 128, 255)")
+        let result = await fetch(request)
+        if (result.status == 200 || result.ok) {
+            log(`Request for ${request.url} passed`, "greenyellow")
+            return result
+        }
+        else {
+            log(`${result.ok}`, "rgb(255, 128, 0)")
+            log("BRUH IDK", "violet")
+        }
+    } catch (err) {
+        log(`Network Request for ${request.url} failed`, "rgb(255, 128, 128)")
+    }
+
+    log(`Sending Cache Request for ${request.url}`, "yellow")
+    let result = await caches.match(request)
+    if(result.ok) {
+        log(`Request for '${request.url}' passed`, "greenyellow")
+        return result
+    }
+
+    log("Cache Request Failed", "rgb(255, 128, 128)")
+    log("Sending 'Not Found' Page", "yellow")
+    return await Promise()
+}
