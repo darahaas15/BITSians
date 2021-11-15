@@ -48,8 +48,7 @@ async function get_request(request) {
             return result
         }
         else {
-            log(`${result.ok}`, "rgb(255, 128, 0)")
-            log("BRUH IDK", "violet")
+            log(`Network Request Status for ${request.url}: ${result.status}`, "rgb(255, 128, 128)")
         }
     } catch (err) {
         log(`Network Request for ${request.url} failed`, "rgb(255, 128, 128)")

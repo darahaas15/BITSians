@@ -1,5 +1,41 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans-Light.ttf), url(../fonts/OpenSans-Light.woff);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans-Regular.ttf), url(../fonts/OpenSans-Regular.woff);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans-Medium.ttf), url(../fonts/OpenSans-Medium.woff);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans-SemiBold.ttf), url(../fonts/OpenSans-SemiBold.woff);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans-Bold.ttf), url(../fonts/OpenSans-Bold.woff);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans-ExtraBold.ttf), url(../fonts/OpenSans-ExtraBold.woff);
+    font-weight: 800;
+}
+
 :root {
-    font-family: 'Open Sans', 'Cambria', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     
     font-weight: 600;
     
