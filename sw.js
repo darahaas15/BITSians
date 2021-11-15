@@ -1,8 +1,8 @@
 const log = (text, color = "white") => console.log(`%c${text}`, `color: black; background-color: ${color};`)
 
-const VERSION = 2
+const VERSION = 3
 const CURRENT_CACHE = `v${VERSION}`
-const cache_files = "/index.html, /main.css, /main.js, /everyone.js".split(", ")
+const cache_files = "/index.html, /main.css, /main.js, /everyone.js, /images/cancel.png, /images/forward.png, /images/logo.png, /images/select-all.png, /fonts/OpenSans-Bold.ttf, /fonts/OpenSans-Bold.woff, /fonts/OpenSans-ExtraBold.ttf, /fonts/OpenSans-ExtraBold.woff, /fonts/OpenSans-Light.ttf, /fonts/OpenSans-Light.woff, /fonts/OpenSans-Medium.ttf, /fonts/OpenSans-Medium.woff, /fonts/OpenSans-Regular.ttf, /fonts/OpenSans-Regular.woff, /fonts/OpenSans-SemiBold.ttf, /fonts/OpenSans-SemiBold.woff".split(", ")
 
 self.addEventListener("install", event => {
     event.waitUntil(
@@ -44,7 +44,7 @@ async function get_request(request) {
         log(`Sending Network Request for ${request.url}`, "rgb(0, 128, 255)")
         let result = await fetch(request)
         if (result.status == 200 || result.ok) {
-            log(`Request for ${request.url} passed`, "greenyellow")
+            log(`Network Request for ${request.url} passed`, "greenyellow")
             return result
         }
         else {
@@ -54,14 +54,20 @@ async function get_request(request) {
         log(`Network Request for ${request.url} failed`, "rgb(255, 128, 128)")
     }
 
-    log(`Sending Cache Request for ${request.url}`, "yellow")
-    let result = await caches.match(request)
-    if(result.ok) {
-        log(`Request for '${request.url}' passed`, "greenyellow")
-        return result
+    try {
+        log(`Sending Cache Request for ${request.url}`, "yellow")
+        let result = await caches.match(request)
+        if (result.status == 200 || result.ok) {
+            log(`Cache Request for ${request.url} passed`, "greenyellow")
+            return result
+        }
+        else {
+            log(`Cache Request Status for ${request.url}: ${result.status}`, "rgb(255, 128, 128)")
+        }
+    } catch (err) {
+        log(`Cache Request for ${request.url} failed`, "rgb(255, 128, 128)")
     }
 
-    log("Cache Request Failed", "rgb(255, 128, 128)")
     log("Sending 'Not Found' Page", "yellow")
     return await Promise()
 }

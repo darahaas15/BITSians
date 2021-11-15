@@ -12,14 +12,14 @@
 
 @font-face {
     font-family: 'Open Sans';
-    src: url(../fonts/OpenSans-Medium.ttf), url(../fonts/OpenSans-Medium.woff);
-    font-weight: 500;
+    src: url(../fonts/OpenSans-SemiBold.ttf), url(../fonts/OpenSans-SemiBold.woff);
+    font-weight: 600;
 }
 
 @font-face {
     font-family: 'Open Sans';
-    src: url(../fonts/OpenSans-SemiBold.ttf), url(../fonts/OpenSans-SemiBold.woff);
-    font-weight: 600;
+    src: url(../fonts/OpenSans-Medium.ttf), url(../fonts/OpenSans-Medium.woff);
+    font-weight: 500;
 }
 
 @font-face {

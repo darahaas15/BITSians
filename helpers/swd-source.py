@@ -58,5 +58,4 @@ for i in range(len(data)):
     data[i] = {title:value for (title, value) in list(zip("ID,year,name,B1,B2,hostel,room".split(","), data[i]))}
 
 import json
-json.dump(data, open("everyone.json", 'w'), separators=(',', ':'))
-open("everyone.js", 'w').write(f"var everyone = {json.dumps(data, separators=(',', ':'))}")
+open("../everyone.js", 'w').write(f"var everyone = {json.dumps(data, separators=(',', ':'))}")

@@ -1,6 +1,6 @@
 from PIL import Image
 
-img = Image.open("images/logo.png").convert("RGBA")
+img = Image.open("../images/logo.png").convert("RGBA")
 
 def apply_padding(img, new_width, new_height):
     data = list(img.getdata())
@@ -26,6 +26,6 @@ img = apply_padding(img, 1400, 1400)
 sizes = (72, 96, 144, 192, 256, 384, 512)
 
 for i in sizes:
-    img.resize((i,i)).save(f"images/logo{i}.png")
+    img.resize((i,i)).save(f"../images/logo{i}.png")
 
-img.resize((192,192)).save("images/apple-touch-icon.png")
+img.resize((192,192)).save("../images/apple-touch-icon.png")
