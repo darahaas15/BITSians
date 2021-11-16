@@ -2,7 +2,7 @@ const log = (text, color = "white") => console.log(`%c${text}`, `color: black; b
 
 const VERSION = 3
 const CURRENT_CACHE = `v${VERSION}`
-const cache_files = "/index.html, /main.css, /main.js, /everyone.js, /images/cancel.png, /images/forward.png, /images/logo.png, /images/select-all.png, /fonts/OpenSans-Bold.ttf, /fonts/OpenSans-Bold.woff, /fonts/OpenSans-ExtraBold.ttf, /fonts/OpenSans-ExtraBold.woff, /fonts/OpenSans-Light.ttf, /fonts/OpenSans-Light.woff, /fonts/OpenSans-Medium.ttf, /fonts/OpenSans-Medium.woff, /fonts/OpenSans-Regular.ttf, /fonts/OpenSans-Regular.woff, /fonts/OpenSans-SemiBold.ttf, /fonts/OpenSans-SemiBold.woff".split(", ")
+const cache_files = "/, /index.html, /main.css, /main.js, /everyone.js, /manifest.json, /images/, /images/filter.png, /images/forward.png, /images/logo.png, /images/select-all.png, /fonts/, /fonts/OpenSans-Light.ttf, /fonts/OpenSans-Light.woff, /fonts/OpenSans-Medium.ttf, /fonts/OpenSans-Medium.woff, /fonts/OpenSans-Regular.ttf, /fonts/OpenSans-Regular.woff, ../fonts/OpenSans-SemiBold.ttf, ../fonts/OpenSans-SemiBold.woff, /fonts/OpenSans-Bold.ttf, /fonts/OpenSans-Bold.woff, /fonts/OpenSans-ExtraBold.ttf, /fonts/OpenSans-ExtraBold.woff".split(", ")
 
 self.addEventListener("install", event => {
     event.waitUntil(
@@ -30,8 +30,6 @@ self.addEventListener("activate", event => {
 
 self.addEventListener("fetch", event => {
     event.respondWith(get_request(event.request))
-    // event.respondWith(get_basic(event.request).catch(err => caches.match(event.request)))
-    // event.respondWith(fetch(event.request).catch(err => caches.match(event.request)))
 });
 
 function get_basic(request) {
@@ -56,18 +54,13 @@ async function get_request(request) {
 
     try {
         log(`Sending Cache Request for ${request.url}`, "yellow")
-        let result = await caches.match(request)
-        if (result.status == 200 || result.ok) {
-            log(`Cache Request for ${request.url} passed`, "greenyellow")
-            return result
-        }
-        else {
-            log(`Cache Request Status for ${request.url}: ${result.status}`, "rgb(255, 128, 128)")
-        }
+        let result = await caches.match(request, {ignoreVary: true, cacheName: CURRENT_CACHE})
+        log(`Cache Request for ${request.url} passed`, "greenyellow")
+        return result
     } catch (err) {
+        console.error(err)
         log(`Cache Request for ${request.url} failed`, "rgb(255, 128, 128)")
     }
 
-    log("Sending 'Not Found' Page", "yellow")
-    return await Promise()
+    return 0
 }
