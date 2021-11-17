@@ -22,10 +22,19 @@ def remove_transparency(img, bkg_color=[0, 0, 0, 255])->None:
 
 # img = apply_padding(img, 1400, 1400)
 
-sizes = (72, 96, 144, 192, 256, 384, 512)
+sizes = (72, 96, 144, 192, 256, 384, 720, 1024)
 
 for i in sizes:
     img.resize((i,i)).save(f"images/logo{i}.png")
 
 remove_transparency(img)
 img.resize((192,192)).save("images/apple-touch-icon.png")
+
+template = """{{
+    "src": "/images/logo{}.png",
+    "type": "image/png",
+    "sizes": "{}x{}"
+}}"""
+output = [template.format(size, size, size) for size in sizes]
+import pyperclip
+pyperclip.copy(",\n".join(output))
