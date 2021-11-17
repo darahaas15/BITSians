@@ -1,6 +1,6 @@
 from PIL import Image
 
-img = Image.open("../images/logo.png").convert("RGBA")
+img = Image.open("images/logo.png").convert("RGBA")
 
 def apply_padding(img, new_width, new_height):
     data = list(img.getdata())
@@ -20,12 +20,12 @@ def remove_transparency(img, bkg_color=[0, 0, 0, 255])->None:
     newdata = list(map(lambda rgba: tuple(bkg_color) if rgba[-1] < 128 else rgba, newdata))
     img.putdata(newdata)
 
-remove_transparency(img)
 img = apply_padding(img, 1400, 1400)
 
 sizes = (72, 96, 144, 192, 256, 384, 512)
 
 for i in sizes:
-    img.resize((i,i)).save(f"../images/logo{i}.png")
+    img.resize((i,i)).save(f"images/logo{i}.png")
 
-img.resize((192,192)).save("../images/apple-touch-icon.png")
+remove_transparency(img)
+img.resize((192,192)).save("images/apple-touch-icon.png")
