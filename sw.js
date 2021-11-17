@@ -8,7 +8,10 @@ self.addEventListener("install", event => {
     event.waitUntil(
         caches
             .open(CURRENT_CACHE)
-            .then(cache => cache.addAll(cache_files))
+            .then(cache => {
+                let promises = cache_files.map(cache_file=>cache.add(cache_file))
+                return Promise.allSettled(promises)
+            })
             .then(self.skipWaiting())
     )
 });
