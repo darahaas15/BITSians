@@ -20,7 +20,7 @@ def remove_transparency(img, bkg_color=[0, 0, 0, 255])->None:
     newdata = list(map(lambda rgba: tuple(bkg_color) if rgba[-1] < 128 else rgba, newdata))
     img.putdata(newdata)
 
-img = apply_padding(img, 1400, 1400)
+# img = apply_padding(img, 1400, 1400)
 
 sizes = (72, 96, 144, 192, 256, 384, 512)
 

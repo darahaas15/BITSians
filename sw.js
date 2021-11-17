@@ -1,6 +1,6 @@
 const log = (text, color = "white") => console.log(`%c${text}`, `color: black; background-color: ${color};`)
 
-const VERSION = 6
+const VERSION = 7
 const CURRENT_CACHE = `v${VERSION}`
 const cache_files = "/, /index.html, /main.css, /main.js, /everyone.js, /manifest.json, /images/, /images/filter.png, /images/forward.png, /images/logo.png, /images/logo192.png, /images/logo512.png, /images/select-all.png, /fonts/, /fonts/OpenSans-Light.ttf, /fonts/OpenSans-Light.woff, /fonts/OpenSans-Medium.ttf, /fonts/OpenSans-Medium.woff, /fonts/OpenSans-Regular.ttf, /fonts/OpenSans-Regular.woff, ../fonts/OpenSans-SemiBold.ttf, ../fonts/OpenSans-SemiBold.woff, /fonts/OpenSans-Bold.ttf, /fonts/OpenSans-Bold.woff, /fonts/OpenSans-ExtraBold.ttf, /fonts/OpenSans-ExtraBold.woff".split(", ")
 
