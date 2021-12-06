@@ -292,6 +292,7 @@ body {
 
 .binary-toggle * {
     user-select: none;
+    pointer-events: none;
 }
 
 :not(.second) > .binary-toggle:first-child {

@@ -41,38 +41,6 @@ function get_basic(request) {
     return fetch(request)
 }
 
-// async function get_request(request) {
-//     if(request.url.includes("network-first")) {
-//         FETCH_TYPE
-//     }
-
-//     try {
-//         log(`Sending Network Request for ${request.url}`, "rgb(0, 128, 255)")
-//         let result = await fetch(request)
-//         if (result.status == 200 || result.ok) {
-//             log(`Network Request for ${request.url} passed`, "greenyellow")
-//             return result
-//         }
-//         else {
-//             log(`Network Request Status for ${request.url}: ${result.status}`, "rgb(255, 128, 128)")
-//         }
-//     } catch (err) {
-//         log(`Network Request for ${request.url} failed`, "rgb(255, 128, 128)")
-//     }
-
-//     try {
-//         log(`Sending Cache Request for ${request.url}`, "yellow")
-//         let result = await caches.match(request, {ignoreVary: true, cacheName: CURRENT_CACHE})
-//         log(`Cache Request for ${request.url} passed`, "greenyellow")
-//         return result
-//     } catch (err) {
-//         console.error(err)
-//         log(`Cache Request for ${request.url} failed`, "rgb(255, 128, 128)")
-//     }
-
-//     return new Response(0)
-// }
-
 async function get_request(request_event) {
     if(request_event.request.url.includes("cache-first")) {
         console.log("Switching to cache first")
@@ -89,7 +57,7 @@ async function get_request(request_event) {
         return get_network_request(request_event).catch(err => get_cache_request(request_event))
     }
     log("Performing Cache Request", "greenyellow")
-    return get_cache_request(request_event)
+    return get_cache_request(request_event).catch(err => get_network_request(request_event))
 }
 
 async function get_cache_request(request_event) {
