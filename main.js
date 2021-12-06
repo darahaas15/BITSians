@@ -20,11 +20,23 @@ const gid = id=>document.getElementById(id)
 const logtime = (stime, process, color="greenyellow")=>print(`%c${process}%c completed in %c${new Date()-stime}ms%c`, "background-color: white; color: black; font-weight: 700;", "", `color: ${color};`, "")
 
 var filtered = []
-const MAX_RESULT_COUNT = 200
+var SORTING = "relevant"
+const MAX_RESULT_COUNT = 250
 
 window.onload = ()=>{
     // Setup toggles
     setup_toggles()
+
+    // Setup binary toggles
+    setup_binary_toggles()
+    // If network first, set that to selected in the binary toggle
+    if(localStorage.getItem("fetch-type") == "cache-first") {
+        document.getElementById("fetch-type-toggle").classList.add("second")
+    }
+    else if(localStorage.getItem("fetch-type") == null) {
+        localStorage.setItem("fetch-type", "network-first")
+    }
+
     // Setup 'Select all' buttons
     setup_select_all()
 
@@ -47,6 +59,25 @@ function setup_toggles() {
     })
 }
 
+function setup_binary_toggles() {
+    [...document.getElementsByClassName("binary-toggle-container")].forEach(toggle_container=>{
+        [...toggle_container.getElementsByClassName("binary-toggle")].forEach((toggle, index)=>{
+            toggle.onclick = event=>{
+                let parent = toggle.parentElement
+    
+                if((index==1 && parent.classList.contains("second")) || (index==0 && !parent.classList.contains("second"))) return
+    
+                if(index == 0) {
+                    parent.classList.remove("second")
+                }
+                else {
+                    parent.classList.add("second")
+                }
+            }
+        })
+    })
+}
+
 function setup_select_all() {
     [...document.getElementsByClassName("select-all-button")].forEach(button=>{
         button.onclick = event=>{
@@ -62,6 +93,29 @@ function setup_select_all() {
             apply_filters()
         }
     })
+}
+
+function change_fetch_type(event) {
+    let toggle_name = event.target.getAttribute("toggle-name")
+    if(toggle_name == "cache") {
+        fetch("cache-first")
+        localStorage.setItem("fetch-type", "cache-first")
+    }
+    else {
+        fetch("network-first")
+        localStorage.setItem("fetch-type", "network-first")
+    }
+}
+
+function change_sorting(event) {
+    let toggle_name = event.target.getAttribute("toggle-name")
+    if(toggle_name == "relevant") {
+        SORTING = "relevant"
+    }
+    else {
+        SORTING = "room"
+    }
+    resolve_query()
 }
 
 var filters = []
@@ -111,7 +165,8 @@ function resolve_query() {
     else {
         results = filtered.map(person=>[scorer_name(query, person["name"]), person])
     }
-    sort_multiple(results, element=>[-element[0][0], -element[0][1], element[0][2]])
+    if(SORTING == "relevant") sort_multiple(results, element=>[-element[0][0], -element[0][1], element[0][2]])
+    else sort_multiple(results, element=>[parseFloat(element[1]["room"])])
     results = results.filter(element=>element[0][0]).slice(0, MAX_RESULT_COUNT)
     results = results.map(([score, person])=>person)
 
@@ -130,7 +185,7 @@ function display_results(results) {
         <div class="year">${person["year"]}</div>
         <div class="info">
             <div class="name" style="font-size: ${Math.min(1.5, lerp(max(person["name"].split(/\s+/), key=e=>e.length).length, 7, 15, 1.5, 0.925))}em">${person["name"]}</div>
-            <div class="branch">${branch_codes[person["B1"]]}</div>
+            <div class="branch">${branch_codes[person["B1"]]?branch_codes[person["B1"]]:""}</div>
             <div class="branch">${branch_codes[person["B2"]]?branch_codes[person["B2"]]:""}</div>
             <div class="student-id">${person["ID"]}</div>
         </div>

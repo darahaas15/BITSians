@@ -235,6 +235,104 @@ body {
     color: black;
 }
 
+/* Binary Toggles */
+
+.binary-toggle-wrapper {
+    background-color: rgb(25, 25, 25);
+    padding: 10px;
+    border-radius: 0.5em;
+}
+
+.binary-toggle-container {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    /* overflow: hidden; */
+    border-radius: 0.5em;
+}
+
+.binary-toggle-container > * {
+    width: 100%;
+}
+
+.binary-toggle-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    border-radius: inherit;
+    transition: left 250ms ease;
+}
+
+#sorting-toggle::before {
+    background-color: rgb(255, 192, 64);
+}
+
+#fetch-type-toggle::before {
+    background-color: rgb(64, 192, 255);
+}
+
+.binary-toggle-container.second::before {
+    left: 50%;
+}
+
+.binary-toggle {
+    cursor: pointer;
+    z-index: 1;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    transition: color 250ms ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.binary-toggle * {
+    user-select: none;
+}
+
+:not(.second) > .binary-toggle:first-child {
+    color: black;
+}
+
+.second > .binary-toggle:last-child {
+    color: black;
+}
+
+.binary-toggle > header {
+    font-weight: 700;
+    font-size: 0.5em;
+    text-transform: uppercase;
+
+    text-align: center;
+}
+
+.binary-toggle > img {
+    filter: invert(1);
+    height: 2em;
+    width: 2em;
+}
+
+:not(.second) > .binary-toggle:first-child > img {
+    filter: none;
+}
+
+.second > .binary-toggle:last-child > img {
+    filter: none;
+}
+
+.binary-toggle > p {
+    margin: 0;
+    /* text-transform: uppercase; */
+    font-size: 0.5em;
+    text-align: center;
+}
+
+/* Footer for credits and shit */
+
 .footer {
     font-size: 0.75em;
     text-align: center;

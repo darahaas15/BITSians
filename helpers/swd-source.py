@@ -1,10 +1,14 @@
 import re
 
-data = open("swd-source.txt").read()
+data = open("helpers/swd_source.txt").read()
 
 data = re.findall(r'<tr>(.*?)</tr>', data)
 data = list(map(lambda x: re.findall(r'<td[^>]*?>(.*?)</td>', x), data))
 data = list(map(lambda x: x[1:], data))
+
+for i in data:
+    if i[-1] in ["FD", "ISA", "HD"]:
+        del i[-2:]
 
 people = {}
 for i in data:
@@ -20,6 +24,9 @@ print(len(data))
 print(len(people))
 data = list(people.values())
 data.sort(key=lambda x:x[0])
+
+# print(data[-1])
+# exit()
 
 def camel_case(name)->str:
     return " ".join(word.capitalize() for word in name.split())
@@ -57,5 +64,11 @@ for i in data:
 for i in range(len(data)):
     data[i] = {title:value for (title, value) in list(zip("ID,year,name,B1,B2,hostel,room".split(","), data[i]))}
 
+for person in data:
+    if "L" in person["room"] or "R" in person["room"]:
+        room_number = re.findall(r'\d+', person["room"])[0]
+        post = re.findall(r"[LR]", person["room"])[0]
+        person["room"] = f"{room_number} {post}"
+
 import json
-open("../everyone.js", 'w').write(f"var everyone = {json.dumps(data, separators=(',', ':'))}")
+open("everyone.js", 'w').write(f"var everyone = {json.dumps(data, separators=(',', ':'))}")

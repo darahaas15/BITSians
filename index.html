@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +14,7 @@
     <link rel="manifest" href="manifest.json">
     <script>
         // If browser supports service workers
-        if("serviceWorker" in navigator) {
+        if ("serviceWorker" in navigator) {
             navigator.serviceWorker.register("sw.js")
         }
     </script>
@@ -21,32 +22,71 @@
     <!-- CSS -->
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
     <div id="page">
         <div id="filters-tab">
             <header>FILTERS<img onclick="close_filters_tab()" src="images/forward.png"></header>
             <div id="filters-container">
                 <div class="filter-section" category="year">
-                    <header><category>Year</category><img src="images/select-all.png" alt="" class="select-all-button"></header>
+                    <header>
+                        <category>Year</category><img src="images/select-all.png" alt="" class="select-all-button">
+                    </header>
                     <!-- After element here for click to select all -->
-                    <div class="filter-toggle-container"><div class="filter-toggle" value="2015">2015</div><div class="filter-toggle" value="2016">2016</div><div class="filter-toggle" value="2017">2017</div><div class="filter-toggle" value="2018">2018</div><div class="filter-toggle" value="2019">2019</div><div class="filter-toggle" value="2020">2020</div></div>
+                    <div class="filter-toggle-container"><div class="filter-toggle" value="2015">2015</div><div class="filter-toggle" value="2016">2016</div><div class="filter-toggle" value="2017">2017</div><div class="filter-toggle" value="2018">2018</div><div class="filter-toggle" value="2019">2019</div><div class="filter-toggle" value="2020">2020</div><div class="filter-toggle" value="2021">2021</div></div>
                 </div>
                 <div class="filter-section" category="hostel">
-                    <header><category>Hostel</category><img src="images/select-all.png" alt="" class="select-all-button"></header>
+                    <header>
+                        <category>Hostel</category><img src="images/select-all.png" alt="" class="select-all-button">
+                    </header>
                     <!-- After element here for click to select all -->
-                    <div class="filter-toggle-container"><div class="filter-toggle" value="AH1">AH1</div><div class="filter-toggle" value="AH2">AH2</div><div class="filter-toggle" value="AH3">AH3</div><div class="filter-toggle" value="AH4">AH4</div><div class="filter-toggle" value="AH5">AH5</div><div class="filter-toggle" value="AH6">AH6</div><div class="filter-toggle" value="AH7">AH7</div><div class="filter-toggle" value="AH8">AH8</div><div class="filter-toggle" value="AH9">AH9</div><br><div class="filter-toggle" value="CH1">CH1</div><div class="filter-toggle" value="CH2">CH2</div><div class="filter-toggle" value="CH3">CH3</div><div class="filter-toggle" value="CH4">CH4</div><div class="filter-toggle" value="CH5">CH5</div><div class="filter-toggle" value="CH6">CH6</div><div class="filter-toggle" value="CH7">CH7</div></div>
+                    <div class="filter-toggle-container"><div class="filter-toggle" value="AH1">AH1</div><div class="filter-toggle" value="AH2">AH2</div><div class="filter-toggle" value="AH3">AH3</div><div class="filter-toggle" value="AH4">AH4</div><div class="filter-toggle" value="AH5">AH5</div><div class="filter-toggle" value="AH6">AH6</div><div class="filter-toggle" value="AH7">AH7</div><div class="filter-toggle" value="AH8">AH8</div><div class="filter-toggle" value="AH9">AH9</div><br><div class="filter-toggle" value="CH1">CH1</div><div class="filter-toggle" value="CH2">CH2</div><div class="filter-toggle" value="CH3">CH3</div><div class="filter-toggle" value="CH4">CH4</div><div class="filter-toggle" value="CH5">CH5</div><div class="filter-toggle" value="CH6">CH6</div><div class="filter-toggle" value="CH7">CH7</div><br><div class="filter-toggle" value="DH1">DH1</div><div class="filter-toggle" value="DH2">DH2</div><div class="filter-toggle" value="DH3">DH3</div><div class="filter-toggle" value="DH4">DH4</div><div class="filter-toggle" value="DH5">DH5</div><div class="filter-toggle" value="DH6">DH6</div></div>
                 </div>
                 <div class="filter-section" category="B1">
-                    <header><category>Primary Degree</category><img src="images/select-all.png" alt="" class="select-all-button"></header>
+                    <header>
+                        <category>Primary Degree</category><img src="images/select-all.png" alt=""
+                            class="select-all-button">
+                    </header>
                     <!-- After element here for click to select all -->
                     <div class="filter-toggle-container"><div class="filter-toggle" value="A1">B.E. Chemical</div><div class="filter-toggle" value="A3">B.E. EEE</div><div class="filter-toggle" value="A4">B.E. Mechanical</div><div class="filter-toggle" value="A7">B.E. CSE</div><div class="filter-toggle" value="A8">B.E. EnI</div><div class="filter-toggle" value="AA">B.E. ECE</div><div class="filter-toggle" value="PHD">PHD</div><div class="filter-toggle" value="H">M.E.</div></div>
                 </div>
                 <div class="filter-section" category="B2">
-                    <header><category>Secondary Degree</category><img src="images/select-all.png" alt="" class="select-all-button"></header>
+                    <header>
+                        <category>Secondary Degree</category><img src="images/select-all.png" alt=""
+                            class="select-all-button">
+                    </header>
                     <!-- After element here for click to select all -->
                     <div class="filter-toggle-container"><div class="filter-toggle" value="B1">M.Sc. Biology</div><div class="filter-toggle" value="B2">M.Sc. Chemistry</div><div class="filter-toggle" value="B3">M.Sc. Economics</div><div class="filter-toggle" value="B4">M.Sc. Math</div><div class="filter-toggle" value="B5">M.Sc. Physics</div></div>
                 </div>
-                <!-- <div class="footer">"I have a big dick" - Ansh, verified by Aryan, produced by Varun V</div> -->
+                <div class="binary-toggle-wrapper">
+                    <div id="sorting-toggle" class="binary-toggle-container" onclick="change_sorting(event)">
+                        <div class="binary-toggle" toggle-name="relevant">
+                            <header>Sort by relevance</header>
+                            <img src="images/relevant.png" alt="">
+                            <p>Ranks results based on your search query</p>
+                        </div>
+                        <div class="binary-toggle" toggle-name="room">
+                            <header>Sort by room number</header>
+                            <img src="images/sort.png" alt="">
+                            <p>Useful when you want the occupant list of a hostel</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="binary-toggle-wrapper">
+                    <div id="fetch-type-toggle" class="binary-toggle-container" onclick="change_fetch_type(event)">
+                        <div class="binary-toggle" toggle-name="network">
+                            <header>Automatic Updates</header>
+                            <img src="images/refresh.png" alt="">
+                            <p>Automatically updates the app, but it opens slightly slower</p>
+                        </div>
+                        <div class="binary-toggle" toggle-name="cache">
+                            <header>Quick Loading</header>
+                            <img src="images/thunder.png" alt="">
+                            <p>App opens quickly, but doesn't automatically update</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">Made by Aryan Pingle</div>
             </div>
         </div>
         <!-- \n*\s*(<div class="filter-toggle".*?>.*?</div>)\n\s+ -->
@@ -65,4 +105,5 @@
     <script src="everyone.js"></script>
     <script src="main.js"></script>
 </body>
+
 </html>
