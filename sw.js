@@ -54,10 +54,16 @@ async function get_request(request_event) {
     }
     if(FETCH_TYPE == "network-first") {
         log("Performing Network Request", "cyan")
-        return get_network_request(request_event).catch(err => get_cache_request(request_event))
+        return get_network_request(request_event).catch(err => {
+            log("Network request failed, attempting Cache request", "rgb(255, 128, 0)")
+            return get_cache_request(request_event)
+        })
     }
     log("Performing Cache Request", "greenyellow")
-    return get_cache_request(request_event).catch(err => get_network_request(request_event))
+    return get_cache_request(request_event).catch(err => {
+        log("Cache request failed, attempting Network request", "rgb(255, 128, 0)")
+        return get_network_request(request_event)
+    })
 }
 
 async function get_cache_request(request_event) {
