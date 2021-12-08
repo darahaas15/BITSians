@@ -12,7 +12,7 @@ for i in data:
 
 people = {}
 for i in data:
-    if (i[0].startswith("2020") and "FD-FirstYear" in i) or int(i[0][:4]) < 2015 or i[-1] == "Permanent Withd" or "withdrawal" in i[-1].lower() or "Temp Withd".lower() in i[-1].lower() or "TS" in i[0] or "aspirant" in i[-1].lower() or "HD" in i[0]:
+    if (i[0].startswith("2020") and "FD-FirstYear" in i) or int(i[0][:4]) < 2015 or i[-1] == "Permanent Withd" or "withdrawal" in i[-1].lower() or "Temp Withd".lower() in i[-1].lower() or "TS" in i[0] or "aspirant" in i[-1].lower():
         # De-registered or updated, so ignore them
         pass
     else:
