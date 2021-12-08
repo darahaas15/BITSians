@@ -3,12 +3,16 @@ const log = (text, color = "white") => console.log(`%c${text}`, `color: black; b
 const VERSION = 10
 const CURRENT_CACHE = `v${VERSION}`
 const cache_files = "/, /index.html, /main.css, /main.js, /everyone.js, /manifest.json, /images/, /images/filter.png, /images/forward.png, /images/refresh.png, /images/thunder.png, /images/relevant.png, /images/sort.png, /images/logo.png, /images/logo72.png, /images/logo96.png, /images/logo144.png, /images/logo192.png, /images/logo256.png, /images/logo384.png, /images/logo720.png, /images/logo1024.png, /images/select-all.png, /fonts/, /fonts/OpenSans-Light.ttf, /fonts/OpenSans-Light.woff, /fonts/OpenSans-Medium.ttf, /fonts/OpenSans-Medium.woff, /fonts/OpenSans-Regular.ttf, /fonts/OpenSans-Regular.woff, /fonts/OpenSans-SemiBold.ttf, /fonts/OpenSans-SemiBold.woff, /fonts/OpenSans-Bold.ttf, /fonts/OpenSans-Bold.woff, /fonts/OpenSans-ExtraBold.ttf, /fonts/OpenSans-ExtraBold.woff".split(", ")
-var FETCH_TYPE = "network-first"
+var FETCH_TYPE = null
 
 self.addEventListener("install", event => {
     event.waitUntil(
         caches
             .open(CURRENT_CACHE)
+            .then(cache => {
+                cache.put("fetch-type", new Response("network-first"))
+                return cache
+            })
             .then(cache => {
                 let promises = cache_files.map(cache_file=>cache.add(cache_file))
                 return Promise.allSettled(promises)
@@ -42,16 +46,24 @@ function get_basic(request) {
 }
 
 async function get_request(request_event) {
+    if(!FETCH_TYPE) {
+        FETCH_TYPE = await caches.match("fetch-type").then(response=>response.text())
+        console.log(`FETCH_TYPE set from cache: ${FETCH_TYPE}`)
+    }
+
     if(request_event.request.url.includes("cache-first")) {
         console.log("Switching to cache first")
         FETCH_TYPE = "cache-first"
+        caches.open(CURRENT_CACHE).then(cache=>cache.put('fetch-type', new Response(FETCH_TYPE)))
         return new Response(0)
     }
-    if(request_event.request.url.includes("network-first")) {
+    else if(request_event.request.url.includes("network-first")) {
         console.log("Switching to network first")
         FETCH_TYPE = "network-first"
+        caches.open(CURRENT_CACHE).then(cache=>cache.put('fetch-type', new Response(FETCH_TYPE)))
         return new Response(0)
     }
+
     if(FETCH_TYPE == "network-first") {
         log("Performing Network Request", "cyan")
         return get_network_request(request_event).catch(err => {
