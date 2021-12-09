@@ -47,6 +47,11 @@ window.onload = ()=>{
     resolve_query()
     // Set key event for query input
     query_input.onkeyup = resolve_query;
+
+    // Set Version Number
+    window.caches.keys().then(([version])=>{
+        document.getElementById("footer").innerHTML = `${version} • Made by Aryan Pingle`
+    })
 }
 
 function setup_toggles() {

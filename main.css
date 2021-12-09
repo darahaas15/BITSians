@@ -334,7 +334,7 @@ body {
 
 /* Footer for credits and shit */
 
-.footer {
+#footer {
     font-size: 0.75em;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.5);
