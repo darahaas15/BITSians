@@ -1,4 +1,4 @@
-const print = console.log
+var print = console.log
 function * range(start, end) {
     while(start != end) yield start++
 }
@@ -112,13 +112,16 @@ function change_fetch_type(event) {
     }
 }
 
-function change_sorting(event) {
-    let toggle_name = event.target.getAttribute("toggle-name")
-    if(toggle_name == "relevant") {
-        SORTING = "relevant"
+function change_sorting(sorting_button) {
+    // let toggle_name = event.target.getAttribute("toggle-name")
+    // childNodes[2] because the initial newline in the html is a text node
+    if(SORTING == "relevant") {
+        SORTING = "room"
+        sorting_button.childNodes[2].nodeValue = "Sorted by Room Number"
     }
     else {
-        SORTING = "room"
+        SORTING = "relevant"
+        sorting_button.childNodes[2].nodeValue = "Sorted by Relevance"
     }
     resolve_query()
 }
