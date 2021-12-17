@@ -1,6 +1,6 @@
 import re
 
-data = open("helpers/swd_source.txt").read()
+data = open("source/swd_source.txt").read()
 
 data = re.findall(r'<tr>(.*?)</tr>', data)
 data = list(map(lambda x: re.findall(r'<td[^>]*?>(.*?)</td>', x), data))
