@@ -201,32 +201,6 @@ function display_results(results) {
 }
 
 /**
- * Use this instead of relying on regex
- */
-
-function break_name(name, threshold=9) {
-    const temp = name.split(/\s+/).reduce((acc, val) => {
-        // Get the number of nested arrays
-        const currIndex = acc.length - 1;
-        // Join up the last array and get its length
-        const currLen = acc[currIndex].join(' ').length;
-
-        // If the length of that content and the new word
-        // in the iteration exceeds 20 chars push the new
-        // word to a new array
-        if (currLen + val.length > threshold) {
-            acc.push([val]);
-        }
-        // otherwise add it to the existing array
-        else {
-            acc[currIndex].push(val);
-        }
-        return acc;
-    }, [[]]);
-    print(temp.map(arr=>arr.join(" ")).join("<br>"))
-}
-
-/**
  * Matches a query to the given text and returns its score
  * @returns List of 3 scores - [number of character matches, longest common substring, start index of LCS]
  */
