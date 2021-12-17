@@ -30,11 +30,17 @@ for i in sizes:
 remove_transparency(img)
 img.resize((192,192)).save("images/apple-touch-icon.png")
 
-template = """{{
-    "src": "/images/logo{}.png",
-    "type": "image/png",
-    "sizes": "{}x{}"
-}}"""
-output = [template.format(size, size, size) for size in sizes]
+template = """\t\t{{
+\t\t\t"src": "/images/logo{}.png",
+\t\t\t"type": "image/png",
+\t\t\t"sizes": "{}x{}",
+\t\t\t"purpose": "{}"
+\t\t}}"""
+output = [template.format(size, size, size, purpose) for size in sizes for purpose in ["any", "maskable"]]
 import pyperclip
 pyperclip.copy(",\n".join(output))
+import re
+
+src = open("manifest.json").read()
+src = re.sub(r'(?<="icons": )\[.*?\]', "[\n" + ",\n".join(output) + "\n\t]", src, flags=re.DOTALL)
+open("manifest.json", 'w').write(src)
