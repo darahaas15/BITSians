@@ -85,18 +85,6 @@
 			"type": "image/png",
 			"sizes": "720x720",
 			"purpose": "maskable"
-		},
-		{
-			"src": "/images/logo1024.png",
-			"type": "image/png",
-			"sizes": "1024x1024",
-			"purpose": "any"
-		},
-		{
-			"src": "/images/logo1024.png",
-			"type": "image/png",
-			"sizes": "1024x1024",
-			"purpose": "maskable"
 		}
 	],
     "start_url": "/index.html",
