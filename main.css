@@ -205,13 +205,17 @@ body {
     align-items: center;
 }
 
-.filter-section > header > img {
+.filter-section > header > button {
+    all: unset;
+    display: block;
     filter: invert(0.5);
     height: .75em;
+    aspect-ratio: 1 / 1;
+    background: url(images/select-all.png) 0/cover no-repeat;
 }
 
 @media (min-width: 985px) {
-    .filter-section > header > img {
+    .filter-section > header > button {
         cursor: pointer;
     }
 }
