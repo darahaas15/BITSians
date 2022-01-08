@@ -1,7 +1,8 @@
 template = """@font-face {{
     font-family: 'Open Sans';
-    src: url(../fonts/OpenSans-{}.ttf), url(../fonts/OpenSans-{}.woff);
+    src: url('../fonts/OpenSans-{}.ttf') format('ttf'), url('../fonts/OpenSans-{}.woff') format('woff');
     font-weight: {};
+    font-display: swap;
 }}"""
 
 codes = """Light 300
