@@ -186,16 +186,16 @@ var branch_codes = {'A1': 'B.E. Chemical', 'A3': 'B.E. EEE', 'A4': 'B.E. Mechani
 function display_results(results) {
     document.getElementById("results-container").innerHTML = results.map(person=>
     `<div class="student">
-        <div class="place">
-            <div class="hostel">${person["hostel"]}</div>
-            <div class="room">${person["room"]}</div>
+        <div class="student-place">
+            <div class="student_place__hostel">${person["hostel"]}</div>
+            <div class="student_place__room">${person["room"]}</div>
         </div>
-        <div class="year">${person["year"]}</div>
-        <div class="info">
-            <div class="name" style="font-size: ${Math.min(1.5, lerp(max(person["name"].split(/\s+/), key=e=>e.length).length, 7, 15, 1.5, 0.925))}em">${person["name"]}</div>
-            <div class="branch">${branch_codes[person["B1"]]?branch_codes[person["B1"]]:""}</div>
-            <div class="branch">${branch_codes[person["B2"]]?branch_codes[person["B2"]]:""}</div>
-            <div class="student-id">${person["ID"]}</div>
+        <div class="student-year">${person["year"]}</div>
+        <div class="student-info">
+            <div class="student-info__name" style="font-size: ${Math.min(1.5, lerp(max(person["name"].split(/\s+/), key=e=>e.length).length, 7, 15, 1.5, 0.925))}em">${person["name"]}</div>
+            <div class="student-info__branch">${branch_codes[person["B1"]]?branch_codes[person["B1"]]:""}</div>
+            <div class="student-info__branch">${branch_codes[person["B2"]]?branch_codes[person["B2"]]:""}</div>
+            <div class="student-info__id">${person["ID"]}</div>
         </div>
     </div>`).join("")
 }
