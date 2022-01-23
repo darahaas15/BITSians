@@ -20,6 +20,7 @@ const gid = id=>document.getElementById(id)
 const logtime = (stime, process, color="greenyellow")=>print(`%c${process}%c completed in %c${new Date()-stime}ms%c`, "background-color: white; color: black; font-weight: 700;", "", `color: ${color};`, "")
 
 var filtered = []
+var results = []
 var SORTING = "relevant"
 const MAX_RESULT_COUNT = 250
 var everyone = []
@@ -123,11 +124,11 @@ function change_sorting(sorting_button) {
     // childNodes[2] because the initial newline in the html is a text node
     if(SORTING == "relevant") {
         SORTING = "room"
-        sorting_button.childNodes[2].nodeValue = "Sorted by Room Number"
+        sorting_button.childNodes[2].nodeValue = "Sort by Relevance"
     }
     else {
         SORTING = "relevant"
-        sorting_button.childNodes[2].nodeValue = "Sorted by Relevance"
+        sorting_button.childNodes[2].nodeValue = "Sort by Room Number"
     }
     resolve_query()
 }
@@ -156,7 +157,9 @@ function load_filters() {
  */
 
 function apply_filters() {
-    load_filters(); filtered = everyone.filter(person=>filters.filter(([category, queries])=>queries.includes(person[category])).length == filters.length); resolve_query();
+    load_filters()
+    filtered = everyone.filter(person=>filters.filter(([category, queries])=>queries.includes(person[category])).length == filters.length)
+    resolve_query()
 }
 
 function close_filters_tab() {
@@ -169,7 +172,7 @@ function show_filters_tab() {
 
 function resolve_query() {
     let query = query_input.value.replace(/\s+/g, ' ')
-    let results = []
+    results = []
     if(/^\d{1,3}$/.test(query)) {
         results = filtered.map(person=>[scorer_room(query, person["room"]), person])
     }
@@ -187,7 +190,7 @@ function resolve_query() {
     display_results(results)
 }
 
-var branch_codes = {'A1': 'B.E. Chemical', 'A3': 'B.E. EEE', 'A4': 'B.E. Mechanical', 'A7': 'B.E. CSE', 'A8': 'B.E. EnI', 'AA': 'B.E. ECE', 'B1': 'M.Sc. Biology', 'B2': 'M.Sc. Chemistry', 'B3': 'M.Sc. Economics', 'B4': 'M.Sc. Maths', 'B5': 'M.Sc. Physics', "PHD": "PHD", "H": "Higher Degree"}
+var branch_codes = {'A1': 'B.E. Chemical', 'A3': 'B.E. EEE', 'A4': 'B.E. Mechanical', 'A7': 'B.E. CSE', 'A8': 'B.E. EnI', 'AA': 'B.E. ECE', 'B1': 'M.Sc. Biology', 'B2': 'M.Sc. Chemistry', 'B3': 'M.Sc. Economics', 'B4': 'M.Sc. Maths', 'B5': 'M.Sc. Physics', "PHD": "PHD", "H": "Higher Degree", "": ""}
 
 function display_results(results) {
     document.getElementById("results-container").innerHTML = results.map(person=>
@@ -258,4 +261,15 @@ function scorer_room(query, text) {
         return [3, 3, 0]
     }
     return [0, 0, 0]
+}
+
+// Download the data
+
+function download_results() {
+    let csv_content = "data:text/csv;charset=utf-8,"
+    let titles = ["Year", "ID", "Name", "Primary Degree", "Secondary Degree", "Hostel", "Room No"]
+    csv_content += titles.join(",") + "\n"
+    csv_content += results.map(person => [person["year"], person["ID"], person["name"], branch_codes[person["B1"]], branch_codes[person["B2"]], person["hostel"], person["room"]].join(",")).join("\n")
+    let encoded_uri = encodeURI(csv_content)
+    window.open(encoded_uri)
 }

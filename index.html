@@ -86,9 +86,15 @@
                 <img id="filter-img" onclick="show_filters_tab()" src="images/filter.png">
                 <input type="text" id="query" placeholder="Search" autocomplete="off" spellcheck="false">
             </header>
-            <div id="sorting-button" onclick="change_sorting(this)">
-                <img src="images/sort.png" alt="">
-                Sorted by Relevance
+            <div id="result-options">
+                <div class="result-option" id="download-button" onclick="download_results()">
+                    <img src="images/download.png" alt="">
+                    Download
+                </div>
+                <div class="result-option" id="sorting-button" onclick="change_sorting(this)">
+                    <img src="images/sort.png" alt="">
+                    Sort by Room Number
+                </div>
             </div>
             <div id="results-container">
             </div>

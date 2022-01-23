@@ -20,9 +20,9 @@ String.prototype.containsAny = function (substrings=[]) {
 }
 
 // For Debugging
-STOP_CACHING = false
+STOP_CACHING = false // Set to true while testing, false for public builds
 var log = (text, color="white") => console.log(`%c${text}`, `color: black; background-color: ${color};`)
-// log = e => e
+log = e => e // Uncomment for public builds
 
 self.addEventListener("install", event => {
     event.waitUntil((async () => {
@@ -78,6 +78,10 @@ async function get_request(request_event) {
         DOCUMENT_FETCH_TYPE = "network-first"
         DOCUMENT_CACHE.put('fetch-type', new Response(DOCUMENT_FETCH_TYPE))
         return new Response(0)
+    }
+    
+    if(DOCUMENT_CACHE == null || RESOURCE_CACHE == null) {
+        await load_both_caches()
     }
     
     // Check if the request is for a document

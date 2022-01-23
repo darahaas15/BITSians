@@ -372,18 +372,29 @@ body {
     }
 }
 
-#results-tab > #sorting-button {
+#result-options {
     margin: 0;
-    position: relative;
-    align-self: flex-end;
-    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 0.75em;
+}
+
+#result-options > .result-option {
+    position: relative;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#sorting-button::after {
+@media (min-width: 720px) {
+    #result-options > .result-option {
+        cursor: pointer;
+    }
+}
+
+.result-option::after {
     content: '';
     position: absolute;
     top: 0;
@@ -394,10 +405,11 @@ body {
     mix-blend-mode: multiply;
 }
 
-#sorting-button > img {
+.result-option > img {
     filter: invert(1);
     aspect-ratio: 1 / 1;
     height: 1em;
+    margin-right: 0.5em;
 }
 
 #results-tab > #results-container {
