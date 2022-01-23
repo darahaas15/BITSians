@@ -22,8 +22,14 @@ const logtime = (stime, process, color="greenyellow")=>print(`%c${process}%c com
 var filtered = []
 var SORTING = "relevant"
 const MAX_RESULT_COUNT = 250
+var everyone = []
 
-window.onload = ()=>{
+setup();
+
+async function setup() {
+    // Get the json data
+    everyone = await fetch("everyone.json").then(data => data.json())
+
     // Setup toggles
     setup_toggles()
 
@@ -46,11 +52,11 @@ window.onload = ()=>{
     // Initial call to show results
     resolve_query()
     // Set key event for query input
-    query_input.onkeyup = resolve_query;
+    query_input.onkeyup = resolve_query
 
     // Set Version Number
-    window.caches.keys().then(([version])=>{
-        document.getElementById("footer").innerHTML = `${version} • Made by Aryan Pingle`
+    window.caches.keys().then(cache_names => {
+        document.getElementById("footer").innerHTML = `${cache_names.filter(name => name.startsWith("RES"))[0].substring(3)} • Made by Aryan Pingle`
     })
 }
 
@@ -193,7 +199,7 @@ function display_results(results) {
         <div class="student-year">${person["year"]}</div>
         <div class="student-info">
             <div class="student-info__name" style="font-size: ${Math.min(1.5, lerp(max(person["name"].split(/\s+/), key=e=>e.length).length, 7, 15, 1.5, 0.925))}em">${person["name"]}</div>
-            <div class="student-info__branch">${branch_codes[person["B1"]]?branch_codes[person["B1"]]:""}</div>
+            <div class="student-info__branch">${person["B1"]?branch_codes[person["B1"]]:""}</div>
             <div class="student-info__branch">${branch_codes[person["B2"]]?branch_codes[person["B2"]]:""}</div>
             <div class="student-info__id">${person["ID"]}</div>
         </div>
