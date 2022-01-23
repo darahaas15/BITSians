@@ -184,10 +184,10 @@ function resolve_query() {
     }
     if(SORTING == "relevant") sort_multiple(results, element=>[-element[0][0], -element[0][1], element[0][2]])
     else sort_multiple(results, element=>[parseFloat(element[1]["room"])])
-    results = results.filter(element=>element[0][0]).slice(0, MAX_RESULT_COUNT)
+    results = results.filter(element=>element[0][0])
     results = results.map(([score, person])=>person)
 
-    display_results(results)
+    display_results(results.slice(0, MAX_RESULT_COUNT))
 }
 
 var branch_codes = {'A1': 'B.E. Chemical', 'A3': 'B.E. EEE', 'A4': 'B.E. Mechanical', 'A7': 'B.E. CSE', 'A8': 'B.E. EnI', 'AA': 'B.E. ECE', 'B1': 'M.Sc. Biology', 'B2': 'M.Sc. Chemistry', 'B3': 'M.Sc. Economics', 'B4': 'M.Sc. Maths', 'B5': 'M.Sc. Physics', "PHD": "PHD", "H": "Higher Degree", "": ""}
