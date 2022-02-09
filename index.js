@@ -215,8 +215,8 @@ function display_results(results) {
     document.getElementById("results-container").innerHTML = results.map(person=>
     `<div class="student">
         <div class="student-place">
-            <div class="student_place__hostel">${person["hostel"]}</div>
-            <div class="student_place__room">${person["room"]}</div>
+            <div class="student-place__hostel">${person["hostel"]}</div>
+            <div class="student-place__room">${person["room"]}</div>
         </div>
         <div class="student-year">${person["year"]}</div>
         <div class="student-info">
