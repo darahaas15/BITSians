@@ -24,6 +24,7 @@ html, body {
 }
 
 body {
+    min-height: 100%;
     background-color: black;
     color: whitesmoke;
     margin: 0;
@@ -498,6 +499,7 @@ body {
 }
 
 #results-tab > header {
+    flex: 0 0 auto;
     font-weight: 900;
     font-size: 2em;
     padding: 0.25em;
@@ -551,6 +553,7 @@ body {
 }
 
 #result-options {
+    flex: 0 0 auto;
     margin: 0;
     display: flex;
     justify-content: space-between;
