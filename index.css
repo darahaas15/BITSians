@@ -124,6 +124,7 @@ body {
 
 .feature__icon {
     width: 2em;
+    height: 2em;
     aspect-ratio: 1 / 1;
     background-position: center;
     background-size: cover;
