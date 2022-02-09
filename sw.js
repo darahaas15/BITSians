@@ -22,7 +22,7 @@ String.prototype.containsAny = function (substrings=[]) {
 // For Debugging
 STOP_CACHING = false // Set to true while testing, false for public builds
 var log = (text, color="white") => console.log(`%c${text}`, `color: black; background-color: ${color};`)
-log = e => e // Uncomment for public builds
+// log = e => e // Uncomment for public builds
 
 self.addEventListener("install", event => {
     event.waitUntil((async () => {
