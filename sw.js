@@ -10,7 +10,7 @@ const DOCUMENT_CACHE_NAME = `DOC`
 var DOCUMENT_CACHE = null
 var DOCUMENT_FETCH_TYPE = null // For the user to select
 // Resource Cache is a cache of almost always static resources - images, fonts, and everything in the Texts folder
-const RESOURCE_VERSION = 3.00
+const RESOURCE_VERSION = 4.00
 const RESOURCE_CACHE_NAME = `RESv${RESOURCE_VERSION.toFixed(2)}`
 var RESOURCE_CACHE = null
 
@@ -85,7 +85,7 @@ async function get_request(request_event) {
     }
     
     // Check if the request is for a document
-    if(url.match(/\/$/) || url.containsAny([".html", ".js", ".css"]) && !url.includes(".json")) {
+    if(url.match(/\/$/) || url.containsAny([".html", ".js", ".css"]) && !url.includes(".json") && !url.includes("apis.google.com")) {
         /**
         * So here's the game plan:
         * Check if a cache version exists.

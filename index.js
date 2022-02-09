@@ -28,6 +28,25 @@ var everyone = []
 setup();
 
 async function setup() {
+    // Setup sign in
+    if(localStorage.getItem("signed-in") != "true") {
+        document.body.classList.add("not-signed-in")
+        gapi.load("auth2", function () {
+            let auth2 = gapi.auth2.init({
+                client_id: '1091212712262-c8ci56h65a3hsra7l55p2amtq7rue5ja.apps.googleusercontent.com',
+                cookiepolicy: 'single_host_origin',
+                scope: 'profile'
+            });
+            auth2.attachClickHandler(document.querySelector("#sign-in-button"), {}, on_signin, function(error) {
+                console.error("Error while signing in")
+                print(error)
+            })
+        })
+    }
+    else {
+        on_signin()
+    }
+
     // Get the json data
     everyone = await fetch("everyone.json").then(data => data.json())
 
@@ -272,4 +291,11 @@ function download_results() {
     csv_content += results.map(person => [person["year"], person["ID"], person["name"], branch_codes[person["B1"]], branch_codes[person["B2"]], person["hostel"], person["room"]].join(",")).join("\n")
     let encoded_uri = encodeURI(csv_content)
     window.open(encoded_uri)
+}
+
+// Signin Functions
+
+function on_signin(google_user) {
+    document.body.classList.add("signed-in")
+    localStorage.setItem("signed-in", "true")
 }

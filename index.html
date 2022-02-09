@@ -12,10 +12,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All BITSians</title>
+    <title>BPGC Everyone</title>
     <link rel="shortcut icon" href="images/logo.png" type="image/PNG">
     <meta name="theme-color" content="#000000">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Google OAuth 2.0 -->
+    <meta name="google-signin-client_id" content="1091212712262-c8ci56h65a3hsra7l55p2amtq7rue5ja.apps.googleusercontent.com" />
+    <script src="https://apis.google.com/js/platform.js" defer></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="index.css">
@@ -28,6 +32,49 @@
 </head>
 
 <body>
+    <div id="signin-page">
+        <header class="signin__header">
+            <div class="signin__header-bpgc">BPGC</div>
+            <div class="signin__header-everyone">Everyone</div>
+        </header>
+        <div class="signin__features">
+            <div class="features-row">
+                <div class="feature">
+                    <div class="feature__icon" style="background-image: url(images/search.png);"></div>
+                    <div class="feature__title">Find<br>Anyone</div>
+                </div>
+                <div class="feature">
+                    <div class="feature__icon" style="background-image: url(images/hostel.png);"></div>
+                    <div class="feature__title">Search<br>Hostels</div>
+                </div>
+                <div class="feature">
+                    <div class="feature__icon" style="background-image: url(images/offline.png);"></div>
+                    <div class="feature__title">Works<br>Offline</div>
+                </div>
+            </div>
+            <div class="features-row">
+                <div class="feature">
+                    <div class="feature__icon" style="background-image: url(images/download.png);"></div>
+                    <div class="feature__title">It's a Site<br>And an App</div>
+                </div>
+                <div class="feature">
+                    <div class="feature__icon" style="background-image: url(images/excel.png);"></div>
+                    <div class="feature__title">Save Results<br>As .xlsx</div>
+                </div>
+            </div>
+        </div>
+        <div class="signin__sign-in">
+            <div id="sign-in-button">
+                <div class="sign-in-button__logo"></div>
+                Verify your BITS Gmail
+            </div>
+        </div>
+        <div class="signin__disclaimer">
+            Google Sign-In is needed only once, and only to verify that you're from BITS.<br>I cannot legally collect user data. Use this app however you want.
+        </div>
+        <!-- <div class="g-signin2" data-onsuccess="on_signin"></div> -->
+        <!-- <div class="signin__disclaimer">Use this app however you want, because I legally cannot collect usage data</div> -->
+    </div>
     <div id="page">
         <div id="filters-tab">
             <header class="filters-tab__header">
