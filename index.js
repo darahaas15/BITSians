@@ -296,6 +296,7 @@ function download_results() {
 // Signin Functions
 
 function on_signin(google_user) {
+    document.body.classList.remove("not-signed-in")
     document.body.classList.add("signed-in")
     localStorage.setItem("signed-in", "true")
 }
