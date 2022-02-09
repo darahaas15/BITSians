@@ -598,10 +598,6 @@ body {
     flex-direction: column;
 }
 
-#results-container > * + * {
-    margin-top: 5px;
-}
-
 #results-container::-webkit-scrollbar {
     border-radius: 999px;
     width: 5px;
@@ -614,12 +610,17 @@ body {
 }
 
 #results-container > .student {
+    flex: 0 0 auto;
     font-family: 'Courier New', Courier, monospace;
     width: 100%;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.student + .student {
+    margin-top: 5px;
 }
 
 .student > * + * {
