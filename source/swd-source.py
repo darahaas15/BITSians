@@ -20,13 +20,10 @@ for i in data:
             del i[-1]
         people[i[0]] = i
 
-print(len(data))
-print(len(people))
+print(f"{len(data) = }")
+print(f"{len(people) = }")
 data = list(people.values())
 data.sort(key=lambda x:x[0])
-
-# print(data[-1])
-# exit()
 
 def camel_case(name)->str:
     return " ".join(word.capitalize() for word in name.split())
@@ -71,4 +68,4 @@ for person in data:
         person["room"] = f"{room_number} {post}"
 
 import json
-open("everyone.js", 'w').write(f"var everyone = {json.dumps(data, separators=(',', ':'))}")
+open("everyone.json", 'w').write(json.dumps(data, separators=(',', ':')))
