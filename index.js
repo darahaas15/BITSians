@@ -204,7 +204,7 @@ function resolve_query() {
     }
     
     if(SORTING == "relevant") sort_multiple(results, element=>[-element[0][0], -element[0][1], element[0][2]])
-    else sort_multiple(results, element=>[parseFloat(element[1]["room"])])
+    else sort_multiple(results, element=>[parseFloat(filtered[element[1]]["room"])])
     results = results.filter(element=>element[0][0])
     for(let i = 0; i < results.length; ++i) {
         // [score, person_index] => person
