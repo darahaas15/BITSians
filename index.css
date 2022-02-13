@@ -66,7 +66,6 @@ body {
     height: 40%;
     display: flex;
     flex-direction: column;
-    /* background-color: orange; */
     line-height: 1em;
     justify-content: center;
     align-items: center;
@@ -218,7 +217,7 @@ body {
     opacity: 1;
 }
 
-#page > * {
+#filters-tab, #results-tab {
     position: absolute;
     top: 0;
     left: 0;
@@ -228,7 +227,7 @@ body {
 }
 
 @media (min-width: 985px) {
-    #page > * {
+    #filters-tab, #results-tab {
         position: relative;
         height: 100vh;
     }
@@ -263,7 +262,7 @@ body {
     }
 }
 
-#filters-tab > * {
+.filters-tab__child {
     width: 100%;
 }
 
@@ -325,10 +324,6 @@ body {
     align-items: stretch;
 }
 
-.filter-section > *+* {
-    margin-top: 1em;
-}
-
 [category="year"] {--hue: 150;}
 [category="hostel"] {--hue: 30;}
 [category="B1"] {--hue: 210;}
@@ -355,6 +350,11 @@ body {
     .filter-section__header > button {
         cursor: pointer;
     }
+}
+
+.filter-toggle-container {
+    /* For the gap */
+    margin-top: 1em;
 }
 
 .filter-toggle {
@@ -434,7 +434,7 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
-.binary-toggle * {
+.binary-toggle__header, .binary-toggle__image, .binary-toggle__description {
     user-select: none;
     pointer-events: none;
 }
@@ -494,7 +494,7 @@ body {
     flex-direction: column;
 }
 
-#results-tab > *+* {
+.results-tab__child + .results-tab__child {
     margin-top: 10px;
 }
 
@@ -612,7 +612,7 @@ body {
     background-color: rgb(128, 128, 128);
 }
 
-#results-container > .student {
+.student {
     flex: 0 0 auto;
     font-family: 'Courier New', Courier, monospace;
     width: 100%;
@@ -622,19 +622,19 @@ body {
     align-items: center;
 }
 
-.student + .student {
-    margin-top: 5px;
-}
-
-.student > * + * {
-    margin-left: 5px;
-}
-
 .student:nth-child(2n+1) {
     background-color: rgb(25, 25, 25);
 }
 
-.student > * {
+.student + .student {
+    margin-top: 5px;
+}
+
+.student-child + .student-child {
+    margin-left: 5px;
+}
+
+.student-child {
     display: flex;
     flex-direction: column;
     justify-content: center;

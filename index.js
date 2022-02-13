@@ -214,12 +214,12 @@ var branch_codes = {'A1': 'B.E. Chemical', 'A3': 'B.E. EEE', 'A4': 'B.E. Mechani
 function display_results(results) {
     document.getElementById("results-container").innerHTML = results.map(person=>
     `<div class="student">
-        <div class="student-place">
+        <div class="student-child student-place">
             <div class="student-place__hostel">${person["hostel"]}</div>
             <div class="student-place__room">${person["room"]}</div>
         </div>
-        <div class="student-year">${person["year"]}</div>
-        <div class="student-info">
+        <div class="student-child student-year">${person["year"]}</div>
+        <div class="student-child student-info">
             <div class="student-info__name" style="font-size: ${Math.min(1.5, lerp(max(person["name"].split(/\s+/), key=e=>e.length).length, 7, 15, 1.5, 0.925))}em">${person["name"]}</div>
             <div class="student-info__branch">${person["B1"]?branch_codes[person["B1"]]:""}</div>
             <div class="student-info__branch">${branch_codes[person["B2"]]?branch_codes[person["B2"]]:""}</div>

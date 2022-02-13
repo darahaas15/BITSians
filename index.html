@@ -75,11 +75,11 @@
     </div>
     <div id="page">
         <div id="filters-tab">
-            <header class="filters-tab__header">
+            <header class="filters-tab__child filters-tab__header">
                 FILTERS
                 <img onclick="close_filters_tab()" src="images/forward.png">
             </header>
-            <div id="filters-container">
+            <div id="filters-container" class="filters-tab__child">
                 <div class="filter-section" category="year">
                     <header class="filter-section__header">
                         <category>Year</category>
@@ -111,14 +111,14 @@
                 <div class="binary-toggle-wrapper">
                     <div id="fetch-type-toggle" class="binary-toggle-container" onclick="change_fetch_type(event)">
                         <div class="binary-toggle" toggle-name="network">
-                            <header>Automatic Updates</header>
-                            <img src="images/refresh.png" alt="">
-                            <p>Automatically updates the app, but it opens slightly slower</p>
+                            <header class="binary-toggle__header">Automatic Updates</header>
+                            <img class="binary-toggle__image" src="images/refresh.png" alt="">
+                            <p class="binary-toggle__description">Automatically updates the app, but it opens slightly slower</p>
                         </div>
                         <div class="binary-toggle" toggle-name="cache">
-                            <header>Quick Loading</header>
-                            <img src="images/thunder.png" alt="">
-                            <p>App opens quickly, but doesn't automatically update</p>
+                            <header class="binary-toggle__header">Quick Loading</header>
+                            <img class="binary-toggle__image" src="images/thunder.png" alt="">
+                            <p class="binary-toggle__description">App opens quickly, but doesn't automatically update</p>
                         </div>
                     </div>
                 </div>
@@ -127,11 +127,11 @@
         </div>
         <!-- \n*\s*(<div class="filter-toggle".*?>.*?</div>)\n\s+ -->
         <div id="results-tab">
-            <header>
+            <header class="results-tab__child">
                 <img id="filter-img" onclick="show_filters_tab()" src="images/filter.png">
                 <input type="text" id="query" placeholder="Search" autocomplete="off" spellcheck="false">
             </header>
-            <div id="result-options">
+            <div id="result-options" class="results-tab__child">
                 <div class="result-option" id="download-button" onclick="download_results()">
                     <img src="images/download.png" alt="">
                     Download
@@ -141,7 +141,7 @@
                     Sort by Room Number
                 </div>
             </div>
-            <div id="results-container">
+            <div id="results-container" class="results-tab__child">
             </div>
         </div>
     </div>
