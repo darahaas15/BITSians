@@ -48,7 +48,7 @@ async function setup() {
     }
 
     // Get the json data
-    everyone = await fetch("everyone.json").then(data => data.json())
+    everyone = fetch("everyone.json").then(data => data.json())
 
     // Setup toggles
     setup_toggles()
@@ -68,9 +68,6 @@ async function setup() {
 
     // Store the input element in query_input
     query_input = document.getElementById("query")
-    apply_filters()
-    // Initial call to show results
-    resolve_query()
     // Set key event for query input
     query_input.onkeyup = resolve_query
 
@@ -78,6 +75,10 @@ async function setup() {
     window.caches.keys().then(cache_names => {
         document.getElementById("footer").innerHTML = `${cache_names.filter(name => name.startsWith("RES"))[0].substring(3)} • Made by Aryan Pingle`
     })
+
+    everyone = await everyone
+    // Apply all the filters i.e. none
+    apply_filters()
 }
 
 function setup_toggles() {
@@ -177,7 +178,12 @@ function load_filters() {
 
 function apply_filters() {
     load_filters()
-    filtered = everyone.filter(person=>filters.filter(([category, queries])=>queries.includes(person[category])).length == filters.length)
+    filtered = []
+    for(let person_index = 0; person_index < everyone.length; ++person_index) {
+        if(filters.filter(([category, queries])=>queries.includes(everyone[person_index][category])).length == filters.length) {
+            filtered.push(everyone[person_index])
+        }
+    }
     resolve_query()
 }
 
@@ -205,13 +211,14 @@ function resolve_query() {
     
     if(SORTING == "relevant") sort_multiple(results, element=>[-element[0][0], -element[0][1], element[0][2]])
     else sort_multiple(results, element=>[parseFloat(filtered[element[1]]["room"])])
-    results = results.filter(element=>element[0][0])
+    results = results.filter(element => element[0][0])
+    results = results.slice(0, MAX_RESULT_COUNT)
     for(let i = 0; i < results.length; ++i) {
         // [score, person_index] => person
         results[i] = filtered[results[i][1]]
     }
 
-    display_results(results.slice(0, MAX_RESULT_COUNT))
+    display_results(results)
 }
 
 var branch_codes = {'A1': 'B.E. Chemical', 'A3': 'B.E. EEE', 'A4': 'B.E. Mechanical', 'A7': 'B.E. CSE', 'A8': 'B.E. EnI', 'AA': 'B.E. ECE', 'B1': 'M.Sc. Biology', 'B2': 'M.Sc. Chemistry', 'B3': 'M.Sc. Economics', 'B4': 'M.Sc. Maths', 'B5': 'M.Sc. Physics', "PHD": "PHD", "H": "Higher Degree", "": ""}
