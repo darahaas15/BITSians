@@ -22,7 +22,7 @@ const logtime = (stime, process, color="greenyellow")=>print(`%c${process}%c com
 var filtered = []
 var results = []
 var SORTING = "relevant"
-const MAX_RESULT_COUNT = 250
+const MAX_RESULT_COUNT = 25
 var everyone = []
 
 setup();
@@ -191,20 +191,25 @@ function show_filters_tab() {
 
 function resolve_query() {
     let query = query_input.value.replace(/\s+/g, ' ')
+    query = query.toLowerCase()
     results = []
     if(/^\d{1,3}$/.test(query)) {
-        results = filtered.map(person=>[scorer_room(query, person["room"]), person])
+        results = filtered.map((person, index)=>[scorer_room(query, person["room"]), index])
     }
     else if(/\d/.test(query)) {
-        results = filtered.map(person=>[scorer_id(query, person["ID"]), person])
+        results = filtered.map((person, index)=>[scorer_id(query, person["ID"]), index])
     }
     else {
-        results = filtered.map(person=>[scorer_name(query, person["name"]), person])
+        results = filtered.map((person, index)=>[scorer_name(query, person["name"]), index])
     }
+    
     if(SORTING == "relevant") sort_multiple(results, element=>[-element[0][0], -element[0][1], element[0][2]])
     else sort_multiple(results, element=>[parseFloat(element[1]["room"])])
     results = results.filter(element=>element[0][0])
-    results = results.map(([score, person])=>person)
+    for(let i = 0; i < results.length; ++i) {
+        // [score, person_index] => person
+        results[i] = filtered[results[i][1]]
+    }
 
     display_results(results.slice(0, MAX_RESULT_COUNT))
 }
@@ -238,7 +243,6 @@ function scorer_name(query, text) {
         return [1, 0, 0]
     }
     text = text.toLowerCase()
-    query = query.toLowerCase()
     let j = 0
     let max_consec = [0, 0]
     let consec = [0, 0]
@@ -268,7 +272,6 @@ function scorer_name(query, text) {
 }
 
 function scorer_id(query, text) {
-    query = query.toUpperCase()
     if(text.includes(query)) {
         return [query.length, query.length, text.indexOf(query)]
     }
