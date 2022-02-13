@@ -22,7 +22,7 @@ const logtime = (stime, process, color="greenyellow")=>print(`%c${process}%c com
 var filtered = []
 var results = []
 var SORTING = "relevant"
-const MAX_RESULT_COUNT = 25
+const MAX_RESULT_COUNT = 250
 var everyone = []
 
 setup();
