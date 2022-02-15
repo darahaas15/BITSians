@@ -72,7 +72,7 @@ async function setup() {
 
     // Set Version Number
     window.caches.keys().then(cache_names => {
-        document.getElementById("footer").innerHTML = `${cache_names.filter(name => name.startsWith("RES"))[0].substring(3)} • Made by Aryan Pingle`
+        document.getElementById("footer").innerHTML = `v${cache_names.filter(name => name.match(/^\d/))[0]} • Made by Aryan Pingle`
     })
 
     everyone = await everyone

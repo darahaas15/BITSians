@@ -5,12 +5,14 @@
 //       Suck it WorkboxJS.      //
 ///////////////////////////////////
 
+const APP_VERSION = 4.50
+
 // Document Cache is a cache of document files - html, js, css, etc
 const DOCUMENT_CACHE_NAME = `DOC`
 var DOCUMENT_CACHE = null
 var DOCUMENT_FETCH_TYPE = null // For the user to select
 // Resource Cache is a cache of almost always static resources - images, fonts, and everything in the Texts folder
-const RESOURCE_VERSION = 4.4
+const RESOURCE_VERSION = 4.40
 const RESOURCE_CACHE_NAME = `RESv${RESOURCE_VERSION.toFixed(2)}`
 var RESOURCE_CACHE = null
 
@@ -45,6 +47,7 @@ self.addEventListener("activate", event => {
 });
 
 async function load_both_caches() {
+    await caches.open(`${APP_VERSION.toFixed(2)}`)
     DOCUMENT_CACHE = await caches.open(DOCUMENT_CACHE_NAME)
     RESOURCE_CACHE = await caches.open(RESOURCE_CACHE_NAME)
 }
@@ -52,7 +55,7 @@ async function load_both_caches() {
 async function delete_obsolete_caches() {
     let cache_names = await caches.keys()
     await Promise.all(cache_names.map(cache_name => {
-        if (![DOCUMENT_CACHE_NAME, RESOURCE_CACHE_NAME].includes(cache_name)) {
+        if (![DOCUMENT_CACHE_NAME, RESOURCE_CACHE_NAME, `${APP_VERSION.toFixed(2)}`].includes(cache_name)) {
             log(`Deleting obsolete cache: '${cache_name}'`, "rgb(255, 128, 128)")
             return caches.delete(cache_name)
         }
