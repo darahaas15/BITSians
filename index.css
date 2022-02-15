@@ -599,6 +599,7 @@ body {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #results-container::-webkit-scrollbar {
@@ -676,4 +677,19 @@ body {
 .student-info__id {
     font-size: 0.75em;
     color: hsl(180, 100%, 30%);
+}
+
+/* Load More Button */
+
+#load-more {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    padding: 1em;
+    width: 90%;
+    margin-top: 0.5em;
+    border-radius: inherit;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.25);
 }

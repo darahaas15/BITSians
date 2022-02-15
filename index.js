@@ -20,31 +20,30 @@ var filtered = []
 var results = []
 var SORTING = "relevant"
 var everyone = []
-const MAX_RESULT_COUNT = 250
+const MAX_RESULT_COUNT = 50
 let current_result_count = 0
 
 setup();
 
 async function setup() {
     // Setup sign in
-    // if(localStorage.getItem("signed-in") != "true") {
-    //     document.body.classList.add("not-signed-in")
-    //     gapi.load("auth2", function () {
-    //         let auth2 = gapi.auth2.init({
-    //             client_id: '1091212712262-c8ci56h65a3hsra7l55p2amtq7rue5ja.apps.googleusercontent.com',
-    //             cookiepolicy: 'single_host_origin',
-    //             scope: 'profile'
-    //         });
-    //         auth2.attachClickHandler(document.querySelector("#sign-in-button"), {}, on_signin, function(error) {
-    //             console.error("Error while signing in")
-    //             print(error)
-    //         })
-    //     })
-    // }
-    // else {
-    //     on_signin()
-    // }
-    on_signin()
+    if(localStorage.getItem("signed-in") != "true") {
+        document.body.classList.add("not-signed-in")
+        gapi.load("auth2", function () {
+            let auth2 = gapi.auth2.init({
+                client_id: '1091212712262-c8ci56h65a3hsra7l55p2amtq7rue5ja.apps.googleusercontent.com',
+                cookiepolicy: 'single_host_origin',
+                scope: 'profile'
+            });
+            auth2.attachClickHandler(document.querySelector("#sign-in-button"), {}, on_signin, function(error) {
+                console.error("Error while signing in")
+                print(error)
+            })
+        })
+    }
+    else {
+        on_signin()
+    }
 
     // Get the json data
     everyone = fetch("everyone.json").then(data => data.json())
@@ -222,8 +221,6 @@ function resolve_query() {
 
 const branch_codes = {'A1': 'B.E. Chemical', 'A3': 'B.E. EEE', 'A4': 'B.E. Mechanical', 'A7': 'B.E. CSE', 'A8': 'B.E. EnI', 'AA': 'B.E. ECE', 'B1': 'M.Sc. Biology', 'B2': 'M.Sc. Chemistry', 'B3': 'M.Sc. Economics', 'B4': 'M.Sc. Maths', 'B5': 'M.Sc. Physics', "PHD": "PHD", "H": "Higher Degree", "": ""}
 
-let results_height = 0
-
 function get_student_element_html(person) {
     return `<div class="student">
         <div class="student-child student-place">
@@ -241,18 +238,27 @@ function get_student_element_html(person) {
 }
 
 function display_results() {
-    document.getElementById("results-container").innerHTML = results.slice(0, MAX_RESULT_COUNT).map(get_student_element_html).join("")
-    results_height = document.getElementById("results-container").clientHeight
+    current_result_count = 0
+    document.getElementById("results-container").innerHTML = results.slice(0, MAX_RESULT_COUNT).map(get_student_element_html).join("") + (current_result_count + MAX_RESULT_COUNT >= results.length ? "" : get_load_more_button_html())
     current_result_count = Math.min(MAX_RESULT_COUNT, results.length)
+}
+
+function get_load_more_button_html() {
+    return "<div id='load-more' onclick='load_more_results()'>More Results</div>"
 }
 
 function load_more_results() {
     if (current_result_count == results.length) return
 
-    let new_text = results.slice(current_result_count, current_result_count + MAX_RESULT_COUNT).map(get_student_element_html).join("")
+    const results_container = document.getElementById("results-container")
+
+    // Remove the load more button
+    results_container.lastElementChild.remove()
+
+    let new_text = results.slice(current_result_count, current_result_count + MAX_RESULT_COUNT).map(get_student_element_html).join("") + (current_result_count + MAX_RESULT_COUNT >= results.length ? "" : get_load_more_button_html())
     let buffer_parent = document.createElement("div")
     buffer_parent.innerHTML = new_text
-    document.getElementById("results-container").append(...buffer_parent.children)
+    results_container.append(...buffer_parent.children)
     current_result_count = Math.min(current_result_count + MAX_RESULT_COUNT, results.length)
 }
 
