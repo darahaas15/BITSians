@@ -1,7 +1,4 @@
 var print = console.log
-function * range(start, end) {
-    while(start != end) yield start++
-}
 const lerp = (val,lb,ub,lv,uv)=>lv + (val-lb)*(uv-lv)/(ub-lb)
 const sort = (arr, key=e=>e)=>{arr.sort((a,b)=>key(a)-key(b)); return arr;}
 const sort_multiple = (arr, key=e=>e)=>{arr.sort((a,b)=>{
@@ -22,30 +19,32 @@ const logtime = (stime, process, color="greenyellow")=>print(`%c${process}%c com
 var filtered = []
 var results = []
 var SORTING = "relevant"
-const MAX_RESULT_COUNT = 250
 var everyone = []
+const MAX_RESULT_COUNT = 250
+let current_result_count = 0
 
 setup();
 
 async function setup() {
     // Setup sign in
-    if(localStorage.getItem("signed-in") != "true") {
-        document.body.classList.add("not-signed-in")
-        gapi.load("auth2", function () {
-            let auth2 = gapi.auth2.init({
-                client_id: '1091212712262-c8ci56h65a3hsra7l55p2amtq7rue5ja.apps.googleusercontent.com',
-                cookiepolicy: 'single_host_origin',
-                scope: 'profile'
-            });
-            auth2.attachClickHandler(document.querySelector("#sign-in-button"), {}, on_signin, function(error) {
-                console.error("Error while signing in")
-                print(error)
-            })
-        })
-    }
-    else {
-        on_signin()
-    }
+    // if(localStorage.getItem("signed-in") != "true") {
+    //     document.body.classList.add("not-signed-in")
+    //     gapi.load("auth2", function () {
+    //         let auth2 = gapi.auth2.init({
+    //             client_id: '1091212712262-c8ci56h65a3hsra7l55p2amtq7rue5ja.apps.googleusercontent.com',
+    //             cookiepolicy: 'single_host_origin',
+    //             scope: 'profile'
+    //         });
+    //         auth2.attachClickHandler(document.querySelector("#sign-in-button"), {}, on_signin, function(error) {
+    //             console.error("Error while signing in")
+    //             print(error)
+    //         })
+    //     })
+    // }
+    // else {
+    //     on_signin()
+    // }
+    on_signin()
 
     // Get the json data
     everyone = fetch("everyone.json").then(data => data.json())
@@ -69,7 +68,8 @@ async function setup() {
     // Store the input element in query_input
     query_input = document.getElementById("query")
     // Set key event for query input
-    query_input.onkeyup = resolve_query
+    query_input.addEventListener("keyup", resolve_query, {passive: true})
+    // query_input.onkeyup = resolve_query
 
     // Set Version Number
     window.caches.keys().then(cache_names => {
@@ -212,7 +212,6 @@ function resolve_query() {
     if(SORTING == "relevant") sort_multiple(results, element=>[-element[0][0], -element[0][1], element[0][2]])
     else sort_multiple(results, element=>[parseFloat(filtered[element[1]]["room"])])
     results = results.filter(element => element[0][0])
-    results = results.slice(0, MAX_RESULT_COUNT)
     for(let i = 0; i < results.length; ++i) {
         // [score, person_index] => person
         results[i] = filtered[results[i][1]]
@@ -221,23 +220,40 @@ function resolve_query() {
     display_results(results)
 }
 
-var branch_codes = {'A1': 'B.E. Chemical', 'A3': 'B.E. EEE', 'A4': 'B.E. Mechanical', 'A7': 'B.E. CSE', 'A8': 'B.E. EnI', 'AA': 'B.E. ECE', 'B1': 'M.Sc. Biology', 'B2': 'M.Sc. Chemistry', 'B3': 'M.Sc. Economics', 'B4': 'M.Sc. Maths', 'B5': 'M.Sc. Physics', "PHD": "PHD", "H": "Higher Degree", "": ""}
+const branch_codes = {'A1': 'B.E. Chemical', 'A3': 'B.E. EEE', 'A4': 'B.E. Mechanical', 'A7': 'B.E. CSE', 'A8': 'B.E. EnI', 'AA': 'B.E. ECE', 'B1': 'M.Sc. Biology', 'B2': 'M.Sc. Chemistry', 'B3': 'M.Sc. Economics', 'B4': 'M.Sc. Maths', 'B5': 'M.Sc. Physics', "PHD": "PHD", "H": "Higher Degree", "": ""}
 
-function display_results(results) {
-    document.getElementById("results-container").innerHTML = results.map(person=>
-    `<div class="student">
+let results_height = 0
+
+function get_student_element_html(person) {
+    return `<div class="student">
         <div class="student-child student-place">
             <div class="student-place__hostel">${person["hostel"]}</div>
             <div class="student-place__room">${person["room"]}</div>
         </div>
         <div class="student-child student-year">${person["year"]}</div>
         <div class="student-child student-info">
-            <div class="student-info__name" style="font-size: ${Math.min(1.5, lerp(max(person["name"].split(/\s+/), key=e=>e.length).length, 7, 15, 1.5, 0.925))}em">${person["name"]}</div>
-            <div class="student-info__branch">${person["B1"]?branch_codes[person["B1"]]:""}</div>
-            <div class="student-info__branch">${branch_codes[person["B2"]]?branch_codes[person["B2"]]:""}</div>
+            <div class="student-info__name" style="font-size: ${Math.min(1.5, lerp(max(person["name"].split(/\s+/), key = e => e.length).length, 7, 15, 1.5, 0.925))}em">${person["name"]}</div>
+            <div class="student-info__branch">${person["B1"] ? branch_codes[person["B1"]] : ""}</div>
+            <div class="student-info__branch">${branch_codes[person["B2"]] ? branch_codes[person["B2"]] : ""}</div>
             <div class="student-info__id">${person["ID"]}</div>
         </div>
-    </div>`).join("")
+    </div>`
+}
+
+function display_results() {
+    document.getElementById("results-container").innerHTML = results.slice(0, MAX_RESULT_COUNT).map(get_student_element_html).join("")
+    results_height = document.getElementById("results-container").clientHeight
+    current_result_count = Math.min(MAX_RESULT_COUNT, results.length)
+}
+
+function load_more_results() {
+    if (current_result_count == results.length) return
+
+    let new_text = results.slice(current_result_count, current_result_count + MAX_RESULT_COUNT).map(get_student_element_html).join("")
+    let buffer_parent = document.createElement("div")
+    buffer_parent.innerHTML = new_text
+    document.getElementById("results-container").append(...buffer_parent.children)
+    current_result_count = Math.min(current_result_count + MAX_RESULT_COUNT, results.length)
 }
 
 /**
