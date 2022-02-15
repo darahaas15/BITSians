@@ -197,26 +197,46 @@ function show_filters_tab() {
 function resolve_query() {
     let query = query_input.value.replace(/\s+/g, ' ')
     query = query.toLowerCase()
-    results = []
+    results = new Array(filtered.length).fill(0)
     if(/^\d{1,3}$/.test(query)) {
-        results = filtered.map((person, index)=>[scorer_room(query, person["room"]), index])
+        for(let i = 0; i < results.length; ++i) {
+            let person = filtered[i]
+            results[i] = [scorer_room(query, person["room"]), i]
+        }
     }
     else if(/\d/.test(query)) {
-        results = filtered.map((person, index)=>[scorer_id(query, person["ID"]), index])
+        for(let i = 0; i < results.length; ++i) {
+            let person = filtered[i]
+            results[i] = [scorer_id(query, person["ID"]), i]
+        }
     }
     else {
-        results = filtered.map((person, index)=>[scorer_name(query, person["name"]), index])
+        for(let i = 0; i < results.length; ++i) {
+            let person = filtered[i]
+            results[i] = [scorer_name(query, person["name"]), i]
+        }
     }
     
     if(SORTING == "relevant") sort_multiple(results, element=>[-element[0][0], -element[0][1], element[0][2]])
     else sort_multiple(results, element=>[parseFloat(filtered[element[1]]["room"])])
-    results = results.filter(element => element[0][0])
+
+    fast_filter(results, element => element[0][0])
     for(let i = 0; i < results.length; ++i) {
         // [score, person_index] => person
         results[i] = filtered[results[i][1]]
     }
 
     display_results(results)
+}
+
+function fast_filter(iterable, condition) {
+    let ci = 0
+    for(let i = 0; i < iterable.length; ++i) {
+        if(condition(iterable[i])) {
+            iterable[ci++] = iterable[i]
+        }
+    }
+    iterable.splice(ci)
 }
 
 const branch_codes = {'A1': 'B.E. Chemical', 'A3': 'B.E. EEE', 'A4': 'B.E. Mechanical', 'A7': 'B.E. CSE', 'A8': 'B.E. EnI', 'AA': 'B.E. ECE', 'B1': 'M.Sc. Biology', 'B2': 'M.Sc. Chemistry', 'B3': 'M.Sc. Economics', 'B4': 'M.Sc. Maths', 'B5': 'M.Sc. Physics', "PHD": "PHD", "H": "Higher Degree", "": ""}
