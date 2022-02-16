@@ -519,21 +519,26 @@ body {
     aspect-ratio: 1 / 1;
 }
 
-#results-tab > header > input {
+.input-search {
     font-family: inherit;
     font-size: 0.75em;
     font-weight: 900;
     background-color: transparent;
-    border: solid white 2px;
+    border: solid rgb(128, 128, 128) 2px;
     border-radius: 0.25em;
     height: 100%;
     outline: none;
     color: white;
     text-align: center;
     width: 100%;
+    transition: border-color 250ms ease;
 }
 
-#results-tab > header > input::placeholder {
+.input-search:focus {
+    border-color: #efefef;
+}
+
+.input-search::placeholder {
     text-transform: uppercase;
     color: rgb(128, 128, 128);
 }
