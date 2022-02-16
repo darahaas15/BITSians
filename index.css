@@ -520,6 +520,7 @@ body {
 }
 
 #results-tab > header > input {
+    font-family: inherit;
     font-size: 0.75em;
     font-weight: 900;
     background-color: transparent;
