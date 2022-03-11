@@ -220,6 +220,7 @@ function resolve_query() {
     if(SORTING == "relevant") sort_multiple(results, element=>[-element[0][0], -element[0][1], element[0][2]])
     else sort_multiple(results, element=>[parseFloat(filtered[element[1]]["room"])])
 
+    // Filter out results with 0 score
     fast_filter(results, element => element[0][0])
     for(let i = 0; i < results.length; ++i) {
         // [score, person_index] => person
@@ -228,6 +229,10 @@ function resolve_query() {
 
     display_results(results)
 }
+
+/**
+ * Performs the same way as Array.filter, just much more quickly
+ */
 
 function fast_filter(iterable, condition) {
     let ci = 0
@@ -250,9 +255,9 @@ function get_student_element_html(person) {
         <div class="student-child student-year">${person["year"]}</div>
         <div class="student-child student-info">
             <div class="student-info__name" style="font-size: ${Math.min(1.5, lerp(max(person["name"].split(/\s+/), key = e => e.length).length, 7, 15, 1.5, 0.925))}em">${person["name"]}</div>
-            <div class="student-info__branch">${person["B1"] ? branch_codes[person["B1"]] : ""}</div>
-            <div class="student-info__branch">${branch_codes[person["B2"]] ? branch_codes[person["B2"]] : ""}</div>
-            <div class="student-info__id">${person["ID"]}</div>
+            <div class="student-info__branch">${person["b1"].toUpperCase() ? branch_codes[person["b1"].toUpperCase()] : ""}</div>
+            <div class="student-info__branch">${branch_codes[person["b2"].toUpperCase()] ? branch_codes[person["b2"].toUpperCase()] : ""}</div>
+            <div class="student-info__id">${person["id"]}</div>
         </div>
     </div>`
 }
@@ -340,7 +345,7 @@ function download_results() {
     let csv_content = "data:text/csv;charset=utf-8,"
     let titles = ["Year", "ID", "Name", "Primary Degree", "Secondary Degree", "Hostel", "Room No"]
     csv_content += titles.join(",") + "\n"
-    csv_content += results.map(person => [person["year"], person["ID"], person["name"], branch_codes[person["B1"]], branch_codes[person["B2"]], person["hostel"], person["room"]].join(",")).join("\n")
+    csv_content += results.map(person => [person["year"], person["id"], person["name"], branch_codes[person["b1"].toUpperCase()], branch_codes[person["b2"].toUpperCase()], person["hostel"], person["room"]].join(",")).join("\n")
     let encoded_uri = encodeURI(csv_content)
     window.open(encoded_uri)
 }

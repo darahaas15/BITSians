@@ -60,7 +60,7 @@ for i in data:
     i += [""]*(m-len(i))
 
 for i in range(len(data)):
-    data[i] = {title:value for (title, value) in list(zip("ID,year,name,B1,B2,hostel,room".split(","), data[i]))}
+    data[i] = {title:value for (title, value) in list(zip("id,year,name,b1,b2,hostel,room".split(","), data[i]))}
 
 for person in data:
     if "L" in person["room"] or "R" in person["room"]:
