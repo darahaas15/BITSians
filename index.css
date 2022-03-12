@@ -326,8 +326,8 @@ body {
 
 [category="year"] {--hue: 150;}
 [category="hostel"] {--hue: 30;}
-[category="B1"] {--hue: 210;}
-[category="B2"] {--hue: 270;}
+[category="b1"] {--hue: 210;}
+[category="b2"] {--hue: 270;}
 
 .filter-section__header {
     font-weight: 700;
