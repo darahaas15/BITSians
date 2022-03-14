@@ -5,7 +5,7 @@
 //       Suck it WorkboxJS.      //
 ///////////////////////////////////
 
-const APP_VERSION = 4.62
+const APP_VERSION = 4.63
 
 // Document Cache is a cache of document files - html, js, css, etc
 const DOCUMENT_CACHE_NAME = `DOC`
