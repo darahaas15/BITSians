@@ -83,6 +83,7 @@ async function setup() {
 function setup_toggles() {
     [...document.getElementsByClassName("filter-toggle")].forEach(toggle=>{
         toggle.onclick = event=>{
+            navigator.vibrate(25)
             if(toggle.classList.contains("selected")) toggle.classList.remove("selected")
             else toggle.classList.add("selected")
             apply_filters()
@@ -187,10 +188,12 @@ function apply_filters() {
 }
 
 function close_filters_tab() {
+    navigator.vibrate(50)
     document.getElementById("filters-tab").classList.add("hidden")
 }
 
 function show_filters_tab() {
+    navigator.vibrate(50)
     document.getElementById("filters-tab").classList.remove("hidden")
 }
 
