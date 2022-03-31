@@ -188,12 +188,12 @@ function apply_filters() {
 }
 
 function close_filters_tab(event) {
-    navigator.vibrate(100)
+    if("vibrate" in navigator) navigator.vibrate(100)
     document.getElementById("filters-tab").classList.add("hidden")
 }
 
 function show_filters_tab(event) {
-    navigator.vibrate(100)
+    if("vibrate" in navigator) navigator.vibrate(100)
     document.getElementById("filters-tab").classList.remove("hidden")
 }
 
