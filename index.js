@@ -187,12 +187,12 @@ function apply_filters() {
     resolve_query()
 }
 
-function close_filters_tab() {
+function close_filters_tab(event) {
     navigator.vibrate(100)
     document.getElementById("filters-tab").classList.add("hidden")
 }
 
-function show_filters_tab() {
+function show_filters_tab(event) {
     navigator.vibrate(100)
     document.getElementById("filters-tab").classList.remove("hidden")
 }
