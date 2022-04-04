@@ -84,7 +84,7 @@
         </div>
     </div>
     <div id="page">
-        <div id="filters-tab">
+        <div id="filters-tab" class="hidden">
             <header class="filters-tab__child filters-tab__header">
                 FILTERS
                 <img onclick="close_filters_tab(event)" src="images/forward.png">
@@ -117,20 +117,6 @@
                         <button class="select-all-button"></button>
                     </header>
                     <div class="filter-toggle-container"><div class="filter-toggle" value="B1">M.Sc. Biology</div><div class="filter-toggle" value="B2">M.Sc. Chemistry</div><div class="filter-toggle" value="B3">M.Sc. Economics</div><div class="filter-toggle" value="B4">M.Sc. Math</div><div class="filter-toggle" value="B5">M.Sc. Physics</div></div>
-                </div>
-                <div class="binary-toggle-wrapper">
-                    <div id="fetch-type-toggle" class="binary-toggle-container" onclick="change_fetch_type(event)">
-                        <div class="binary-toggle" toggle-name="network">
-                            <header class="binary-toggle__header">Automatic Updates</header>
-                            <img class="binary-toggle__image" src="images/refresh.png" alt="">
-                            <p class="binary-toggle__description">Automatically updates the app, but it opens slightly slower</p>
-                        </div>
-                        <div class="binary-toggle" toggle-name="cache">
-                            <header class="binary-toggle__header">Quick Loading</header>
-                            <img class="binary-toggle__image" src="images/thunder.png" alt="">
-                            <p class="binary-toggle__description">App opens quickly, but doesn't automatically update</p>
-                        </div>
-                    </div>
                 </div>
                 <div id="footer"></div>
             </div>

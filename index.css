@@ -606,17 +606,21 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    --scrollbar-width: 4px;
+
+    scrollbar-width: var(--scrollbar-width);
 }
 
 #results-container::-webkit-scrollbar {
     border-radius: 999px;
-    width: 5px;
+    width: var(--scrollbar-width);
     background-color: black;
 }
 
 #results-container::-webkit-scrollbar-thumb {
     border-radius: 999px;
-    background-color: rgb(128, 128, 128);
+    background-color: rgb(64, 64, 64);
 }
 
 .student {

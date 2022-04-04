@@ -36,7 +36,6 @@ async function setup() {
                 scope: 'profile'
             });
             auth2.attachClickHandler(document.querySelector("#sign-in-button"), {}, on_signin, function(error) {
-                console.error("Error while signing in")
                 print(error)
             })
         })
@@ -50,16 +49,6 @@ async function setup() {
 
     // Setup toggles
     setup_toggles()
-
-    // Setup binary toggles
-    setup_binary_toggles()
-    // If network first, set that to selected in the binary toggle
-    if(localStorage.getItem("fetch-type") == "cache-first") {
-        document.getElementById("fetch-type-toggle").classList.add("second")
-    }
-    else if(localStorage.getItem("fetch-type") == null) {
-        localStorage.setItem("fetch-type", "network-first")
-    }
 
     // Setup 'Select all' buttons
     setup_select_all()
@@ -91,25 +80,6 @@ function setup_toggles() {
     })
 }
 
-function setup_binary_toggles() {
-    [...document.getElementsByClassName("binary-toggle-container")].forEach(toggle_container=>{
-        [...toggle_container.getElementsByClassName("binary-toggle")].forEach((toggle, index)=>{
-            toggle.onclick = event=>{
-                let parent = toggle.parentElement
-    
-                if((index==1 && parent.classList.contains("second")) || (index==0 && !parent.classList.contains("second"))) return
-    
-                if(index == 0) {
-                    parent.classList.remove("second")
-                }
-                else {
-                    parent.classList.add("second")
-                }
-            }
-        })
-    })
-}
-
 function setup_select_all() {
     [...document.getElementsByClassName("select-all-button")].forEach(button=>{
         button.onclick = event=>{
@@ -125,18 +95,6 @@ function setup_select_all() {
             apply_filters()
         }
     })
-}
-
-function change_fetch_type(event) {
-    let toggle_name = event.target.getAttribute("toggle-name")
-    if(toggle_name == "cache") {
-        fetch("cache-first")
-        localStorage.setItem("fetch-type", "cache-first")
-    }
-    else {
-        fetch("network-first")
-        localStorage.setItem("fetch-type", "network-first")
-    }
 }
 
 function change_sorting(sorting_button) {
