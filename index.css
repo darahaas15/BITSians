@@ -478,12 +478,35 @@ body {
 
 /* Footer for credits and shit */
 
-#footer {
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200;
     font-size: 0.75em;
-    text-transform: uppercase;
+}
+
+#version, #credits {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(25, 25, 25);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: rgba(255, 255, 255, 0.5);
-    text-align: center;
+}
+
+#version {
+    padding: 0.5em 1em;
     font-family: 'Courier New', Courier, monospace;
+    margin-right: 10px;
+}
+
+#credits {
+    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
 }
 
 /* RESULTS TAB */
